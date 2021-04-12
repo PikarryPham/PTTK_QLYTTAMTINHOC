@@ -54,6 +54,48 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuanLiHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLiHocPhan.Designer.cs">
+      <DependentUpon>QuanLiHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuaHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuaHocPhan.Designer.cs">
+      <DependentUpon>SuaHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhToanThe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThanhToanThe.Designer.cs">
+      <DependentUpon>ThanhToanThe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHocPhan.Designer.cs">
+      <DependentUpon>ThemHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHocPhanBatBuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHocPhanBatBuoc.Designer.cs">
+      <DependentUpon>ThemHocPhanBatBuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHocPhanChuyenSau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHocPhanChuyenSau.Designer.cs">
+      <DependentUpon>ThemHocPhanChuyenSau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThemHocPhanCoBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThemHocPhanCoBan.Designer.cs">
+      <DependentUpon>ThemHocPhanCoBan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -66,6 +108,27 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QuanLiHocPhan.resx">
+      <DependentUpon>QuanLiHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuaHocPhan.resx">
+      <DependentUpon>SuaHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThanhToanThe.resx">
+      <DependentUpon>ThanhToanThe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHocPhan.resx">
+      <DependentUpon>ThemHocPhan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHocPhanBatBuoc.resx">
+      <DependentUpon>ThemHocPhanBatBuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHocPhanChuyenSau.resx">
+      <DependentUpon>ThemHocPhanChuyenSau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThemHocPhanCoBan.resx">
+      <DependentUpon>ThemHocPhanCoBan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
