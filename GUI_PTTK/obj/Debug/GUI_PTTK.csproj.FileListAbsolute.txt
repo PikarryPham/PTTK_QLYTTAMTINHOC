@@ -8,3 +8,17 @@ C:\Users\MON\source\repos\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.GenerateResource.ca
 C:\Users\MON\source\repos\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CoreCompileInputs.cache
 C:\Users\MON\source\repos\GUI_PTTK\obj\Debug\GUI_PTTK.exe
 C:\Users\MON\source\repos\GUI_PTTK\obj\Debug\GUI_PTTK.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\GUI_PTTK.exe.config
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\GUI_PTTK.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\GUI_PTTK.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\BUS_PTTK.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\BUS_PTTK.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\BUS_PTTK.exe.config
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.csprojAssemblyReference.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.Form1.resources
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.Properties.Resources.resources
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.GenerateResource.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CoreCompileInputs.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CopyComplete
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.pdb

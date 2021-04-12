@@ -7,3 +7,16 @@ C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.GenerateResource.ca
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CoreCompileInputs.cache
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.exe
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.exe.config
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.pdb
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.exe.config
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csprojAssemblyReference.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.Properties.Resources.resources
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.GenerateResource.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CoreCompileInputs.cache
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CopyComplete
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.exe
+D:\Đồ Án\Năm 3\HK2\PTTK\Giai đoạn 4\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.pdb
