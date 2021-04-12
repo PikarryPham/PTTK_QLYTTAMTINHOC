@@ -29,22 +29,15 @@ namespace GUI_PTTK
         /// </summary>
         private void InitializeComponent()
         {
-            this.username = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.taokithiccqt = new System.Windows.Forms.Button();
             this.backTrang = new System.Windows.Forms.Button();
-            this.dscackithiccqt = new System.Windows.Forms.GroupBox();
+            this.capnhatkithiccqt = new System.Windows.Forms.Button();
+            this.dscackithiccqtTrang = new System.Windows.Forms.GroupBox();
+            this.listdskithiCCQT = new System.Windows.Forms.DataGridView();
+            this.dscackithiccqtTrang.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.listdskithiCCQT)).BeginInit();
             this.SuspendLayout();
-            // 
-            // username
-            // 
-            this.username.AutoSize = true;
-            this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(911, 19);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(85, 29);
-            this.username.TabIndex = 0;
-            this.username.Text = "label1";
             // 
             // label1
             // 
@@ -59,7 +52,7 @@ namespace GUI_PTTK
             // 
             // taokithiccqt
             // 
-            this.taokithiccqt.Location = new System.Drawing.Point(757, 362);
+            this.taokithiccqt.Location = new System.Drawing.Point(767, 312);
             this.taokithiccqt.Name = "taokithiccqt";
             this.taokithiccqt.Size = new System.Drawing.Size(239, 57);
             this.taokithiccqt.TabIndex = 2;
@@ -73,43 +66,65 @@ namespace GUI_PTTK
             this.backTrang.Name = "backTrang";
             this.backTrang.Size = new System.Drawing.Size(99, 36);
             this.backTrang.TabIndex = 6;
-            this.backTrang.Text = "Back";
+            this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
             // 
-            // dscackithiccqt
+            // capnhatkithiccqt
             // 
-            this.dscackithiccqt.Location = new System.Drawing.Point(12, 132);
-            this.dscackithiccqt.Name = "dscackithiccqt";
-            this.dscackithiccqt.Size = new System.Drawing.Size(706, 566);
-            this.dscackithiccqt.TabIndex = 7;
-            this.dscackithiccqt.TabStop = false;
-            this.dscackithiccqt.Text = "DanhsachcackithiCCQT";
+            this.capnhatkithiccqt.Location = new System.Drawing.Point(767, 436);
+            this.capnhatkithiccqt.Name = "capnhatkithiccqt";
+            this.capnhatkithiccqt.Size = new System.Drawing.Size(239, 57);
+            this.capnhatkithiccqt.TabIndex = 8;
+            this.capnhatkithiccqt.Text = "Cap nhat ki thi CCQT";
+            this.capnhatkithiccqt.UseVisualStyleBackColor = true;
+            // 
+            // dscackithiccqtTrang
+            // 
+            this.dscackithiccqtTrang.Controls.Add(this.listdskithiCCQT);
+            this.dscackithiccqtTrang.Location = new System.Drawing.Point(12, 132);
+            this.dscackithiccqtTrang.Name = "dscackithiccqtTrang";
+            this.dscackithiccqtTrang.Size = new System.Drawing.Size(734, 566);
+            this.dscackithiccqtTrang.TabIndex = 7;
+            this.dscackithiccqtTrang.TabStop = false;
+            this.dscackithiccqtTrang.Text = "Danh sach cac ki thi CCQT";
+            // 
+            // listdskithiCCQT
+            // 
+            this.listdskithiCCQT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listdskithiCCQT.Location = new System.Drawing.Point(10, 21);
+            this.listdskithiCCQT.Name = "listdskithiCCQT";
+            this.listdskithiCCQT.RowHeadersWidth = 51;
+            this.listdskithiCCQT.RowTemplate.Height = 24;
+            this.listdskithiCCQT.Size = new System.Drawing.Size(696, 524);
+            this.listdskithiCCQT.TabIndex = 0;
             // 
             // QuanlikithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 727);
-            this.Controls.Add(this.dscackithiccqt);
+            this.Controls.Add(this.capnhatkithiccqt);
+            this.Controls.Add(this.dscackithiccqtTrang);
             this.Controls.Add(this.backTrang);
             this.Controls.Add(this.taokithiccqt);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "QuanlikithiCCQT";
             this.Text = "Quan li ki thi CCQT";
+            this.dscackithiccqtTrang.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.listdskithiCCQT)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button taokithiccqt;
         private System.Windows.Forms.Button backTrang;
-        private System.Windows.Forms.GroupBox dscackithiccqt;
+        private System.Windows.Forms.Button capnhatkithiccqt;
+        private System.Windows.Forms.GroupBox dscackithiccqtTrang;
+        private System.Windows.Forms.DataGridView listdskithiCCQT;
     }
 }
 

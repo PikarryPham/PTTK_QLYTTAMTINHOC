@@ -30,7 +30,6 @@ namespace GUI_PTTK
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.username = new System.Windows.Forms.Label();
             this.backTrangTaomoi = new System.Windows.Forms.Button();
             this.labelaaaa = new System.Windows.Forms.Label();
             this.diadiemthi = new System.Windows.Forms.TextBox();
@@ -56,16 +55,6 @@ namespace GUI_PTTK
             this.label1.TabIndex = 3;
             this.label1.Text = "Tao moi ki thi CCQT";
             // 
-            // username
-            // 
-            this.username.AutoSize = true;
-            this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(670, 22);
-            this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(85, 29);
-            this.username.TabIndex = 2;
-            this.username.Text = "label1";
-            // 
             // backTrangTaomoi
             // 
             this.backTrangTaomoi.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -73,7 +62,7 @@ namespace GUI_PTTK
             this.backTrangTaomoi.Name = "backTrangTaomoi";
             this.backTrangTaomoi.Size = new System.Drawing.Size(99, 36);
             this.backTrangTaomoi.TabIndex = 7;
-            this.backTrangTaomoi.Text = "Back";
+            this.backTrangTaomoi.Text = "Quay ve";
             this.backTrangTaomoi.UseVisualStyleBackColor = false;
             // 
             // labelaaaa
@@ -183,7 +172,6 @@ namespace GUI_PTTK
             this.Controls.Add(this.labelaaaa);
             this.Controls.Add(this.backTrangTaomoi);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.username);
             this.Name = "ThemkithiCCQT";
             this.Text = "ThemkithiCCQT";
             this.ResumeLayout(false);
@@ -194,7 +182,6 @@ namespace GUI_PTTK
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button backTrangTaomoi;
         private System.Windows.Forms.Label labelaaaa;
         private System.Windows.Forms.TextBox diadiemthi;

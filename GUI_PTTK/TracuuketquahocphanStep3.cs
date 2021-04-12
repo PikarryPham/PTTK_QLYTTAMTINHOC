@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_PTTK.component
+namespace GUI_PTTK
 {
-    public partial class UserControl1 : UserControl
+    public partial class TracuuketquahocphanStep3 : Form
     {
-        public UserControl1()
+        public TracuuketquahocphanStep3()
         {
             InitializeComponent();
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-            ///
         }
     }
 }

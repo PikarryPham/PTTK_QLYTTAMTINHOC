@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI_PTTK.component
 {
-    public partial class UserControl1 : UserControl
+    public partial class Hocphan : UserControl
     {
-        public UserControl1()
+        public Hocphan()
         {
             InitializeComponent();
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-            ///
         }
     }
 }
