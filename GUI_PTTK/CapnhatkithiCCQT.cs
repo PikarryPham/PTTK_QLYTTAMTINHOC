@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUI_PTTK
 {
-    public partial class Form1 : Form
+    public partial class CapnhatkithiCCQT : Form
     {
-        public Form1()
+        public CapnhatkithiCCQT()
         {
             InitializeComponent();
         }
