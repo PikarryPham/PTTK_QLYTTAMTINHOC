@@ -41,6 +41,7 @@ namespace GUI_PTTK
             this.dshocvien = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.showlistdshvienhethong = new System.Windows.Forms.Button();
+            this.username = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien)).BeginInit();
             this.SuspendLayout();
@@ -161,11 +162,23 @@ namespace GUI_PTTK
             this.showlistdshvienhethong.Text = "Hien thi danh sach hoc vien he thong";
             this.showlistdshvienhethong.UseVisualStyleBackColor = true;
             // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(963, 22);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 21;
+            this.username.Text = "Username";
+            // 
             // Tracuuketquahpstep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 713);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dshocvien);
@@ -201,5 +214,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.DataGridView dshocvien;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button showlistdshvienhethong;
+        private System.Windows.Forms.Label username;
     }
 }

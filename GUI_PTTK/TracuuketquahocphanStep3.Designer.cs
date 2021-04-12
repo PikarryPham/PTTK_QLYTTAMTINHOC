@@ -47,6 +47,7 @@ namespace GUI_PTTK
             this.ngaydkhp = new System.Windows.Forms.Label();
             this.inkqhocphan = new System.Windows.Forms.Button();
             this.dkhoclai = new System.Windows.Forms.Button();
+            this.username = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backTrang
@@ -179,7 +180,7 @@ namespace GUI_PTTK
             // thoigiankthp
             // 
             this.thoigiankthp.AutoSize = true;
-            this.thoigiankthp.Location = new System.Drawing.Point(609, 319);
+            this.thoigiankthp.Location = new System.Drawing.Point(602, 319);
             this.thoigiankthp.Name = "thoigiankthp";
             this.thoigiankthp.Size = new System.Drawing.Size(69, 17);
             this.thoigiankthp.TabIndex = 24;
@@ -221,11 +222,23 @@ namespace GUI_PTTK
             this.dkhoclai.Text = "Dang ky thi lai";
             this.dkhoclai.UseVisualStyleBackColor = true;
             // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(664, 21);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 29;
+            this.username.Text = "Username";
+            // 
             // TracuuketquahocphanStep3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 608);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.dkhoclai);
             this.Controls.Add(this.inkqhocphan);
             this.Controls.Add(this.ngaydkhp);
@@ -271,5 +284,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label ngaydkhp;
         private System.Windows.Forms.Button inkqhocphan;
         private System.Windows.Forms.Button dkhoclai;
+        private System.Windows.Forms.Label username;
     }
 }

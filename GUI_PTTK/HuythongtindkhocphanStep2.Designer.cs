@@ -34,6 +34,7 @@ namespace GUI_PTTK
             this.label2 = new System.Windows.Forms.Label();
             this.tenhphuy = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.username = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // khongdongyhuyhpbtn
@@ -86,11 +87,23 @@ namespace GUI_PTTK
             this.label1.TabIndex = 19;
             this.label1.Text = "Huy dang ki hoc phan";
             // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(420, 9);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 24;
+            this.username.Text = "Username";
+            // 
             // HuythongtindkhocphanStep2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(538, 450);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.khongdongyhuyhpbtn);
             this.Controls.Add(this.dongyhuyhpbtn);
             this.Controls.Add(this.label2);
@@ -110,5 +123,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label tenhphuy;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label username;
     }
 }

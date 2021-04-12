@@ -35,6 +35,8 @@ namespace GUI_PTTK
             this.capnhatkithiccqt = new System.Windows.Forms.Button();
             this.dscackithiccqtTrang = new System.Windows.Forms.GroupBox();
             this.listdskithiCCQT = new System.Windows.Forms.DataGridView();
+            this.xemthongtinccqt = new System.Windows.Forms.Button();
+            this.username = new System.Windows.Forms.Label();
             this.dscackithiccqtTrang.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listdskithiCCQT)).BeginInit();
             this.SuspendLayout();
@@ -52,7 +54,7 @@ namespace GUI_PTTK
             // 
             // taokithiccqt
             // 
-            this.taokithiccqt.Location = new System.Drawing.Point(767, 312);
+            this.taokithiccqt.Location = new System.Drawing.Point(767, 270);
             this.taokithiccqt.Name = "taokithiccqt";
             this.taokithiccqt.Size = new System.Drawing.Size(239, 57);
             this.taokithiccqt.TabIndex = 2;
@@ -71,7 +73,7 @@ namespace GUI_PTTK
             // 
             // capnhatkithiccqt
             // 
-            this.capnhatkithiccqt.Location = new System.Drawing.Point(767, 412);
+            this.capnhatkithiccqt.Location = new System.Drawing.Point(767, 374);
             this.capnhatkithiccqt.Name = "capnhatkithiccqt";
             this.capnhatkithiccqt.Size = new System.Drawing.Size(239, 57);
             this.capnhatkithiccqt.TabIndex = 8;
@@ -95,14 +97,36 @@ namespace GUI_PTTK
             this.listdskithiCCQT.Name = "listdskithiCCQT";
             this.listdskithiCCQT.RowHeadersWidth = 51;
             this.listdskithiCCQT.RowTemplate.Height = 24;
-            this.listdskithiCCQT.Size = new System.Drawing.Size(696, 524);
+            this.listdskithiCCQT.Size = new System.Drawing.Size(696, 545);
             this.listdskithiCCQT.TabIndex = 0;
+            // 
+            // xemthongtinccqt
+            // 
+            this.xemthongtinccqt.Location = new System.Drawing.Point(767, 469);
+            this.xemthongtinccqt.Name = "xemthongtinccqt";
+            this.xemthongtinccqt.Size = new System.Drawing.Size(239, 57);
+            this.xemthongtinccqt.TabIndex = 9;
+            this.xemthongtinccqt.Text = "Xem thong tin ki thi CCQT";
+            this.xemthongtinccqt.UseVisualStyleBackColor = true;
+            // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(885, 16);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 10;
+            this.username.Text = "Username";
             // 
             // QuanlikithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 727);
+            this.Controls.Add(this.username);
+            this.Controls.Add(this.xemthongtinccqt);
             this.Controls.Add(this.capnhatkithiccqt);
             this.Controls.Add(this.dscackithiccqtTrang);
             this.Controls.Add(this.backTrang);
@@ -125,6 +149,8 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button capnhatkithiccqt;
         private System.Windows.Forms.GroupBox dscackithiccqtTrang;
         private System.Windows.Forms.DataGridView listdskithiCCQT;
+        private System.Windows.Forms.Button xemthongtinccqt;
+        private System.Windows.Forms.Label username;
     }
 }
 

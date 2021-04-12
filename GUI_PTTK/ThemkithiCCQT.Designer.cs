@@ -36,7 +36,6 @@ namespace GUI_PTTK
             this.tenkithiccqt = new System.Windows.Forms.TextBox();
             this.label22222222 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.ngaythiccqt = new System.Windows.Forms.TextBox();
             this.thoigianbdccqt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.thoigianlambai = new System.Windows.Forms.TextBox();
@@ -53,6 +52,8 @@ namespace GUI_PTTK
             this.label11 = new System.Windows.Forms.Label();
             this.lambaitime_sauinsert = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.dateTimePickerThem = new System.Windows.Forms.DateTimePicker();
+            this.username = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -116,13 +117,6 @@ namespace GUI_PTTK
             this.label2.Size = new System.Drawing.Size(60, 17);
             this.label2.TabIndex = 13;
             this.label2.Text = "Ngay thi";
-            // 
-            // ngaythiccqt
-            // 
-            this.ngaythiccqt.Location = new System.Drawing.Point(162, 260);
-            this.ngaythiccqt.Name = "ngaythiccqt";
-            this.ngaythiccqt.Size = new System.Drawing.Size(387, 22);
-            this.ngaythiccqt.TabIndex = 14;
             // 
             // thoigianbdccqt
             // 
@@ -271,11 +265,32 @@ namespace GUI_PTTK
             this.label13.TabIndex = 44;
             this.label13.Text = "Thoi gian lam bai";
             // 
+            // dateTimePickerThem
+            // 
+            this.dateTimePickerThem.Location = new System.Drawing.Point(162, 265);
+            this.dateTimePickerThem.Name = "dateTimePickerThem";
+            this.dateTimePickerThem.Size = new System.Drawing.Size(387, 22);
+            this.dateTimePickerThem.TabIndex = 46;
+            this.dateTimePickerThem.Value = new System.DateTime(2021, 4, 12, 0, 0, 0, 0);
+            // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(988, 16);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 47;
+            this.username.Text = "Username";
+            // 
             // ThemkithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 514);
+            this.Controls.Add(this.username);
+            this.Controls.Add(this.dateTimePickerThem);
             this.Controls.Add(this.lambaitime_sauinsert);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.batdauhp_sauinsert);
@@ -292,7 +307,6 @@ namespace GUI_PTTK
             this.Controls.Add(this.label4);
             this.Controls.Add(this.thoigianbdccqt);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.ngaythiccqt);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tenkithiccqt);
             this.Controls.Add(this.label22222222);
@@ -316,7 +330,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.TextBox tenkithiccqt;
         private System.Windows.Forms.Label label22222222;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox ngaythiccqt;
         private System.Windows.Forms.TextBox thoigianbdccqt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox thoigianlambai;
@@ -333,5 +346,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label lambaitime_sauinsert;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimePickerThem;
+        private System.Windows.Forms.Label username;
     }
 }

@@ -34,6 +34,7 @@ namespace GUI_PTTK
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.tenhpdkthilai = new System.Windows.Forms.Label();
+            this.username = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -41,7 +42,7 @@ namespace GUI_PTTK
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(122, 34);
+            this.label1.Location = new System.Drawing.Point(122, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(365, 38);
             this.label1.TabIndex = 13;
@@ -86,11 +87,23 @@ namespace GUI_PTTK
             this.tenhpdkthilai.TabIndex = 15;
             this.tenhpdkthilai.Text = "Ten hoc phan";
             // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(489, 24);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 19;
+            this.username.Text = "Username";
+            // 
             // Dangkythilai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 358);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
@@ -109,5 +122,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label tenhpdkthilai;
+        private System.Windows.Forms.Label username;
     }
 }

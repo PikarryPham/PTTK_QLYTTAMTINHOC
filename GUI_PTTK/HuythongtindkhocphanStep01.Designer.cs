@@ -41,6 +41,7 @@ namespace GUI_PTTK
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.chitietdkhocphan_huythongtindk = new System.Windows.Forms.DataGridView();
+            this.username = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien_huythongtindk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan_huythongtindk)).BeginInit();
             this.SuspendLayout();
@@ -161,11 +162,23 @@ namespace GUI_PTTK
             this.chitietdkhocphan_huythongtindk.Size = new System.Drawing.Size(591, 323);
             this.chitietdkhocphan_huythongtindk.TabIndex = 21;
             // 
+            // username
+            // 
+            this.username.AutoSize = true;
+            this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.username.Location = new System.Drawing.Point(1041, 22);
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(106, 26);
+            this.username.TabIndex = 31;
+            this.username.Text = "Username";
+            // 
             // HuythongtindkhocphanStep01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 741);
+            this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong_huythongtindk);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dshocvien_huythongtindk);
@@ -201,5 +214,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView chitietdkhocphan_huythongtindk;
+        private System.Windows.Forms.Label username;
     }
 }
