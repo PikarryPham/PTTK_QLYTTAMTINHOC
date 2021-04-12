@@ -68,7 +68,7 @@ namespace GUI_PTTK
             // 
             // showlistdshvienhethong_huythongtindk
             // 
-            this.showlistdshvienhethong_huythongtindk.Location = new System.Drawing.Point(690, 681);
+            this.showlistdshvienhethong_huythongtindk.Location = new System.Drawing.Point(748, 681);
             this.showlistdshvienhethong_huythongtindk.Name = "showlistdshvienhethong_huythongtindk";
             this.showlistdshvienhethong_huythongtindk.Size = new System.Drawing.Size(284, 35);
             this.showlistdshvienhethong_huythongtindk.TabIndex = 30;
@@ -79,7 +79,7 @@ namespace GUI_PTTK
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(672, 163);
+            this.label5.Location = new System.Drawing.Point(713, 163);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(302, 25);
             this.label5.TabIndex = 29;
@@ -89,7 +89,7 @@ namespace GUI_PTTK
             // 
             this.dshocvien_huythongtindk.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.dshocvien_huythongtindk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dshocvien_huythongtindk.Location = new System.Drawing.Point(562, 204);
+            this.dshocvien_huythongtindk.Location = new System.Drawing.Point(609, 204);
             this.dshocvien_huythongtindk.Name = "dshocvien_huythongtindk";
             this.dshocvien_huythongtindk.RowHeadersWidth = 51;
             this.dshocvien_huythongtindk.RowTemplate.Height = 24;
@@ -98,7 +98,7 @@ namespace GUI_PTTK
             // 
             // trathongtindiem_huythongtindk
             // 
-            this.trathongtindiem_huythongtindk.Location = new System.Drawing.Point(156, 681);
+            this.trathongtindiem_huythongtindk.Location = new System.Drawing.Point(169, 681);
             this.trathongtindiem_huythongtindk.Name = "trathongtindiem_huythongtindk";
             this.trathongtindiem_huythongtindk.Size = new System.Drawing.Size(248, 35);
             this.trathongtindiem_huythongtindk.TabIndex = 27;
@@ -107,7 +107,7 @@ namespace GUI_PTTK
             // 
             // timthongtindkhp_huythongtindk
             // 
-            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(156, 255);
+            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(191, 254);
             this.timthongtindkhp_huythongtindk.Name = "timthongtindkhp_huythongtindk";
             this.timthongtindkhp_huythongtindk.Size = new System.Drawing.Size(248, 35);
             this.timthongtindkhp_huythongtindk.TabIndex = 26;
@@ -145,7 +145,7 @@ namespace GUI_PTTK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(100, 303);
+            this.label2.Location = new System.Drawing.Point(139, 302);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(326, 25);
             this.label2.TabIndex = 22;
@@ -154,11 +154,11 @@ namespace GUI_PTTK
             // chitietdkhocphan_huythongtindk
             // 
             this.chitietdkhocphan_huythongtindk.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chitietdkhocphan_huythongtindk.Location = new System.Drawing.Point(24, 340);
+            this.chitietdkhocphan_huythongtindk.Location = new System.Drawing.Point(12, 340);
             this.chitietdkhocphan_huythongtindk.Name = "chitietdkhocphan_huythongtindk";
             this.chitietdkhocphan_huythongtindk.RowHeadersWidth = 51;
             this.chitietdkhocphan_huythongtindk.RowTemplate.Height = 24;
-            this.chitietdkhocphan_huythongtindk.Size = new System.Drawing.Size(513, 323);
+            this.chitietdkhocphan_huythongtindk.Size = new System.Drawing.Size(591, 323);
             this.chitietdkhocphan_huythongtindk.TabIndex = 21;
             // 
             // HuythongtindkhocphanStep01

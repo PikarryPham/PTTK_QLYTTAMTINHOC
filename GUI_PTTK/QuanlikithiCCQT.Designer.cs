@@ -71,7 +71,7 @@ namespace GUI_PTTK
             // 
             // capnhatkithiccqt
             // 
-            this.capnhatkithiccqt.Location = new System.Drawing.Point(767, 436);
+            this.capnhatkithiccqt.Location = new System.Drawing.Point(767, 412);
             this.capnhatkithiccqt.Name = "capnhatkithiccqt";
             this.capnhatkithiccqt.Size = new System.Drawing.Size(239, 57);
             this.capnhatkithiccqt.TabIndex = 8;

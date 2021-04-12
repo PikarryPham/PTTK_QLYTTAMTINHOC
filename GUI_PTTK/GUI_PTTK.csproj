@@ -68,6 +68,12 @@
     <Compile Include="HuythongtindkhocphanStep01.Designer.cs">
       <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
     </Compile>
+    <Compile Include="HuythongtindkhocphanStep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuythongtindkhocphanStep2.Designer.cs">
+      <DependentUpon>HuythongtindkhocphanStep2.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanlikithiCCQT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HuythongtindkhocphanStep01.resx">
       <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuythongtindkhocphanStep2.resx">
+      <DependentUpon>HuythongtindkhocphanStep2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanlikithiCCQT.resx">
       <DependentUpon>QuanlikithiCCQT.cs</DependentUpon>
