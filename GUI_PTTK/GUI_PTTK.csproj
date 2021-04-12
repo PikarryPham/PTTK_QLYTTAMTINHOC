@@ -56,23 +56,17 @@
     <Compile Include="CapnhatkithiCCQT.Designer.cs">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
     </Compile>
-    <Compile Include="component\Hocphan.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="Dangkythilai.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="component\Hocphan.Designer.cs">
-      <DependentUpon>Hocphan.cs</DependentUpon>
+    <Compile Include="Dangkythilai.Designer.cs">
+      <DependentUpon>Dangkythilai.cs</DependentUpon>
     </Compile>
-    <Compile Include="component\Hocvien.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="HuythongtindkhocphanStep01.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="component\Hocvien.Designer.cs">
-      <DependentUpon>Hocvien.cs</DependentUpon>
-    </Compile>
-    <Compile Include="component\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="component\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <Compile Include="HuythongtindkhocphanStep01.Designer.cs">
+      <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanlikithiCCQT.cs">
       <SubType>Form</SubType>
@@ -88,23 +82,26 @@
     <Compile Include="ThemkithiCCQT.Designer.cs">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tracuukqhocphan.cs">
+    <Compile Include="TracuuketquahocphanStep3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tracuukqhocphan.Designer.cs">
-      <DependentUpon>Tracuukqhocphan.cs</DependentUpon>
+    <Compile Include="TracuuketquahocphanStep3.Designer.cs">
+      <DependentUpon>TracuuketquahocphanStep3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracuuketquahpstep2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracuuketquahpstep2.Designer.cs">
+      <DependentUpon>Tracuuketquahpstep2.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CapnhatkithiCCQT.resx">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="component\Hocphan.resx">
-      <DependentUpon>Hocphan.cs</DependentUpon>
+    <EmbeddedResource Include="Dangkythilai.resx">
+      <DependentUpon>Dangkythilai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="component\Hocvien.resx">
-      <DependentUpon>Hocvien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="component\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
+    <EmbeddedResource Include="HuythongtindkhocphanStep01.resx">
+      <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="QuanlikithiCCQT.resx">
       <DependentUpon>QuanlikithiCCQT.cs</DependentUpon>
@@ -121,8 +118,11 @@
     <EmbeddedResource Include="ThemkithiCCQT.resx">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tracuukqhocphan.resx">
-      <DependentUpon>Tracuukqhocphan.cs</DependentUpon>
+    <EmbeddedResource Include="TracuuketquahocphanStep3.resx">
+      <DependentUpon>TracuuketquahocphanStep3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracuuketquahpstep2.resx">
+      <DependentUpon>Tracuuketquahpstep2.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -142,6 +142,9 @@
       <Project>{6571fbd3-8f8b-4e5b-a067-06e55e31fb3a}</Project>
       <Name>BUS_PTTK</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="component\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

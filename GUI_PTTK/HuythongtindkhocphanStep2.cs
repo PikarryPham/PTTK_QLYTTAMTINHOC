@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_PTTK.component
+namespace GUI_PTTK
 {
-    public partial class Hocvien : UserControl
+    public partial class HuythongtindkhocphanStep2 : Form
     {
-        public Hocvien()
+        public HuythongtindkhocphanStep2()
         {
             InitializeComponent();
         }

@@ -16,7 +16,6 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.pdb
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe.config
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.csprojAssemblyReference.cache
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.CapnhatkithiCCQT.resources
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.component.UserControl1.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.QuanlikithiCCQT.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Properties.Resources.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.ThemkithiCCQT.resources
@@ -25,6 +24,7 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CoreComp
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CopyComplete
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.exe
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.pdb
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.component.Hocphan.resources
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.component.Hocvien.resources
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Tracuukqhocphan.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.TracuuketquahocphanStep3.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Tracuuketquahpstep2.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Dangkythilai.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.HuythongtindkhocphanStep01.resources

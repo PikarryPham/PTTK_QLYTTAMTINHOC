@@ -38,11 +38,11 @@ namespace GUI_PTTK
             this.tenhocvien_tracuu = new System.Windows.Forms.TextBox();
             this.timthongtindkhp = new System.Windows.Forms.Button();
             this.trathongtindiem = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dshocvien = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.showlistdshvienhethong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dshocvien)).BeginInit();
             this.SuspendLayout();
             // 
             // backTrang
@@ -70,7 +70,7 @@ namespace GUI_PTTK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 274);
+            this.label2.Location = new System.Drawing.Point(101, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(326, 25);
             this.label2.TabIndex = 12;
@@ -115,7 +115,7 @@ namespace GUI_PTTK
             // 
             // timthongtindkhp
             // 
-            this.timthongtindkhp.Location = new System.Drawing.Point(179, 226);
+            this.timthongtindkhp.Location = new System.Drawing.Point(144, 231);
             this.timthongtindkhp.Name = "timthongtindkhp";
             this.timthongtindkhp.Size = new System.Drawing.Size(248, 35);
             this.timthongtindkhp.TabIndex = 16;
@@ -131,15 +131,16 @@ namespace GUI_PTTK
             this.trathongtindiem.Text = "Kiem tra ket qua hoc phan";
             this.trathongtindiem.UseVisualStyleBackColor = true;
             // 
-            // dataGridView1
+            // dshocvien
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(531, 180);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(538, 459);
-            this.dataGridView1.TabIndex = 18;
+            this.dshocvien.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dshocvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dshocvien.Location = new System.Drawing.Point(531, 180);
+            this.dshocvien.Name = "dshocvien";
+            this.dshocvien.RowHeadersWidth = 51;
+            this.dshocvien.RowTemplate.Height = 24;
+            this.dshocvien.Size = new System.Drawing.Size(538, 459);
+            this.dshocvien.TabIndex = 18;
             // 
             // label5
             // 
@@ -153,7 +154,7 @@ namespace GUI_PTTK
             // 
             // showlistdshvienhethong
             // 
-            this.showlistdshvienhethong.Location = new System.Drawing.Point(665, 657);
+            this.showlistdshvienhethong.Location = new System.Drawing.Point(678, 657);
             this.showlistdshvienhethong.Name = "showlistdshvienhethong";
             this.showlistdshvienhethong.Size = new System.Drawing.Size(284, 35);
             this.showlistdshvienhethong.TabIndex = 20;
@@ -167,7 +168,7 @@ namespace GUI_PTTK
             this.ClientSize = new System.Drawing.Size(1081, 713);
             this.Controls.Add(this.showlistdshvienhethong);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dshocvien);
             this.Controls.Add(this.trathongtindiem);
             this.Controls.Add(this.timthongtindkhp);
             this.Controls.Add(this.tenhocvien_tracuu);
@@ -180,7 +181,7 @@ namespace GUI_PTTK
             this.Name = "Tracuuketquahpstep2";
             this.Text = "Tracuuketquahpstep2";
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dshocvien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,7 +198,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.TextBox tenhocvien_tracuu;
         private System.Windows.Forms.Button timthongtindkhp;
         private System.Windows.Forms.Button trathongtindiem;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dshocvien;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button showlistdshvienhethong;
     }

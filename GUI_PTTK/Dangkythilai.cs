@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI_PTTK.component
+namespace GUI_PTTK
 {
-    public partial class UserControl1 : UserControl
+    public partial class Dangkythilai : Form
     {
-        public UserControl1()
+        public Dangkythilai()
         {
             InitializeComponent();
-        }
-
-        private void UserControl1_Load(object sender, EventArgs e)
-        {
-            ///
         }
     }
 }
