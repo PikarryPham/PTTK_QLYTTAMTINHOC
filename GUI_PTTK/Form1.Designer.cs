@@ -33,7 +33,8 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.taomoikithiccqt = new System.Windows.Forms.Button();
             this.capnhatkythiCCQT = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.xoakithiccqt = new System.Windows.Forms.Button();
+            this.xemkithiccqt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username
@@ -75,21 +76,31 @@ namespace GUI_PTTK
             this.capnhatkythiCCQT.Text = "Cap nhat thong tin ky thi CCQT";
             this.capnhatkythiCCQT.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // xoakithiccqt
             // 
-            this.button1.Location = new System.Drawing.Point(122, 288);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(243, 70);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Tao moi ky thi CCQT";
-            this.button1.UseVisualStyleBackColor = true;
+            this.xoakithiccqt.Location = new System.Drawing.Point(122, 288);
+            this.xoakithiccqt.Name = "xoakithiccqt";
+            this.xoakithiccqt.Size = new System.Drawing.Size(243, 70);
+            this.xoakithiccqt.TabIndex = 4;
+            this.xoakithiccqt.Text = "Xoa ki thi CCQT";
+            this.xoakithiccqt.UseVisualStyleBackColor = true;
+            // 
+            // xemkithiccqt
+            // 
+            this.xemkithiccqt.Location = new System.Drawing.Point(419, 288);
+            this.xemkithiccqt.Name = "xemkithiccqt";
+            this.xemkithiccqt.Size = new System.Drawing.Size(243, 70);
+            this.xemkithiccqt.TabIndex = 5;
+            this.xemkithiccqt.Text = "Xem ki thi CCQT";
+            this.xemkithiccqt.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.xemkithiccqt);
+            this.Controls.Add(this.xoakithiccqt);
             this.Controls.Add(this.capnhatkythiCCQT);
             this.Controls.Add(this.taomoikithiccqt);
             this.Controls.Add(this.label1);
@@ -108,7 +119,8 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button taomoikithiccqt;
         private System.Windows.Forms.Button capnhatkythiCCQT;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button xoakithiccqt;
+        private System.Windows.Forms.Button xemkithiccqt;
     }
 }
 
