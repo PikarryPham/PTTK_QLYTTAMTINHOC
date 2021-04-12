@@ -7,3 +7,16 @@ C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.GenerateResource.ca
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CoreCompileInputs.cache
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.exe
 C:\Users\MON\source\repos\BUS_PTTK\obj\Debug\BUS_PTTK.pdb
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.exe.config
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.exe
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\BUS_PTTK.pdb
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.exe
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.pdb
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\bin\Debug\DataAccess.exe.config
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csprojAssemblyReference.cache
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.Properties.Resources.resources
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.GenerateResource.cache
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CoreCompileInputs.cache
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.csproj.CopyComplete
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.exe
+C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\BUS_PTTK\obj\Debug\BUS_PTTK.pdb
