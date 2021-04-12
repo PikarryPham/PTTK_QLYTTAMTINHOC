@@ -16,7 +16,7 @@ namespace GUI_PTTK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanlikithiCCQT());
+            Application.Run(new Login());
         }
     }
 }

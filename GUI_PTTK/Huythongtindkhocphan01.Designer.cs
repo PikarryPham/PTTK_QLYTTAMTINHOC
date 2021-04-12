@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class HuythongtindkhocphanStep01
+    partial class Huythongtindkhocphan01
     {
         /// <summary>
         /// Required designer variable.
@@ -36,12 +36,14 @@ namespace GUI_PTTK
             this.dshocvien_huythongtindk = new System.Windows.Forms.DataGridView();
             this.trathongtindiem_huythongtindk = new System.Windows.Forms.Button();
             this.timthongtindkhp_huythongtindk = new System.Windows.Forms.Button();
-            this.tenhocvien_tracuu_huythongtindk = new System.Windows.Forms.TextBox();
+            this.cmnd_tracuu_huythongtindk = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.chitietdkhocphan_huythongtindk = new System.Windows.Forms.DataGridView();
             this.username = new System.Windows.Forms.Label();
+            this.tenhv_tracuu_huythongtindk = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien_huythongtindk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan_huythongtindk)).BeginInit();
             this.SuspendLayout();
@@ -63,9 +65,9 @@ namespace GUI_PTTK
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(312, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(476, 38);
+            this.label1.Size = new System.Drawing.Size(579, 38);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Huy thong tin dang ky hoc phan";
+            this.label1.Text = "Huy thong tin chi tiet dang ky hoc phan";
             // 
             // showlistdshvienhethong_huythongtindk
             // 
@@ -108,39 +110,39 @@ namespace GUI_PTTK
             // 
             // timthongtindkhp_huythongtindk
             // 
-            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(191, 254);
+            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(191, 250);
             this.timthongtindkhp_huythongtindk.Name = "timthongtindkhp_huythongtindk";
             this.timthongtindkhp_huythongtindk.Size = new System.Drawing.Size(248, 35);
             this.timthongtindkhp_huythongtindk.TabIndex = 26;
-            this.timthongtindkhp_huythongtindk.Text = "Tim chi tiet dang ky hoc phan";
+            this.timthongtindkhp_huythongtindk.Text = "Tim thong tin dang ky hoc phan";
             this.timthongtindkhp_huythongtindk.UseVisualStyleBackColor = true;
             // 
-            // tenhocvien_tracuu_huythongtindk
+            // cmnd_tracuu_huythongtindk
             // 
-            this.tenhocvien_tracuu_huythongtindk.Location = new System.Drawing.Point(191, 204);
-            this.tenhocvien_tracuu_huythongtindk.Name = "tenhocvien_tracuu_huythongtindk";
-            this.tenhocvien_tracuu_huythongtindk.Size = new System.Drawing.Size(336, 22);
-            this.tenhocvien_tracuu_huythongtindk.TabIndex = 25;
+            this.cmnd_tracuu_huythongtindk.Location = new System.Drawing.Point(191, 170);
+            this.cmnd_tracuu_huythongtindk.Name = "cmnd_tracuu_huythongtindk";
+            this.cmnd_tracuu_huythongtindk.Size = new System.Drawing.Size(336, 22);
+            this.cmnd_tracuu_huythongtindk.TabIndex = 25;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 204);
+            this.label4.Location = new System.Drawing.Point(27, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 17);
+            this.label4.Size = new System.Drawing.Size(132, 17);
             this.label4.TabIndex = 24;
-            this.label4.Text = "Ten thong tin hoc vien";
+            this.label4.Text = "CMND cua hoc vien";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(25, 148);
+            this.label3.Location = new System.Drawing.Point(25, 122);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 25);
+            this.label3.Size = new System.Drawing.Size(246, 25);
             this.label3.TabIndex = 23;
-            this.label3.Text = "Dien ten thong tin hoc vien";
+            this.label3.Text = "Dien thong tin cua hoc vien";
             // 
             // label2
             // 
@@ -173,18 +175,36 @@ namespace GUI_PTTK
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             // 
+            // tenhv_tracuu_huythongtindk
+            // 
+            this.tenhv_tracuu_huythongtindk.Location = new System.Drawing.Point(191, 213);
+            this.tenhv_tracuu_huythongtindk.Name = "tenhv_tracuu_huythongtindk";
+            this.tenhv_tracuu_huythongtindk.Size = new System.Drawing.Size(336, 22);
+            this.tenhv_tracuu_huythongtindk.TabIndex = 33;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(27, 213);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 17);
+            this.label6.TabIndex = 32;
+            this.label6.Text = "Ten hoc vien";
+            // 
             // HuythongtindkhocphanStep01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 741);
+            this.Controls.Add(this.tenhv_tracuu_huythongtindk);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong_huythongtindk);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dshocvien_huythongtindk);
             this.Controls.Add(this.trathongtindiem_huythongtindk);
             this.Controls.Add(this.timthongtindkhp_huythongtindk);
-            this.Controls.Add(this.tenhocvien_tracuu_huythongtindk);
+            this.Controls.Add(this.cmnd_tracuu_huythongtindk);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -209,11 +229,13 @@ namespace GUI_PTTK
         private System.Windows.Forms.DataGridView dshocvien_huythongtindk;
         private System.Windows.Forms.Button trathongtindiem_huythongtindk;
         private System.Windows.Forms.Button timthongtindkhp_huythongtindk;
-        private System.Windows.Forms.TextBox tenhocvien_tracuu_huythongtindk;
+        private System.Windows.Forms.TextBox cmnd_tracuu_huythongtindk;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView chitietdkhocphan_huythongtindk;
         private System.Windows.Forms.Label username;
+        private System.Windows.Forms.TextBox tenhv_tracuu_huythongtindk;
+        private System.Windows.Forms.Label label6;
     }
 }

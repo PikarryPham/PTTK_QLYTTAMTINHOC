@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace GUI_PTTK
 {
-    public partial class QuanlikithiCCQT : Form
+    public partial class Tracuuketquahp02 : Form
     {
-        public QuanlikithiCCQT()
+        public Tracuuketquahp02()
         {
             InitializeComponent();
         }
+
+        
     }
 }

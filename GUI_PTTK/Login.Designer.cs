@@ -36,11 +36,11 @@ namespace GUI_PTTK
             this.loginusername = new System.Windows.Forms.TextBox();
             this.loginpassword = new System.Windows.Forms.TextBox();
             this.loginoption = new System.Windows.Forms.GroupBox();
-            this.logingiaovien = new System.Windows.Forms.RadioButton();
-            this.nhanvienketoan = new System.Windows.Forms.RadioButton();
-            this.logintiepnhan = new System.Windows.Forms.RadioButton();
-            this.loginbophanvp = new System.Windows.Forms.RadioButton();
             this.loginquanli = new System.Windows.Forms.RadioButton();
+            this.loginbophanvp = new System.Windows.Forms.RadioButton();
+            this.logintiepnhan = new System.Windows.Forms.RadioButton();
+            this.nhanvienketoan = new System.Windows.Forms.RadioButton();
+            this.logingiaovien = new System.Windows.Forms.RadioButton();
             this.loginhthong = new System.Windows.Forms.Button();
             this.loginoption.SuspendLayout();
             this.SuspendLayout();
@@ -115,35 +115,15 @@ namespace GUI_PTTK
             this.loginoption.TabStop = false;
             this.loginoption.Text = "Vui long chon loai nguoi dung cua ban";
             // 
-            // logingiaovien
+            // loginquanli
             // 
-            this.logingiaovien.AutoSize = true;
-            this.logingiaovien.Location = new System.Drawing.Point(44, 39);
-            this.logingiaovien.Name = "logingiaovien";
-            this.logingiaovien.Size = new System.Drawing.Size(91, 21);
-            this.logingiaovien.TabIndex = 0;
-            this.logingiaovien.Text = "Giao Vien";
-            this.logingiaovien.UseVisualStyleBackColor = true;
-            // 
-            // nhanvienketoan
-            // 
-            this.nhanvienketoan.AutoSize = true;
-            this.nhanvienketoan.Location = new System.Drawing.Point(44, 91);
-            this.nhanvienketoan.Name = "nhanvienketoan";
-            this.nhanvienketoan.Size = new System.Drawing.Size(144, 21);
-            this.nhanvienketoan.TabIndex = 1;
-            this.nhanvienketoan.Text = "Nhan vien ke toan";
-            this.nhanvienketoan.UseVisualStyleBackColor = true;
-            // 
-            // logintiepnhan
-            // 
-            this.logintiepnhan.AutoSize = true;
-            this.logintiepnhan.Location = new System.Drawing.Point(266, 44);
-            this.logintiepnhan.Name = "logintiepnhan";
-            this.logintiepnhan.Size = new System.Drawing.Size(156, 21);
-            this.logintiepnhan.TabIndex = 2;
-            this.logintiepnhan.Text = "Nhan vien tiep nhan";
-            this.logintiepnhan.UseVisualStyleBackColor = true;
+            this.loginquanli.AutoSize = true;
+            this.loginquanli.Location = new System.Drawing.Point(489, 64);
+            this.loginquanli.Name = "loginquanli";
+            this.loginquanli.Size = new System.Drawing.Size(78, 21);
+            this.loginquanli.TabIndex = 4;
+            this.loginquanli.Text = "Quan ly";
+            this.loginquanli.UseVisualStyleBackColor = true;
             // 
             // loginbophanvp
             // 
@@ -155,19 +135,39 @@ namespace GUI_PTTK
             this.loginbophanvp.Text = "Bo phan Van phong";
             this.loginbophanvp.UseVisualStyleBackColor = true;
             // 
-            // loginquanli
+            // logintiepnhan
             // 
-            this.loginquanli.AutoSize = true;
-            this.loginquanli.Location = new System.Drawing.Point(489, 64);
-            this.loginquanli.Name = "loginquanli";
-            this.loginquanli.Size = new System.Drawing.Size(78, 21);
-            this.loginquanli.TabIndex = 4;
-            this.loginquanli.Text = "Quan ly";
-            this.loginquanli.UseVisualStyleBackColor = true;
+            this.logintiepnhan.AutoSize = true;
+            this.logintiepnhan.Location = new System.Drawing.Point(266, 44);
+            this.logintiepnhan.Name = "logintiepnhan";
+            this.logintiepnhan.Size = new System.Drawing.Size(156, 21);
+            this.logintiepnhan.TabIndex = 2;
+            this.logintiepnhan.Text = "Nhan vien tiep nhan";
+            this.logintiepnhan.UseVisualStyleBackColor = true;
+            // 
+            // nhanvienketoan
+            // 
+            this.nhanvienketoan.AutoSize = true;
+            this.nhanvienketoan.Location = new System.Drawing.Point(44, 91);
+            this.nhanvienketoan.Name = "nhanvienketoan";
+            this.nhanvienketoan.Size = new System.Drawing.Size(144, 21);
+            this.nhanvienketoan.TabIndex = 1;
+            this.nhanvienketoan.Text = "Nhan vien ke toan";
+            this.nhanvienketoan.UseVisualStyleBackColor = true;
+            // 
+            // logingiaovien
+            // 
+            this.logingiaovien.AutoSize = true;
+            this.logingiaovien.Location = new System.Drawing.Point(44, 39);
+            this.logingiaovien.Name = "logingiaovien";
+            this.logingiaovien.Size = new System.Drawing.Size(91, 21);
+            this.logingiaovien.TabIndex = 0;
+            this.logingiaovien.Text = "Giao Vien";
+            this.logingiaovien.UseVisualStyleBackColor = true;
             // 
             // loginhthong
             // 
-            this.loginhthong.Location = new System.Drawing.Point(291, 461);
+            this.loginhthong.Location = new System.Drawing.Point(278, 461);
             this.loginhthong.Name = "loginhthong";
             this.loginhthong.Size = new System.Drawing.Size(176, 46);
             this.loginhthong.TabIndex = 13;

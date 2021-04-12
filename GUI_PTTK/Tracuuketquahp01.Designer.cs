@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class Tracuuketquahpstep2
+    partial class Tracuuketquahp01
     {
         /// <summary>
         /// Required designer variable.
@@ -35,15 +35,17 @@ namespace GUI_PTTK
             this.chitietdkhocphan = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.tenhocvien_tracuu = new System.Windows.Forms.TextBox();
+            this.CMNDhocvien_tracuu = new System.Windows.Forms.TextBox();
             this.timthongtindkhp = new System.Windows.Forms.Button();
             this.trathongtindiem = new System.Windows.Forms.Button();
-            this.dshocvien = new System.Windows.Forms.DataGridView();
+            this.dshocvien_tracuu = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.showlistdshvienhethong = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
+            this.tenhocvien_tracuu = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dshocvien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dshocvien_tracuu)).BeginInit();
             this.SuspendLayout();
             // 
             // backTrang
@@ -92,27 +94,27 @@ namespace GUI_PTTK
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(13, 124);
+            this.label3.Location = new System.Drawing.Point(12, 104);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(241, 25);
+            this.label3.Size = new System.Drawing.Size(209, 25);
             this.label3.TabIndex = 13;
-            this.label3.Text = "Dien ten thong tin hoc vien";
+            this.label3.Text = "Dien thong tin hoc vien";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 180);
+            this.label4.Location = new System.Drawing.Point(16, 143);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 17);
+            this.label4.Size = new System.Drawing.Size(132, 17);
             this.label4.TabIndex = 14;
-            this.label4.Text = "Ten thong tin hoc vien";
+            this.label4.Text = "CMND cua hoc vien";
             // 
-            // tenhocvien_tracuu
+            // CMNDhocvien_tracuu
             // 
-            this.tenhocvien_tracuu.Location = new System.Drawing.Point(179, 180);
-            this.tenhocvien_tracuu.Name = "tenhocvien_tracuu";
-            this.tenhocvien_tracuu.Size = new System.Drawing.Size(336, 22);
-            this.tenhocvien_tracuu.TabIndex = 15;
+            this.CMNDhocvien_tracuu.Location = new System.Drawing.Point(170, 143);
+            this.CMNDhocvien_tracuu.Name = "CMNDhocvien_tracuu";
+            this.CMNDhocvien_tracuu.Size = new System.Drawing.Size(336, 22);
+            this.CMNDhocvien_tracuu.TabIndex = 15;
             // 
             // timthongtindkhp
             // 
@@ -132,16 +134,16 @@ namespace GUI_PTTK
             this.trathongtindiem.Text = "Kiem tra ket qua hoc phan";
             this.trathongtindiem.UseVisualStyleBackColor = true;
             // 
-            // dshocvien
+            // dshocvien_tracuu
             // 
-            this.dshocvien.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dshocvien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dshocvien.Location = new System.Drawing.Point(531, 180);
-            this.dshocvien.Name = "dshocvien";
-            this.dshocvien.RowHeadersWidth = 51;
-            this.dshocvien.RowTemplate.Height = 24;
-            this.dshocvien.Size = new System.Drawing.Size(538, 459);
-            this.dshocvien.TabIndex = 18;
+            this.dshocvien_tracuu.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dshocvien_tracuu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dshocvien_tracuu.Location = new System.Drawing.Point(531, 180);
+            this.dshocvien_tracuu.Name = "dshocvien_tracuu";
+            this.dshocvien_tracuu.RowHeadersWidth = 51;
+            this.dshocvien_tracuu.RowTemplate.Height = 24;
+            this.dshocvien_tracuu.Size = new System.Drawing.Size(538, 459);
+            this.dshocvien_tracuu.TabIndex = 18;
             // 
             // label5
             // 
@@ -173,28 +175,46 @@ namespace GUI_PTTK
             this.username.TabIndex = 21;
             this.username.Text = "Username";
             // 
-            // Tracuuketquahpstep2
+            // tenhocvien_tracuu
+            // 
+            this.tenhocvien_tracuu.Location = new System.Drawing.Point(170, 180);
+            this.tenhocvien_tracuu.Name = "tenhocvien_tracuu";
+            this.tenhocvien_tracuu.Size = new System.Drawing.Size(336, 22);
+            this.tenhocvien_tracuu.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(16, 180);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 17);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Ten hoc vien";
+            // 
+            // Tracuuketquahp01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 713);
+            this.Controls.Add(this.tenhocvien_tracuu);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dshocvien);
+            this.Controls.Add(this.dshocvien_tracuu);
             this.Controls.Add(this.trathongtindiem);
             this.Controls.Add(this.timthongtindkhp);
-            this.Controls.Add(this.tenhocvien_tracuu);
+            this.Controls.Add(this.CMNDhocvien_tracuu);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chitietdkhocphan);
             this.Controls.Add(this.backTrang);
             this.Controls.Add(this.label1);
-            this.Name = "Tracuuketquahpstep2";
+            this.Name = "Tracuuketquahp01";
             this.Text = "Tracuuketquahpstep2";
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dshocvien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dshocvien_tracuu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,12 +228,14 @@ namespace GUI_PTTK
         private System.Windows.Forms.DataGridView chitietdkhocphan;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox tenhocvien_tracuu;
+        private System.Windows.Forms.TextBox CMNDhocvien_tracuu;
         private System.Windows.Forms.Button timthongtindkhp;
         private System.Windows.Forms.Button trathongtindiem;
-        private System.Windows.Forms.DataGridView dshocvien;
+        private System.Windows.Forms.DataGridView dshocvien_tracuu;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button showlistdshvienhethong;
         private System.Windows.Forms.Label username;
+        private System.Windows.Forms.TextBox tenhocvien_tracuu;
+        private System.Windows.Forms.Label label6;
     }
 }

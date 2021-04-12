@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class TracuuketquahocphanStep3
+    partial class Tracuuketquahp02
     {
         /// <summary>
         /// Required designer variable.
@@ -46,8 +46,13 @@ namespace GUI_PTTK
             this.diemhp = new System.Windows.Forms.Label();
             this.ngaydkhp = new System.Windows.Forms.Label();
             this.inkqhocphan = new System.Windows.Forms.Button();
-            this.dkhoclai = new System.Windows.Forms.Button();
+            this.dkthilai = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
+            this.tracuudiemkqhp = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.solanthilai = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePickerTracuu = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // backTrang
@@ -65,7 +70,7 @@ namespace GUI_PTTK
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(218, 72);
+            this.label1.Location = new System.Drawing.Point(221, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(387, 38);
             this.label1.TabIndex = 11;
@@ -73,15 +78,16 @@ namespace GUI_PTTK
             // 
             // thongtinhp_tracuu
             // 
-            this.thongtinhp_tracuu.Location = new System.Drawing.Point(167, 159);
+            this.thongtinhp_tracuu.Location = new System.Drawing.Point(156, 112);
             this.thongtinhp_tracuu.Name = "thongtinhp_tracuu";
-            this.thongtinhp_tracuu.Size = new System.Drawing.Size(571, 22);
+            this.thongtinhp_tracuu.Size = new System.Drawing.Size(413, 22);
             this.thongtinhp_tracuu.TabIndex = 13;
+            this.thongtinhp_tracuu.UseWaitCursor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 162);
+            this.label2.Location = new System.Drawing.Point(31, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 14;
@@ -94,9 +100,9 @@ namespace GUI_PTTK
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label3.Location = new System.Drawing.Point(26, 209);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(454, 32);
+            this.label3.Size = new System.Drawing.Size(237, 32);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Thong tin chi tiet dang ky hoc phan";
+            this.label3.Text = "Ket qua hoc phan";
             // 
             // label4
             // 
@@ -171,7 +177,7 @@ namespace GUI_PTTK
             // thoigianbdhp
             // 
             this.thoigianbdhp.AutoSize = true;
-            this.thoigianbdhp.Location = new System.Drawing.Point(222, 320);
+            this.thoigianbdhp.Location = new System.Drawing.Point(210, 319);
             this.thoigianbdhp.Name = "thoigianbdhp";
             this.thoigianbdhp.Size = new System.Drawing.Size(74, 17);
             this.thoigianbdhp.TabIndex = 23;
@@ -198,7 +204,7 @@ namespace GUI_PTTK
             // ngaydkhp
             // 
             this.ngaydkhp.AutoSize = true;
-            this.ngaydkhp.Location = new System.Drawing.Point(210, 402);
+            this.ngaydkhp.Location = new System.Drawing.Point(194, 402);
             this.ngaydkhp.Name = "ngaydkhp";
             this.ngaydkhp.Size = new System.Drawing.Size(70, 17);
             this.ngaydkhp.TabIndex = 26;
@@ -206,21 +212,21 @@ namespace GUI_PTTK
             // 
             // inkqhocphan
             // 
-            this.inkqhocphan.Location = new System.Drawing.Point(191, 537);
+            this.inkqhocphan.Location = new System.Drawing.Point(166, 528);
             this.inkqhocphan.Name = "inkqhocphan";
             this.inkqhocphan.Size = new System.Drawing.Size(206, 44);
             this.inkqhocphan.TabIndex = 27;
             this.inkqhocphan.Text = "In ket qua hoc phan";
             this.inkqhocphan.UseVisualStyleBackColor = true;
             // 
-            // dkhoclai
+            // dkthilai
             // 
-            this.dkhoclai.Location = new System.Drawing.Point(418, 537);
-            this.dkhoclai.Name = "dkhoclai";
-            this.dkhoclai.Size = new System.Drawing.Size(206, 44);
-            this.dkhoclai.TabIndex = 28;
-            this.dkhoclai.Text = "Dang ky thi lai";
-            this.dkhoclai.UseVisualStyleBackColor = true;
+            this.dkthilai.Location = new System.Drawing.Point(388, 528);
+            this.dkthilai.Name = "dkthilai";
+            this.dkthilai.Size = new System.Drawing.Size(206, 44);
+            this.dkthilai.TabIndex = 28;
+            this.dkthilai.Text = "Dang ky thi lai";
+            this.dkthilai.UseVisualStyleBackColor = true;
             // 
             // username
             // 
@@ -233,13 +239,63 @@ namespace GUI_PTTK
             this.username.TabIndex = 29;
             this.username.Text = "Username";
             // 
-            // TracuuketquahocphanStep3
+            // tracuudiemkqhp
+            // 
+            this.tracuudiemkqhp.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.tracuudiemkqhp.Location = new System.Drawing.Point(620, 129);
+            this.tracuudiemkqhp.Name = "tracuudiemkqhp";
+            this.tracuudiemkqhp.Size = new System.Drawing.Size(125, 41);
+            this.tracuudiemkqhp.TabIndex = 30;
+            this.tracuudiemkqhp.Text = "Tra cuu diem";
+            this.tracuudiemkqhp.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(413, 358);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 25);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "So lan thi lai";
+            // 
+            // solanthilai
+            // 
+            this.solanthilai.AutoSize = true;
+            this.solanthilai.Location = new System.Drawing.Point(602, 365);
+            this.solanthilai.Name = "solanthilai";
+            this.solanthilai.Size = new System.Drawing.Size(69, 17);
+            this.solanthilai.TabIndex = 32;
+            this.solanthilai.Text = "thoigiankt";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(31, 161);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(119, 17);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Thoi gian bat dau";
+            // 
+            // dateTimePickerTracuu
+            // 
+            this.dateTimePickerTracuu.Location = new System.Drawing.Point(156, 161);
+            this.dateTimePickerTracuu.Name = "dateTimePickerTracuu";
+            this.dateTimePickerTracuu.Size = new System.Drawing.Size(413, 22);
+            this.dateTimePickerTracuu.TabIndex = 35;
+            // 
+            // Tracuuketquahp02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 608);
+            this.Controls.Add(this.dateTimePickerTracuu);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.solanthilai);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.tracuudiemkqhp);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.dkhoclai);
+            this.Controls.Add(this.dkthilai);
             this.Controls.Add(this.inkqhocphan);
             this.Controls.Add(this.ngaydkhp);
             this.Controls.Add(this.diemhp);
@@ -257,7 +313,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.thongtinhp_tracuu);
             this.Controls.Add(this.backTrang);
             this.Controls.Add(this.label1);
-            this.Name = "TracuuketquahocphanStep3";
+            this.Name = "Tracuuketquahp02";
             this.Text = "TracuuketquahocphanStep3";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -283,7 +339,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label diemhp;
         private System.Windows.Forms.Label ngaydkhp;
         private System.Windows.Forms.Button inkqhocphan;
-        private System.Windows.Forms.Button dkhoclai;
+        private System.Windows.Forms.Button dkthilai;
         private System.Windows.Forms.Label username;
+        private System.Windows.Forms.Button tracuudiemkqhp;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label solanthilai;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DateTimePicker dateTimePickerTracuu;
     }
 }

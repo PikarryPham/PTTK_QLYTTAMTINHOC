@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class HuythongtindkhocphanStep2
+    partial class Huythongtindkhocphan02
     {
         /// <summary>
         /// Required designer variable.
@@ -39,7 +39,7 @@ namespace GUI_PTTK
             // 
             // khongdongyhuyhpbtn
             // 
-            this.khongdongyhuyhpbtn.Location = new System.Drawing.Point(271, 310);
+            this.khongdongyhuyhpbtn.Location = new System.Drawing.Point(271, 243);
             this.khongdongyhuyhpbtn.Name = "khongdongyhuyhpbtn";
             this.khongdongyhuyhpbtn.Size = new System.Drawing.Size(169, 56);
             this.khongdongyhuyhpbtn.TabIndex = 23;
@@ -48,7 +48,7 @@ namespace GUI_PTTK
             // 
             // dongyhuyhpbtn
             // 
-            this.dongyhuyhpbtn.Location = new System.Drawing.Point(83, 310);
+            this.dongyhuyhpbtn.Location = new System.Drawing.Point(84, 243);
             this.dongyhuyhpbtn.Name = "dongyhuyhpbtn";
             this.dongyhuyhpbtn.Size = new System.Drawing.Size(169, 56);
             this.dongyhuyhpbtn.TabIndex = 22;
@@ -60,7 +60,7 @@ namespace GUI_PTTK
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(25, 210);
+            this.label2.Location = new System.Drawing.Point(27, 178);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(468, 29);
             this.label2.TabIndex = 21;
@@ -102,7 +102,7 @@ namespace GUI_PTTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(538, 450);
+            this.ClientSize = new System.Drawing.Size(538, 334);
             this.Controls.Add(this.username);
             this.Controls.Add(this.khongdongyhuyhpbtn);
             this.Controls.Add(this.dongyhuyhpbtn);

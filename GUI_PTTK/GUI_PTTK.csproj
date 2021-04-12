@@ -62,23 +62,23 @@
     <Compile Include="Dangkythilai.Designer.cs">
       <DependentUpon>Dangkythilai.cs</DependentUpon>
     </Compile>
-    <Compile Include="HuythongtindkhocphanStep01.cs">
+    <Compile Include="Huythongtindkhocphan01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HuythongtindkhocphanStep01.Designer.cs">
-      <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
+    <Compile Include="Huythongtindkhocphan01.Designer.cs">
+      <DependentUpon>Huythongtindkhocphan01.cs</DependentUpon>
     </Compile>
-    <Compile Include="HuythongtindkhocphanStep2.cs">
+    <Compile Include="Huythongtindkhocphan02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HuythongtindkhocphanStep2.Designer.cs">
-      <DependentUpon>HuythongtindkhocphanStep2.cs</DependentUpon>
+    <Compile Include="Huythongtindkhocphan02.Designer.cs">
+      <DependentUpon>Huythongtindkhocphan02.cs</DependentUpon>
     </Compile>
-    <Compile Include="QuanlikithiCCQT.cs">
+    <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="QuanlikithiCCQT.Designer.cs">
-      <DependentUpon>QuanlikithiCCQT.cs</DependentUpon>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -88,17 +88,17 @@
     <Compile Include="ThemkithiCCQT.Designer.cs">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </Compile>
-    <Compile Include="TracuuketquahocphanStep3.cs">
+    <Compile Include="Tracuuketquahp02.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TracuuketquahocphanStep3.Designer.cs">
-      <DependentUpon>TracuuketquahocphanStep3.cs</DependentUpon>
+    <Compile Include="Tracuuketquahp02.Designer.cs">
+      <DependentUpon>Tracuuketquahp02.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tracuuketquahpstep2.cs">
+    <Compile Include="Tracuuketquahp01.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Tracuuketquahpstep2.Designer.cs">
-      <DependentUpon>Tracuuketquahpstep2.cs</DependentUpon>
+    <Compile Include="Tracuuketquahp01.Designer.cs">
+      <DependentUpon>Tracuuketquahp01.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="CapnhatkithiCCQT.resx">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
@@ -106,14 +106,14 @@
     <EmbeddedResource Include="Dangkythilai.resx">
       <DependentUpon>Dangkythilai.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HuythongtindkhocphanStep01.resx">
-      <DependentUpon>HuythongtindkhocphanStep01.cs</DependentUpon>
+    <EmbeddedResource Include="Huythongtindkhocphan01.resx">
+      <DependentUpon>Huythongtindkhocphan01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="HuythongtindkhocphanStep2.resx">
-      <DependentUpon>HuythongtindkhocphanStep2.cs</DependentUpon>
+    <EmbeddedResource Include="Huythongtindkhocphan02.resx">
+      <DependentUpon>Huythongtindkhocphan02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="QuanlikithiCCQT.resx">
-      <DependentUpon>QuanlikithiCCQT.cs</DependentUpon>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -127,11 +127,11 @@
     <EmbeddedResource Include="ThemkithiCCQT.resx">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TracuuketquahocphanStep3.resx">
-      <DependentUpon>TracuuketquahocphanStep3.cs</DependentUpon>
+    <EmbeddedResource Include="Tracuuketquahp02.resx">
+      <DependentUpon>Tracuuketquahp02.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Tracuuketquahpstep2.resx">
-      <DependentUpon>Tracuuketquahpstep2.cs</DependentUpon>
+    <EmbeddedResource Include="Tracuuketquahp01.resx">
+      <DependentUpon>Tracuuketquahp01.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -31,8 +31,8 @@ namespace GUI_PTTK
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.dongy_thilaibtn = new System.Windows.Forms.Button();
+            this.khongdongy_thilaibtn = new System.Windows.Forms.Button();
             this.tenhpdkthilai = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -59,23 +59,23 @@ namespace GUI_PTTK
             this.label2.TabIndex = 16;
             this.label2.Text = "Ban co muon thi lai hoc phan nay hay khong?";
             // 
-            // button1
+            // dongy_thilaibtn
             // 
-            this.button1.Location = new System.Drawing.Point(129, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 56);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Dong y";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dongy_thilaibtn.Location = new System.Drawing.Point(129, 260);
+            this.dongy_thilaibtn.Name = "dongy_thilaibtn";
+            this.dongy_thilaibtn.Size = new System.Drawing.Size(169, 56);
+            this.dongy_thilaibtn.TabIndex = 17;
+            this.dongy_thilaibtn.Text = "Dong y";
+            this.dongy_thilaibtn.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // khongdongy_thilaibtn
             // 
-            this.button2.Location = new System.Drawing.Point(318, 260);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(169, 56);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Khong dong y";
-            this.button2.UseVisualStyleBackColor = true;
+            this.khongdongy_thilaibtn.Location = new System.Drawing.Point(318, 260);
+            this.khongdongy_thilaibtn.Name = "khongdongy_thilaibtn";
+            this.khongdongy_thilaibtn.Size = new System.Drawing.Size(169, 56);
+            this.khongdongy_thilaibtn.TabIndex = 18;
+            this.khongdongy_thilaibtn.Text = "Khong dong y";
+            this.khongdongy_thilaibtn.UseVisualStyleBackColor = true;
             // 
             // tenhpdkthilai
             // 
@@ -104,8 +104,8 @@ namespace GUI_PTTK
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(607, 358);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.khongdongy_thilaibtn);
+            this.Controls.Add(this.dongy_thilaibtn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.tenhpdkthilai);
             this.Controls.Add(this.label1);
@@ -119,8 +119,8 @@ namespace GUI_PTTK
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button dongy_thilaibtn;
+        private System.Windows.Forms.Button khongdongy_thilaibtn;
         private System.Windows.Forms.Label tenhpdkthilai;
         private System.Windows.Forms.Label username;
     }
