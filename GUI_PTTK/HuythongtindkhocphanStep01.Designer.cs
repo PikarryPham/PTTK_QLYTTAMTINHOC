@@ -102,7 +102,7 @@ namespace GUI_PTTK
             this.trathongtindiem_huythongtindk.Name = "trathongtindiem_huythongtindk";
             this.trathongtindiem_huythongtindk.Size = new System.Drawing.Size(248, 35);
             this.trathongtindiem_huythongtindk.TabIndex = 27;
-            this.trathongtindiem_huythongtindk.Text = "Kiem tra ket qua hoc phan";
+            this.trathongtindiem_huythongtindk.Text = "Huy dang ky hoc phan";
             this.trathongtindiem_huythongtindk.UseVisualStyleBackColor = true;
             // 
             // timthongtindkhp_huythongtindk
