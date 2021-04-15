@@ -174,9 +174,9 @@ namespace GUI_PTTK
             this.solanthilai_inketqua.AutoSize = true;
             this.solanthilai_inketqua.Location = new System.Drawing.Point(229, 343);
             this.solanthilai_inketqua.Name = "solanthilai_inketqua";
-            this.solanthilai_inketqua.Size = new System.Drawing.Size(69, 17);
+            this.solanthilai_inketqua.Size = new System.Drawing.Size(71, 17);
             this.solanthilai_inketqua.TabIndex = 44;
-            this.solanthilai_inketqua.Text = "thoigiankt";
+            this.solanthilai_inketqua.Text = "solanthilai";
             // 
             // label9
             // 

@@ -35,6 +35,8 @@ namespace GUI_PTTK
             this.khongdongy_thilaibtn = new System.Windows.Forms.Button();
             this.tenhpdkthilai = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
+            this.thoigianbdhp_thilai = new System.Windows.Forms.Label();
+            this.thoigiandkhp_thilai = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@ namespace GUI_PTTK
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(67, 188);
+            this.label2.Location = new System.Drawing.Point(39, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(489, 29);
             this.label2.TabIndex = 16;
@@ -61,7 +63,7 @@ namespace GUI_PTTK
             // 
             // dongy_thilaibtn
             // 
-            this.dongy_thilaibtn.Location = new System.Drawing.Point(129, 260);
+            this.dongy_thilaibtn.Location = new System.Drawing.Point(115, 329);
             this.dongy_thilaibtn.Name = "dongy_thilaibtn";
             this.dongy_thilaibtn.Size = new System.Drawing.Size(169, 56);
             this.dongy_thilaibtn.TabIndex = 17;
@@ -70,7 +72,7 @@ namespace GUI_PTTK
             // 
             // khongdongy_thilaibtn
             // 
-            this.khongdongy_thilaibtn.Location = new System.Drawing.Point(318, 260);
+            this.khongdongy_thilaibtn.Location = new System.Drawing.Point(318, 329);
             this.khongdongy_thilaibtn.Name = "khongdongy_thilaibtn";
             this.khongdongy_thilaibtn.Size = new System.Drawing.Size(169, 56);
             this.khongdongy_thilaibtn.TabIndex = 18;
@@ -81,7 +83,7 @@ namespace GUI_PTTK
             // 
             this.tenhpdkthilai.AutoSize = true;
             this.tenhpdkthilai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenhpdkthilai.Location = new System.Drawing.Point(229, 121);
+            this.tenhpdkthilai.Location = new System.Drawing.Point(39, 116);
             this.tenhpdkthilai.Name = "tenhpdkthilai";
             this.tenhpdkthilai.Size = new System.Drawing.Size(133, 25);
             this.tenhpdkthilai.TabIndex = 15;
@@ -98,11 +100,33 @@ namespace GUI_PTTK
             this.username.TabIndex = 19;
             this.username.Text = "Username";
             // 
+            // thoigianbdhp_thilai
+            // 
+            this.thoigianbdhp_thilai.AutoSize = true;
+            this.thoigianbdhp_thilai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoigianbdhp_thilai.Location = new System.Drawing.Point(39, 163);
+            this.thoigianbdhp_thilai.Name = "thoigianbdhp_thilai";
+            this.thoigianbdhp_thilai.Size = new System.Drawing.Size(249, 25);
+            this.thoigianbdhp_thilai.TabIndex = 20;
+            this.thoigianbdhp_thilai.Text = "Thoi gian bat dau hoc phan";
+            // 
+            // thoigiandkhp_thilai
+            // 
+            this.thoigiandkhp_thilai.AutoSize = true;
+            this.thoigiandkhp_thilai.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoigiandkhp_thilai.Location = new System.Drawing.Point(39, 214);
+            this.thoigiandkhp_thilai.Name = "thoigiandkhp_thilai";
+            this.thoigiandkhp_thilai.Size = new System.Drawing.Size(253, 25);
+            this.thoigiandkhp_thilai.TabIndex = 21;
+            this.thoigiandkhp_thilai.Text = "Thoi gian dang ky hoc phan";
+            // 
             // Dangkythilai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(607, 358);
+            this.ClientSize = new System.Drawing.Size(607, 410);
+            this.Controls.Add(this.thoigiandkhp_thilai);
+            this.Controls.Add(this.thoigianbdhp_thilai);
             this.Controls.Add(this.username);
             this.Controls.Add(this.khongdongy_thilaibtn);
             this.Controls.Add(this.dongy_thilaibtn);
@@ -123,5 +147,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button khongdongy_thilaibtn;
         private System.Windows.Forms.Label tenhpdkthilai;
         private System.Windows.Forms.Label username;
+        private System.Windows.Forms.Label thoigianbdhp_thilai;
+        private System.Windows.Forms.Label thoigiandkhp_thilai;
     }
 }

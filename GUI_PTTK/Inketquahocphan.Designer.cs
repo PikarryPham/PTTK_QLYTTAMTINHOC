@@ -33,8 +33,10 @@ namespace GUI_PTTK
             this.khongdongy_inkqhpBtn = new System.Windows.Forms.Button();
             this.dongy_inkqhpBtn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.tenhpdkinhp = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tenhpdkinhp = new System.Windows.Forms.Label();
+            this.thoigianbd_inhp = new System.Windows.Forms.Label();
+            this.thoigiandk_inhp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // username
@@ -50,7 +52,7 @@ namespace GUI_PTTK
             // 
             // khongdongy_inkqhpBtn
             // 
-            this.khongdongy_inkqhpBtn.Location = new System.Drawing.Point(291, 259);
+            this.khongdongy_inkqhpBtn.Location = new System.Drawing.Point(291, 341);
             this.khongdongy_inkqhpBtn.Name = "khongdongy_inkqhpBtn";
             this.khongdongy_inkqhpBtn.Size = new System.Drawing.Size(169, 56);
             this.khongdongy_inkqhpBtn.TabIndex = 24;
@@ -59,7 +61,7 @@ namespace GUI_PTTK
             // 
             // dongy_inkqhpBtn
             // 
-            this.dongy_inkqhpBtn.Location = new System.Drawing.Point(102, 259);
+            this.dongy_inkqhpBtn.Location = new System.Drawing.Point(90, 341);
             this.dongy_inkqhpBtn.Name = "dongy_inkqhpBtn";
             this.dongy_inkqhpBtn.Size = new System.Drawing.Size(169, 56);
             this.dongy_inkqhpBtn.TabIndex = 23;
@@ -71,38 +73,60 @@ namespace GUI_PTTK
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(32, 186);
+            this.label2.Location = new System.Drawing.Point(32, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(536, 29);
             this.label2.TabIndex = 22;
             this.label2.Text = "Ban co muon in ket qua hoc phan nay hay khong?";
-            // 
-            // tenhpdkinhp
-            // 
-            this.tenhpdkinhp.AutoSize = true;
-            this.tenhpdkinhp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tenhpdkinhp.Location = new System.Drawing.Point(217, 121);
-            this.tenhpdkinhp.Name = "tenhpdkinhp";
-            this.tenhpdkinhp.Size = new System.Drawing.Size(133, 25);
-            this.tenhpdkinhp.TabIndex = 21;
-            this.tenhpdkinhp.Text = "Ten hoc phan";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(133, 53);
+            this.label1.Location = new System.Drawing.Point(158, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(302, 38);
             this.label1.TabIndex = 20;
             this.label1.Text = "In ket qua hoc phan";
             // 
+            // tenhpdkinhp
+            // 
+            this.tenhpdkinhp.AutoSize = true;
+            this.tenhpdkinhp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tenhpdkinhp.Location = new System.Drawing.Point(32, 123);
+            this.tenhpdkinhp.Name = "tenhpdkinhp";
+            this.tenhpdkinhp.Size = new System.Drawing.Size(133, 25);
+            this.tenhpdkinhp.TabIndex = 21;
+            this.tenhpdkinhp.Text = "Ten hoc phan";
+            // 
+            // thoigianbd_inhp
+            // 
+            this.thoigianbd_inhp.AutoSize = true;
+            this.thoigianbd_inhp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoigianbd_inhp.Location = new System.Drawing.Point(32, 166);
+            this.thoigianbd_inhp.Name = "thoigianbd_inhp";
+            this.thoigianbd_inhp.Size = new System.Drawing.Size(254, 25);
+            this.thoigianbd_inhp.TabIndex = 26;
+            this.thoigianbd_inhp.Text = "Thoi gian bat dau hoc phan ";
+            // 
+            // thoigiandk_inhp
+            // 
+            this.thoigiandk_inhp.AutoSize = true;
+            this.thoigiandk_inhp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.thoigiandk_inhp.Location = new System.Drawing.Point(32, 212);
+            this.thoigiandk_inhp.Name = "thoigiandk_inhp";
+            this.thoigiandk_inhp.Size = new System.Drawing.Size(258, 25);
+            this.thoigiandk_inhp.TabIndex = 27;
+            this.thoigiandk_inhp.Text = "Thoi gian dang ky hoc phan ";
+            // 
             // Inketquahocphan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 356);
+            this.ClientSize = new System.Drawing.Size(586, 420);
+            this.Controls.Add(this.thoigiandk_inhp);
+            this.Controls.Add(this.thoigianbd_inhp);
             this.Controls.Add(this.username);
             this.Controls.Add(this.khongdongy_inkqhpBtn);
             this.Controls.Add(this.dongy_inkqhpBtn);
@@ -122,7 +146,9 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button khongdongy_inkqhpBtn;
         private System.Windows.Forms.Button dongy_inkqhpBtn;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label tenhpdkinhp;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label tenhpdkinhp;
+        private System.Windows.Forms.Label thoigianbd_inhp;
+        private System.Windows.Forms.Label thoigiandk_inhp;
     }
 }

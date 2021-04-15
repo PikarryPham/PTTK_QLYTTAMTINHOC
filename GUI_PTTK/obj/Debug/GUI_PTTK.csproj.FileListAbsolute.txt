@@ -29,3 +29,7 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Huythongtindkho
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Login.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Tracuuketquahp02.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Tracuuketquahp01.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Inketquahocphan.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Ket_qua_hoc_phan.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Thongtinngaythilai.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.TrangCaNhan_QuanLy.resources

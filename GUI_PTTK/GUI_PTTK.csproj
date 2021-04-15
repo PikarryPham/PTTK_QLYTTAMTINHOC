@@ -68,11 +68,23 @@
     <Compile Include="Huythongtindkhocphan01.Designer.cs">
       <DependentUpon>Huythongtindkhocphan01.cs</DependentUpon>
     </Compile>
-    <Compile Include="Huythongtindkhocphan02.cs">
+    <Compile Include="Xacnhanhuythongtindkhocphan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Huythongtindkhocphan02.Designer.cs">
-      <DependentUpon>Huythongtindkhocphan02.cs</DependentUpon>
+    <Compile Include="Xacnhanhuythongtindkhocphan.Designer.cs">
+      <DependentUpon>Xacnhanhuythongtindkhocphan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inketquahocphan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inketquahocphan.Designer.cs">
+      <DependentUpon>Inketquahocphan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ket qua hoc phan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ket qua hoc phan.Designer.cs">
+      <DependentUpon>Ket qua hoc phan.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -88,6 +100,12 @@
     <Compile Include="ThemkithiCCQT.Designer.cs">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Thongtinngaythilai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thongtinngaythilai.Designer.cs">
+      <DependentUpon>Thongtinngaythilai.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tracuuketquahp02.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +118,12 @@
     <Compile Include="Tracuuketquahp01.Designer.cs">
       <DependentUpon>Tracuuketquahp01.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrangCaNhan_QuanLy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangCaNhan_QuanLy.Designer.cs">
+      <DependentUpon>TrangCaNhan_QuanLy.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="CapnhatkithiCCQT.resx">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
     </EmbeddedResource>
@@ -109,8 +133,14 @@
     <EmbeddedResource Include="Huythongtindkhocphan01.resx">
       <DependentUpon>Huythongtindkhocphan01.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Huythongtindkhocphan02.resx">
-      <DependentUpon>Huythongtindkhocphan02.cs</DependentUpon>
+    <EmbeddedResource Include="Xacnhanhuythongtindkhocphan.resx">
+      <DependentUpon>Xacnhanhuythongtindkhocphan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inketquahocphan.resx">
+      <DependentUpon>Inketquahocphan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ket qua hoc phan.resx">
+      <DependentUpon>Ket qua hoc phan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -127,11 +157,17 @@
     <EmbeddedResource Include="ThemkithiCCQT.resx">
       <DependentUpon>ThemkithiCCQT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Thongtinngaythilai.resx">
+      <DependentUpon>Thongtinngaythilai.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Tracuuketquahp02.resx">
       <DependentUpon>Tracuuketquahp02.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Tracuuketquahp01.resx">
       <DependentUpon>Tracuuketquahp01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangCaNhan_QuanLy.resx">
+      <DependentUpon>TrangCaNhan_QuanLy.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

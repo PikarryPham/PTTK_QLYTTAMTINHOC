@@ -48,6 +48,8 @@ namespace GUI_PTTK
             this.tenhp_thilai = new System.Windows.Forms.Label();
             this.thoigianbdhp_thilai = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
+            this.thoigiandkhp_thilai = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -244,11 +246,32 @@ namespace GUI_PTTK
             this.username.TabIndex = 21;
             this.username.Text = "Username";
             // 
+            // thoigiandkhp_thilai
+            // 
+            this.thoigiandkhp_thilai.AutoSize = true;
+            this.thoigiandkhp_thilai.Location = new System.Drawing.Point(440, 164);
+            this.thoigiandkhp_thilai.Name = "thoigiandkhp_thilai";
+            this.thoigiandkhp_thilai.Size = new System.Drawing.Size(126, 17);
+            this.thoigiandkhp_thilai.TabIndex = 23;
+            this.thoigiandkhp_thilai.Text = "thoigiandkhp_thilai";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(440, 124);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 17);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Thoi gian dang ky hoc phan";
+            // 
             // Thongtinngaythilai
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(699, 469);
+            this.Controls.Add(this.thoigiandkhp_thilai);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.username);
             this.Controls.Add(this.thoigianbdhp_thilai);
             this.Controls.Add(this.tenhp_thilai);
@@ -288,5 +311,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label tenhp_thilai;
         private System.Windows.Forms.Label thoigianbdhp_thilai;
         private System.Windows.Forms.Label username;
+        private System.Windows.Forms.Label thoigiandkhp_thilai;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -16,5 +16,10 @@ namespace GUI_PTTK
         {
             InitializeComponent();
         }
+
+        private void Huythongtindkhocphan02_Load(object sender, EventArgs e)
+        {
+            //nothing
+        }
     }
 }
