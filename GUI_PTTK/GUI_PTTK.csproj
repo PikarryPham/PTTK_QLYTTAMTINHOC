@@ -56,6 +56,12 @@
     <Compile Include="CapnhatkithiCCQT.Designer.cs">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
     </Compile>
+    <Compile Include="Chon ngay thi cho ky thi CCQT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Chon ngay thi cho ky thi CCQT.Designer.cs">
+      <DependentUpon>Chon ngay thi cho ky thi CCQT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dangkythilai.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     </Compile>
     <EmbeddedResource Include="CapnhatkithiCCQT.resx">
       <DependentUpon>CapnhatkithiCCQT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Chon ngay thi cho ky thi CCQT.resx">
+      <DependentUpon>Chon ngay thi cho ky thi CCQT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dangkythilai.resx">
       <DependentUpon>Dangkythilai.cs</DependentUpon>

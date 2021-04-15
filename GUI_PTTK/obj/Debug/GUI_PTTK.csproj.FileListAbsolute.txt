@@ -33,3 +33,4 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Inketquahocphan
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Ket_qua_hoc_phan.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Thongtinngaythilai.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.TrangCaNhan_QuanLy.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Chon_ngay_thi_cho_ky_thi_CCQT.resources

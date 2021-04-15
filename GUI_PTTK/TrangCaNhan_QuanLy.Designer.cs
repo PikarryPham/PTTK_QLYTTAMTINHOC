@@ -37,6 +37,7 @@ namespace GUI_PTTK
             this.trangcn_capnhatkithi = new System.Windows.Forms.Button();
             this.trangcn_editthongtinhp = new System.Windows.Forms.Button();
             this.trangcn_themthongtinhp = new System.Windows.Forms.Button();
+            this.trangcn_quanlyngaythiCCQT_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // username
@@ -73,7 +74,7 @@ namespace GUI_PTTK
             // 
             // trangcn_captknhanvien
             // 
-            this.trangcn_captknhanvien.Location = new System.Drawing.Point(205, 156);
+            this.trangcn_captknhanvien.Location = new System.Drawing.Point(61, 162);
             this.trangcn_captknhanvien.Name = "trangcn_captknhanvien";
             this.trangcn_captknhanvien.Size = new System.Drawing.Size(240, 57);
             this.trangcn_captknhanvien.TabIndex = 44;
@@ -82,7 +83,7 @@ namespace GUI_PTTK
             // 
             // trangcn_taokithi
             // 
-            this.trangcn_taokithi.Location = new System.Drawing.Point(352, 252);
+            this.trangcn_taokithi.Location = new System.Drawing.Point(352, 162);
             this.trangcn_taokithi.Name = "trangcn_taokithi";
             this.trangcn_taokithi.Size = new System.Drawing.Size(240, 57);
             this.trangcn_taokithi.TabIndex = 45;
@@ -91,7 +92,7 @@ namespace GUI_PTTK
             // 
             // trangcn_capnhatkithi
             // 
-            this.trangcn_capnhatkithi.Location = new System.Drawing.Point(61, 252);
+            this.trangcn_capnhatkithi.Location = new System.Drawing.Point(61, 342);
             this.trangcn_capnhatkithi.Name = "trangcn_capnhatkithi";
             this.trangcn_capnhatkithi.Size = new System.Drawing.Size(240, 57);
             this.trangcn_capnhatkithi.TabIndex = 46;
@@ -100,7 +101,7 @@ namespace GUI_PTTK
             // 
             // trangcn_editthongtinhp
             // 
-            this.trangcn_editthongtinhp.Location = new System.Drawing.Point(61, 343);
+            this.trangcn_editthongtinhp.Location = new System.Drawing.Point(61, 252);
             this.trangcn_editthongtinhp.Name = "trangcn_editthongtinhp";
             this.trangcn_editthongtinhp.Size = new System.Drawing.Size(240, 57);
             this.trangcn_editthongtinhp.TabIndex = 48;
@@ -109,18 +110,28 @@ namespace GUI_PTTK
             // 
             // trangcn_themthongtinhp
             // 
-            this.trangcn_themthongtinhp.Location = new System.Drawing.Point(352, 343);
+            this.trangcn_themthongtinhp.Location = new System.Drawing.Point(352, 252);
             this.trangcn_themthongtinhp.Name = "trangcn_themthongtinhp";
             this.trangcn_themthongtinhp.Size = new System.Drawing.Size(240, 57);
             this.trangcn_themthongtinhp.TabIndex = 47;
             this.trangcn_themthongtinhp.Text = "Them moi thong tin hoc phan";
             this.trangcn_themthongtinhp.UseVisualStyleBackColor = true;
             // 
+            // trangcn_quanlyngaythiCCQT_btn
+            // 
+            this.trangcn_quanlyngaythiCCQT_btn.Location = new System.Drawing.Point(352, 339);
+            this.trangcn_quanlyngaythiCCQT_btn.Name = "trangcn_quanlyngaythiCCQT_btn";
+            this.trangcn_quanlyngaythiCCQT_btn.Size = new System.Drawing.Size(240, 62);
+            this.trangcn_quanlyngaythiCCQT_btn.TabIndex = 51;
+            this.trangcn_quanlyngaythiCCQT_btn.Text = "Quan ly lich thi cho ki thi CCQT";
+            this.trangcn_quanlyngaythiCCQT_btn.UseVisualStyleBackColor = true;
+            // 
             // TrangCaNhan_QuanLy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(671, 449);
+            this.Controls.Add(this.trangcn_quanlyngaythiCCQT_btn);
             this.Controls.Add(this.trangcn_editthongtinhp);
             this.Controls.Add(this.trangcn_themthongtinhp);
             this.Controls.Add(this.trangcn_capnhatkithi);
@@ -146,5 +157,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button trangcn_capnhatkithi;
         private System.Windows.Forms.Button trangcn_editthongtinhp;
         private System.Windows.Forms.Button trangcn_themthongtinhp;
+        private System.Windows.Forms.Button trangcn_quanlyngaythiCCQT_btn;
     }
 }
