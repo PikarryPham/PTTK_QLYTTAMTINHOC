@@ -33,10 +33,7 @@
             this.HovaTen = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Ki_thi_CCQT = new System.Windows.Forms.Label();
             this.button_xem_CCQT_da_dang_ky = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_Quayve
@@ -53,7 +50,7 @@
             // 
             this.CMND_CCCD.AutoSize = true;
             this.CMND_CCCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.CMND_CCCD.Location = new System.Drawing.Point(51, 137);
+            this.CMND_CCCD.Location = new System.Drawing.Point(59, 229);
             this.CMND_CCCD.Name = "CMND_CCCD";
             this.CMND_CCCD.Size = new System.Drawing.Size(123, 24);
             this.CMND_CCCD.TabIndex = 24;
@@ -63,7 +60,7 @@
             // 
             this.HovaTen.AutoSize = true;
             this.HovaTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.HovaTen.Location = new System.Drawing.Point(51, 94);
+            this.HovaTen.Location = new System.Drawing.Point(59, 186);
             this.HovaTen.Name = "HovaTen";
             this.HovaTen.Size = new System.Drawing.Size(98, 24);
             this.HovaTen.TabIndex = 23;
@@ -71,37 +68,17 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(180, 139);
+            this.textBox2.Location = new System.Drawing.Point(188, 231);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(354, 22);
             this.textBox2.TabIndex = 22;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(180, 96);
+            this.textBox1.Location = new System.Drawing.Point(188, 188);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(354, 22);
             this.textBox1.TabIndex = 21;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(180, 192);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 25;
-            // 
-            // Ki_thi_CCQT
-            // 
-            this.Ki_thi_CCQT.AutoSize = true;
-            this.Ki_thi_CCQT.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.Ki_thi_CCQT.Location = new System.Drawing.Point(51, 192);
-            this.Ki_thi_CCQT.Name = "Ki_thi_CCQT";
-            this.Ki_thi_CCQT.Size = new System.Drawing.Size(108, 24);
-            this.Ki_thi_CCQT.TabIndex = 26;
-            this.Ki_thi_CCQT.Text = "Ki thi CCQT";
-            this.Ki_thi_CCQT.Click += new System.EventHandler(this.label1_Click);
             // 
             // button_xem_CCQT_da_dang_ky
             // 
@@ -119,8 +96,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(622, 478);
             this.Controls.Add(this.button_xem_CCQT_da_dang_ky);
-            this.Controls.Add(this.Ki_thi_CCQT);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.CMND_CCCD);
             this.Controls.Add(this.HovaTen);
             this.Controls.Add(this.textBox2);
@@ -128,7 +103,6 @@
             this.Controls.Add(this.Button_Quayve);
             this.Name = "HuyDangKyThiCCQT";
             this.Text = "HuyDangKyThiCCQT";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,8 +115,6 @@
         private System.Windows.Forms.Label HovaTen;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label Ki_thi_CCQT;
         private System.Windows.Forms.Button button_xem_CCQT_da_dang_ky;
     }
 }
