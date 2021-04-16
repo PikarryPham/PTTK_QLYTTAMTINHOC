@@ -34,7 +34,6 @@
             this.textBoxIDHocPhan = new System.Windows.Forms.TextBox();
             this.labelIDHocPhan = new System.Windows.Forms.Label();
             this.buttonSua = new System.Windows.Forms.Button();
-            this.buttonXoa = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -51,23 +50,24 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(259, 85);
+            this.dataGridView1.Location = new System.Drawing.Point(150, 66);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(501, 197);
             this.dataGridView1.TabIndex = 22;
             // 
             // labelHienthi
             // 
             this.labelHienthi.AutoSize = true;
-            this.labelHienthi.Location = new System.Drawing.Point(315, 65);
+            this.labelHienthi.Location = new System.Drawing.Point(290, 46);
             this.labelHienthi.Name = "labelHienthi";
-            this.labelHienthi.Size = new System.Drawing.Size(131, 17);
+            this.labelHienthi.Size = new System.Drawing.Size(220, 17);
             this.labelHienthi.TabIndex = 23;
-            this.labelHienthi.Text = "Thong tin hoc phan";
+            this.labelHienthi.Text = "Thong tin tat ca hoc phan hien co";
+            this.labelHienthi.Click += new System.EventHandler(this.labelHienthi_Click);
             // 
             // textBoxIDHocPhan
             // 
-            this.textBoxIDHocPhan.Location = new System.Drawing.Point(399, 252);
+            this.textBoxIDHocPhan.Location = new System.Drawing.Point(345, 286);
             this.textBoxIDHocPhan.Name = "textBoxIDHocPhan";
             this.textBoxIDHocPhan.Size = new System.Drawing.Size(100, 22);
             this.textBoxIDHocPhan.TabIndex = 24;
@@ -76,39 +76,32 @@
             // labelIDHocPhan
             // 
             this.labelIDHocPhan.AutoSize = true;
-            this.labelIDHocPhan.Location = new System.Drawing.Point(256, 257);
+            this.labelIDHocPhan.Location = new System.Drawing.Point(147, 289);
             this.labelIDHocPhan.Name = "labelIDHocPhan";
-            this.labelIDHocPhan.Size = new System.Drawing.Size(122, 17);
+            this.labelIDHocPhan.Size = new System.Drawing.Size(176, 17);
             this.labelIDHocPhan.TabIndex = 25;
-            this.labelIDHocPhan.Text = "Nhap ID hoc phan";
+            this.labelIDHocPhan.Text = "Nhap ID hoc phan can sua";
             this.labelIDHocPhan.Click += new System.EventHandler(this.labelIDHocPhan_Click);
             // 
             // buttonSua
             // 
-            this.buttonSua.Location = new System.Drawing.Point(44, 350);
+            this.buttonSua.Location = new System.Drawing.Point(483, 286);
             this.buttonSua.Name = "buttonSua";
             this.buttonSua.Size = new System.Drawing.Size(168, 23);
             this.buttonSua.TabIndex = 26;
             this.buttonSua.Text = "Sua thong tin hoc phan";
             this.buttonSua.UseVisualStyleBackColor = true;
-            // 
-            // buttonXoa
-            // 
-            this.buttonXoa.Location = new System.Drawing.Point(295, 350);
-            this.buttonXoa.Name = "buttonXoa";
-            this.buttonXoa.Size = new System.Drawing.Size(168, 23);
-            this.buttonXoa.TabIndex = 27;
-            this.buttonXoa.Text = "Xoa thong tin hoc phan";
-            this.buttonXoa.UseVisualStyleBackColor = true;
+            this.buttonSua.Click += new System.EventHandler(this.buttonSua_Click);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(551, 350);
+            this.button1.Location = new System.Drawing.Point(483, 338);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(175, 23);
+            this.button1.Size = new System.Drawing.Size(168, 42);
             this.button1.TabIndex = 28;
-            this.button1.Text = "Them thong tin hoc phan";
+            this.button1.Text = "Them thong tin hoc phan moi";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // QuanLiHocPhan
             // 
@@ -116,7 +109,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonXoa);
             this.Controls.Add(this.buttonSua);
             this.Controls.Add(this.labelIDHocPhan);
             this.Controls.Add(this.textBoxIDHocPhan);
@@ -139,7 +131,6 @@
         private System.Windows.Forms.TextBox textBoxIDHocPhan;
         private System.Windows.Forms.Label labelIDHocPhan;
         private System.Windows.Forms.Button buttonSua;
-        private System.Windows.Forms.Button buttonXoa;
         private System.Windows.Forms.Button button1;
     }
 }

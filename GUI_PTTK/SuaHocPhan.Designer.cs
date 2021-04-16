@@ -49,8 +49,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonQuayVe = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button2 = new System.Windows.Forms.Button();
             label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -58,7 +62,7 @@
             label7.AutoSize = true;
             label7.Enabled = false;
             label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label7.Location = new System.Drawing.Point(393, 18);
+            label7.Location = new System.Drawing.Point(447, 15);
             label7.Name = "label7";
             label7.Size = new System.Drawing.Size(239, 20);
             label7.TabIndex = 46;
@@ -67,11 +71,11 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(469, 424);
+            this.button1.Location = new System.Drawing.Point(392, 428);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 23);
+            this.button1.Size = new System.Drawing.Size(151, 23);
             this.button1.TabIndex = 45;
-            this.button1.Text = "Them hoc phan";
+            this.button1.Text = "Sua hoc phan";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // label5
@@ -87,7 +91,7 @@
             // textBox5
             // 
             this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(547, 279);
+            this.textBox5.Location = new System.Drawing.Point(618, 276);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(124, 22);
             this.textBox5.TabIndex = 42;
@@ -105,10 +109,11 @@
             // textBox4
             // 
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(547, 220);
+            this.textBox4.Location = new System.Drawing.Point(618, 217);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(124, 22);
             this.textBox4.TabIndex = 40;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // label3
             // 
@@ -123,7 +128,7 @@
             // textBox3
             // 
             this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(547, 160);
+            this.textBox3.Location = new System.Drawing.Point(618, 155);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(124, 22);
             this.textBox3.TabIndex = 38;
@@ -141,7 +146,7 @@
             // textBox2
             // 
             this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(547, 101);
+            this.textBox2.Location = new System.Drawing.Point(618, 98);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(124, 22);
             this.textBox2.TabIndex = 36;
@@ -159,7 +164,7 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(547, 41);
+            this.textBox1.Location = new System.Drawing.Point(618, 43);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(124, 22);
             this.textBox1.TabIndex = 33;
@@ -222,15 +227,15 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(389, 390);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(136, 17);
+            this.label6.Size = new System.Drawing.Size(98, 17);
             this.label6.TabIndex = 50;
-            this.label6.Text = "Tinh trang hoc phan";
+            this.label6.Text = "Loai hoc phan";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(39, 78);
+            this.label9.Location = new System.Drawing.Point(41, 43);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(237, 20);
             this.label9.TabIndex = 54;
@@ -240,7 +245,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 101);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(303, 190);
@@ -255,11 +260,46 @@
             this.buttonQuayVe.Text = "Quay ve";
             this.buttonQuayVe.UseVisualStyleBackColor = true;
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(57, 266);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(210, 20);
+            this.label10.TabIndex = 57;
+            this.label10.Text = "Thong tin thoi khoa bieu";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(12, 289);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(303, 190);
+            this.dataGridView2.TabIndex = 56;
+            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // button2
+            // 
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(581, 428);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(161, 23);
+            this.button2.TabIndex = 58;
+            this.button2.Text = "Quan li thoi khoa bieu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // SuaHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 491);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.buttonQuayVe);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.dataGridView1);
@@ -284,6 +324,7 @@
             this.Name = "SuaHocPhan";
             this.Text = "SuaHocPhan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +351,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonQuayVe;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button2;
     }
 }
