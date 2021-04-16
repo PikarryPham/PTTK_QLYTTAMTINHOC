@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class TaoTaiKhoanNhanVien
+    partial class TaiKhoanNV
     {
         /// <summary>
         /// Required designer variable.
@@ -31,95 +31,96 @@ namespace GUI_PTTK
         {
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txrUserName = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.btnTaoTK = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.ttxLoaiNV = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 21);
+            this.button1.Location = new System.Drawing.Point(22, 23);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Quay ve";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(210, 98);
+            this.label1.Location = new System.Drawing.Point(282, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 17);
+            this.label1.Size = new System.Drawing.Size(73, 17);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Ten tai khoan";
+            this.label1.Text = "Username";
             // 
-            // txrUserName
+            // textBox1
             // 
-            this.txrUserName.Location = new System.Drawing.Point(338, 98);
-            this.txrUserName.Name = "txrUserName";
-            this.txrUserName.Size = new System.Drawing.Size(100, 22);
-            this.txrUserName.TabIndex = 2;
+            this.textBox1.Location = new System.Drawing.Point(427, 105);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(210, 158);
+            this.label2.Location = new System.Drawing.Point(286, 174);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 17);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Mat khau";
+            this.label2.Text = "Password";
             // 
-            // textBox1
+            // textBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(338, 155);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
-            // 
-            // btnTaoTK
-            // 
-            this.btnTaoTK.Location = new System.Drawing.Point(281, 311);
-            this.btnTaoTK.Name = "btnTaoTK";
-            this.btnTaoTK.Size = new System.Drawing.Size(117, 23);
-            this.btnTaoTK.TabIndex = 5;
-            this.btnTaoTK.Text = "Tao tai khoan";
-            this.btnTaoTK.UseVisualStyleBackColor = true;
+            this.textBox2.Location = new System.Drawing.Point(427, 169);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 22);
+            this.textBox2.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(210, 218);
+            this.label3.Location = new System.Drawing.Point(286, 232);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Loai nhan vien";
+            this.label3.Size = new System.Drawing.Size(54, 17);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "LoaiNV";
             // 
-            // ttxLoaiNV
+            // textBox3
             // 
-            this.ttxLoaiNV.Location = new System.Drawing.Point(338, 215);
-            this.ttxLoaiNV.Name = "ttxLoaiNV";
-            this.ttxLoaiNV.Size = new System.Drawing.Size(100, 22);
-            this.ttxLoaiNV.TabIndex = 7;
+            this.textBox3.Location = new System.Drawing.Point(427, 227);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.TabIndex = 6;
             // 
-            // TaoTaiKhoanNhanVien
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(348, 306);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(143, 23);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Tao tai khoan";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // TaiKhoanNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.ttxLoaiNV);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnTaoTK);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txrUserName);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "TaoTaiKhoanNhanVien";
-            this.Text = "TaoTaiKhoanNhanVien";
+            this.Name = "TaiKhoanNV";
+            this.Text = "TaiKhoanNV";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,11 +130,11 @@ namespace GUI_PTTK
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txrUserName;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button btnTaoTK;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ttxLoaiNV;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button2;
     }
 }

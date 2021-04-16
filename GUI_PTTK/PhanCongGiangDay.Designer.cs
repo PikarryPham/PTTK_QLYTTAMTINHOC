@@ -1,7 +1,7 @@
 ﻿
 namespace GUI_PTTK
 {
-    partial class PhanCongGiangDay
+    partial class btnSuaPCGD
     {
         /// <summary>
         /// Required designer variable.
@@ -49,6 +49,8 @@ namespace GUI_PTTK
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -192,12 +194,13 @@ namespace GUI_PTTK
             // 
             // btnPCGD
             // 
-            this.btnPCGD.Location = new System.Drawing.Point(274, 606);
+            this.btnPCGD.Location = new System.Drawing.Point(196, 591);
             this.btnPCGD.Name = "btnPCGD";
-            this.btnPCGD.Size = new System.Drawing.Size(262, 61);
+            this.btnPCGD.Size = new System.Drawing.Size(101, 61);
             this.btnPCGD.TabIndex = 16;
-            this.btnPCGD.Text = "Phan cong giang day";
+            this.btnPCGD.Text = "ThemPCGD";
             this.btnPCGD.UseVisualStyleBackColor = true;
+            this.btnPCGD.Click += new System.EventHandler(this.btnPCGD_Click);
             // 
             // dataGridView3
             // 
@@ -229,12 +232,32 @@ namespace GUI_PTTK
             this.button1.Text = "Quay ve";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // PhanCongGiangDay
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(336, 591);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(86, 61);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "SuaPCGD";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(476, 591);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(90, 61);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "XoaPCGD";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btnSuaPCGD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1176, 749);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView3);
@@ -255,7 +278,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "PhanCongGiangDay";
+            this.Name = "btnSuaPCGD";
             this.Text = "PhanCongGiangDay";
             this.Load += new System.EventHandler(this.PhanCongGiangDay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -288,5 +311,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }

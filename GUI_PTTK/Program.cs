@@ -16,7 +16,7 @@ namespace GUI_PTTK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PhanCongGiangDay());
+            Application.Run(new btnSuaPCGD());
         }
     }
 }
