@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace GUI_PTTK
 {
-    public partial class QuanLiHocVien : Form
+    public partial class ThemHoSoHocVienMoi : Form
     {
-        public QuanLiHocVien()
+        public ThemHoSoHocVienMoi()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        private void labSuaTTHV_Click(object sender, EventArgs e)
         {
 
         }

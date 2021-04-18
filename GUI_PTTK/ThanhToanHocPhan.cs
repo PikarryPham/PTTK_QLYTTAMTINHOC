@@ -17,12 +17,22 @@ namespace GUI_PTTK
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void labThemHV_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click_1(object sender, EventArgs e)
+        private void labTen_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txbTenHV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
 
         }

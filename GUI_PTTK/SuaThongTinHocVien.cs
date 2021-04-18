@@ -16,5 +16,10 @@ namespace GUI_PTTK
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

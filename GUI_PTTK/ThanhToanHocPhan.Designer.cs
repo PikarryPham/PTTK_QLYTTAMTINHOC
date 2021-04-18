@@ -1,5 +1,4 @@
-﻿
-namespace GUI_PTTK
+﻿namespace GUI_PTTK
 {
     partial class ThanhToanHocPhan
     {
@@ -29,91 +28,121 @@ namespace GUI_PTTK
         /// </summary>
         private void InitializeComponent()
         {
-            this.lb_TTHP = new System.Windows.Forms.Label();
+            this.labThemHV = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lb_DSHD = new System.Windows.Forms.Label();
-            this.btn_ThanhToan = new System.Windows.Forms.Button();
-            this.btn_Quaylai = new System.Windows.Forms.Button();
+            this.btnQuayVe = new System.Windows.Forms.Button();
+            this.txbIDHV = new System.Windows.Forms.TextBox();
+            this.labTen = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txbMaHD = new System.Windows.Forms.TextBox();
+            this.rbTienMat = new System.Windows.Forms.RadioButton();
+            this.rbThe = new System.Windows.Forms.RadioButton();
+            this.btnThanhToan = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lb_TTHP
+            // labThemHV
             // 
-            this.lb_TTHP.AutoSize = true;
-            this.lb_TTHP.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_TTHP.Location = new System.Drawing.Point(283, 22);
-            this.lb_TTHP.Name = "lb_TTHP";
-            this.lb_TTHP.Size = new System.Drawing.Size(235, 25);
-            this.lb_TTHP.TabIndex = 0;
-            this.lb_TTHP.Text = "Thanh toan hoc phan";
-            this.lb_TTHP.Click += new System.EventHandler(this.label1_Click);
+            this.labThemHV.AutoSize = true;
+            this.labThemHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labThemHV.Location = new System.Drawing.Point(259, 24);
+            this.labThemHV.Name = "labThemHV";
+            this.labThemHV.Size = new System.Drawing.Size(235, 25);
+            this.labThemHV.TabIndex = 24;
+            this.labThemHV.Text = "Thanh toan hoc phan";
+            this.labThemHV.Click += new System.EventHandler(this.labThemHV_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(110, 93);
+            this.dataGridView1.Location = new System.Drawing.Point(227, 71);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(585, 197);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.Size = new System.Drawing.Size(295, 148);
+            this.dataGridView1.TabIndex = 25;
             // 
-            // lb_DSHD
+            // btnQuayVe
             // 
-            this.lb_DSHD.AutoSize = true;
-            this.lb_DSHD.Location = new System.Drawing.Point(107, 66);
-            this.lb_DSHD.Name = "lb_DSHD";
-            this.lb_DSHD.Size = new System.Drawing.Size(176, 13);
-            this.lb_DSHD.TabIndex = 2;
-            this.lb_DSHD.Text = "Danh sach hoa don can thanh toan";
-            this.lb_DSHD.Click += new System.EventHandler(this.label1_Click_1);
+            this.btnQuayVe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuayVe.Location = new System.Drawing.Point(60, 23);
+            this.btnQuayVe.Name = "btnQuayVe";
+            this.btnQuayVe.Size = new System.Drawing.Size(102, 33);
+            this.btnQuayVe.TabIndex = 26;
+            this.btnQuayVe.Text = "Quay ve";
+            this.btnQuayVe.UseVisualStyleBackColor = true;
             // 
-            // btn_ThanhToan
+            // txbIDHV
             // 
-            this.btn_ThanhToan.Location = new System.Drawing.Point(338, 370);
-            this.btn_ThanhToan.Name = "btn_ThanhToan";
-            this.btn_ThanhToan.Size = new System.Drawing.Size(129, 33);
-            this.btn_ThanhToan.TabIndex = 3;
-            this.btn_ThanhToan.Text = "Tien hanh thanh toan";
-            this.btn_ThanhToan.UseVisualStyleBackColor = true;
+            this.txbIDHV.Location = new System.Drawing.Point(343, 245);
+            this.txbIDHV.Name = "txbIDHV";
+            this.txbIDHV.Size = new System.Drawing.Size(179, 20);
+            this.txbIDHV.TabIndex = 28;
+            this.txbIDHV.TextChanged += new System.EventHandler(this.txbTenHV_TextChanged);
             // 
-            // btn_Quaylai
+            // labTen
             // 
-            this.btn_Quaylai.Location = new System.Drawing.Point(110, 22);
-            this.btn_Quaylai.Name = "btn_Quaylai";
-            this.btn_Quaylai.Size = new System.Drawing.Size(75, 23);
-            this.btn_Quaylai.TabIndex = 4;
-            this.btn_Quaylai.Text = "Quay ve";
-            this.btn_Quaylai.UseVisualStyleBackColor = true;
+            this.labTen.AutoSize = true;
+            this.labTen.Location = new System.Drawing.Point(226, 248);
+            this.labTen.Name = "labTen";
+            this.labTen.Size = new System.Drawing.Size(62, 13);
+            this.labTen.TabIndex = 27;
+            this.labTen.Text = "ID hoc vien";
+            this.labTen.Click += new System.EventHandler(this.labTen_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(107, 318);
+            this.label1.Location = new System.Drawing.Point(226, 291);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Nhap ma hoa don";
+            this.label1.Size = new System.Drawing.Size(107, 13);
+            this.label1.TabIndex = 29;
+            this.label1.Text = "Hinh thuc thanh toan";
             // 
-            // txbMaHD
+            // rbTienMat
             // 
-            this.txbMaHD.Location = new System.Drawing.Point(226, 315);
-            this.txbMaHD.Name = "txbMaHD";
-            this.txbMaHD.Size = new System.Drawing.Size(100, 20);
-            this.txbMaHD.TabIndex = 6;
+            this.rbTienMat.AutoSize = true;
+            this.rbTienMat.Location = new System.Drawing.Point(356, 289);
+            this.rbTienMat.Name = "rbTienMat";
+            this.rbTienMat.Size = new System.Drawing.Size(66, 17);
+            this.rbTienMat.TabIndex = 30;
+            this.rbTienMat.TabStop = true;
+            this.rbTienMat.Text = "Tien mat";
+            this.rbTienMat.UseVisualStyleBackColor = true;
+            this.rbTienMat.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            // 
+            // rbThe
+            // 
+            this.rbThe.AutoSize = true;
+            this.rbThe.Location = new System.Drawing.Point(456, 291);
+            this.rbThe.Name = "rbThe";
+            this.rbThe.Size = new System.Drawing.Size(44, 17);
+            this.rbThe.TabIndex = 31;
+            this.rbThe.TabStop = true;
+            this.rbThe.Text = "The";
+            this.rbThe.UseVisualStyleBackColor = true;
+            // 
+            // btnThanhToan
+            // 
+            this.btnThanhToan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThanhToan.Location = new System.Drawing.Point(343, 336);
+            this.btnThanhToan.Name = "btnThanhToan";
+            this.btnThanhToan.Size = new System.Drawing.Size(102, 33);
+            this.btnThanhToan.TabIndex = 32;
+            this.btnThanhToan.Text = "Thanh toan";
+            this.btnThanhToan.UseVisualStyleBackColor = true;
             // 
             // ThanhToanHocPhan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txbMaHD);
+            this.ClientSize = new System.Drawing.Size(821, 445);
+            this.Controls.Add(this.btnThanhToan);
+            this.Controls.Add(this.rbThe);
+            this.Controls.Add(this.rbTienMat);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn_Quaylai);
-            this.Controls.Add(this.btn_ThanhToan);
-            this.Controls.Add(this.lb_DSHD);
+            this.Controls.Add(this.txbIDHV);
+            this.Controls.Add(this.labTen);
+            this.Controls.Add(this.btnQuayVe);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lb_TTHP);
+            this.Controls.Add(this.labThemHV);
             this.Name = "ThanhToanHocPhan";
             this.Text = "ThanhToanHocPhan";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -124,12 +153,14 @@ namespace GUI_PTTK
 
         #endregion
 
-        private System.Windows.Forms.Label lb_TTHP;
+        private System.Windows.Forms.Label labThemHV;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label lb_DSHD;
-        private System.Windows.Forms.Button btn_ThanhToan;
-        private System.Windows.Forms.Button btn_Quaylai;
+        private System.Windows.Forms.Button btnQuayVe;
+        private System.Windows.Forms.TextBox txbIDHV;
+        private System.Windows.Forms.Label labTen;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txbMaHD;
+        private System.Windows.Forms.RadioButton rbTienMat;
+        private System.Windows.Forms.RadioButton rbThe;
+        private System.Windows.Forms.Button btnThanhToan;
     }
 }
