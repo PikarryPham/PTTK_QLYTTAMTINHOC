@@ -31,5 +31,10 @@ namespace GUI_PTTK
         {
 
         }
+
+        private void txbIDHV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

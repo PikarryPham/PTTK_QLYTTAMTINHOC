@@ -60,26 +60,27 @@
             // labIDHV
             // 
             this.labIDHV.AutoSize = true;
-            this.labIDHV.Location = new System.Drawing.Point(253, 288);
+            this.labIDHV.Location = new System.Drawing.Point(136, 295);
             this.labIDHV.Name = "labIDHV";
-            this.labIDHV.Size = new System.Drawing.Size(62, 13);
+            this.labIDHV.Size = new System.Drawing.Size(103, 13);
             this.labIDHV.TabIndex = 2;
-            this.labIDHV.Text = "ID hoc vien";
+            this.labIDHV.Text = "ID hoc vien can sua";
             this.labIDHV.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // txbIDHV
             // 
-            this.txbIDHV.Location = new System.Drawing.Point(364, 285);
+            this.txbIDHV.Location = new System.Drawing.Point(280, 292);
             this.txbIDHV.Name = "txbIDHV";
             this.txbIDHV.Size = new System.Drawing.Size(153, 20);
             this.txbIDHV.TabIndex = 3;
+            this.txbIDHV.TextChanged += new System.EventHandler(this.txbIDHV_TextChanged);
             // 
             // btnThemHV
             // 
             this.btnThemHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemHV.Location = new System.Drawing.Point(209, 325);
+            this.btnThemHV.Location = new System.Drawing.Point(478, 374);
             this.btnThemHV.Name = "btnThemHV";
-            this.btnThemHV.Size = new System.Drawing.Size(171, 33);
+            this.btnThemHV.Size = new System.Drawing.Size(181, 33);
             this.btnThemHV.TabIndex = 4;
             this.btnThemHV.Text = "Them hoc vien moi";
             this.btnThemHV.UseVisualStyleBackColor = true;
@@ -87,7 +88,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(424, 325);
+            this.button1.Location = new System.Drawing.Point(478, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 33);
             this.button1.TabIndex = 5;

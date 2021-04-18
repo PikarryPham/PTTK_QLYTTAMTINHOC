@@ -78,11 +78,23 @@
     <Compile Include="ThemHoSoHocVienMoi.Designer.cs">
       <DependentUpon>ThemHoSoHocVienMoi.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrangCaNhan_NVTiepNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangCaNhan_NVTiepNhan.Designer.cs">
+      <DependentUpon>TrangCaNhan_NVTiepNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="XacNhanTTTienMat.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="XacNhanTTTienMat.Designer.cs">
       <DependentUpon>XacNhanTTTienMat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuatHDCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatHDCT.Designer.cs">
+      <DependentUpon>XuatHDCT.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -108,8 +120,14 @@
     <EmbeddedResource Include="ThemHoSoHocVienMoi.resx">
       <DependentUpon>ThemHoSoHocVienMoi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TrangCaNhan_NVTiepNhan.resx">
+      <DependentUpon>TrangCaNhan_NVTiepNhan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XacNhanTTTienMat.resx">
       <DependentUpon>XacNhanTTTienMat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatHDCT.resx">
+      <DependentUpon>XuatHDCT.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
