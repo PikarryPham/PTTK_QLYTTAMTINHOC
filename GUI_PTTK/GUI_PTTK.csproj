@@ -102,6 +102,12 @@
     <Compile Include="ThemHocPhanCoBan.Designer.cs">
       <DependentUpon>ThemHocPhanCoBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="TrangCaNhan_NhanVienKeToan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrangCaNhan_NhanVienKeToan.Designer.cs">
+      <DependentUpon>TrangCaNhan_NhanVienKeToan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThemHocPhanCoBan.resx">
       <DependentUpon>ThemHocPhanCoBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrangCaNhan_NhanVienKeToan.resx">
+      <DependentUpon>TrangCaNhan_NhanVienKeToan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
