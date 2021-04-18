@@ -55,6 +55,8 @@ namespace GUI_PTTK
             this.dateTimePickerThoigianBD = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerThoigiandk = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
+            this.CMNDhocvien_tracuustep02 = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backTrang
@@ -72,7 +74,7 @@ namespace GUI_PTTK
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(221, 56);
+            this.label1.Location = new System.Drawing.Point(222, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(387, 38);
             this.label1.TabIndex = 11;
@@ -80,16 +82,16 @@ namespace GUI_PTTK
             // 
             // thongtinhp_tracuu
             // 
-            this.thongtinhp_tracuu.Location = new System.Drawing.Point(156, 112);
+            this.thongtinhp_tracuu.Location = new System.Drawing.Point(190, 129);
             this.thongtinhp_tracuu.Name = "thongtinhp_tracuu";
-            this.thongtinhp_tracuu.Size = new System.Drawing.Size(413, 22);
+            this.thongtinhp_tracuu.Size = new System.Drawing.Size(379, 22);
             this.thongtinhp_tracuu.TabIndex = 13;
             this.thongtinhp_tracuu.UseWaitCursor = true;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 115);
+            this.label2.Location = new System.Drawing.Point(31, 132);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 17);
             this.label2.TabIndex = 14;
@@ -100,7 +102,7 @@ namespace GUI_PTTK
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(28, 257);
+            this.label3.Location = new System.Drawing.Point(28, 269);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(237, 32);
             this.label3.TabIndex = 15;
@@ -110,7 +112,7 @@ namespace GUI_PTTK
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 303);
+            this.label4.Location = new System.Drawing.Point(28, 327);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 16;
@@ -120,7 +122,7 @@ namespace GUI_PTTK
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 344);
+            this.label5.Location = new System.Drawing.Point(28, 368);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(163, 25);
             this.label5.TabIndex = 17;
@@ -130,7 +132,7 @@ namespace GUI_PTTK
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(412, 344);
+            this.label6.Location = new System.Drawing.Point(417, 361);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(166, 25);
             this.label6.TabIndex = 18;
@@ -140,7 +142,7 @@ namespace GUI_PTTK
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 390);
+            this.label7.Location = new System.Drawing.Point(28, 414);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(143, 25);
             this.label7.TabIndex = 19;
@@ -150,7 +152,7 @@ namespace GUI_PTTK
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(28, 434);
+            this.label8.Location = new System.Drawing.Point(28, 458);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(126, 25);
             this.label8.TabIndex = 20;
@@ -161,7 +163,7 @@ namespace GUI_PTTK
             this.tbdenhocvien.AutoSize = true;
             this.tbdenhocvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbdenhocvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbdenhocvien.Location = new System.Drawing.Point(250, 482);
+            this.tbdenhocvien.Location = new System.Drawing.Point(250, 491);
             this.tbdenhocvien.Name = "tbdenhocvien";
             this.tbdenhocvien.Size = new System.Drawing.Size(319, 32);
             this.tbdenhocvien.TabIndex = 21;
@@ -170,7 +172,7 @@ namespace GUI_PTTK
             // tenhpdky
             // 
             this.tenhpdky.AutoSize = true;
-            this.tenhpdky.Location = new System.Drawing.Point(187, 310);
+            this.tenhpdky.Location = new System.Drawing.Point(187, 334);
             this.tenhpdky.Name = "tenhpdky";
             this.tenhpdky.Size = new System.Drawing.Size(96, 17);
             this.tenhpdky.TabIndex = 22;
@@ -179,7 +181,7 @@ namespace GUI_PTTK
             // thoigianbdhp
             // 
             this.thoigianbdhp.AutoSize = true;
-            this.thoigianbdhp.Location = new System.Drawing.Point(209, 351);
+            this.thoigianbdhp.Location = new System.Drawing.Point(209, 375);
             this.thoigianbdhp.Name = "thoigianbdhp";
             this.thoigianbdhp.Size = new System.Drawing.Size(74, 17);
             this.thoigianbdhp.TabIndex = 23;
@@ -188,7 +190,7 @@ namespace GUI_PTTK
             // thoigiankthp
             // 
             this.thoigiankthp.AutoSize = true;
-            this.thoigiankthp.Location = new System.Drawing.Point(601, 351);
+            this.thoigiankthp.Location = new System.Drawing.Point(606, 368);
             this.thoigiankthp.Name = "thoigiankthp";
             this.thoigiankthp.Size = new System.Drawing.Size(69, 17);
             this.thoigiankthp.TabIndex = 24;
@@ -197,7 +199,7 @@ namespace GUI_PTTK
             // diemhp
             // 
             this.diemhp.AutoSize = true;
-            this.diemhp.Location = new System.Drawing.Point(193, 397);
+            this.diemhp.Location = new System.Drawing.Point(193, 421);
             this.diemhp.Name = "diemhp";
             this.diemhp.Size = new System.Drawing.Size(54, 17);
             this.diemhp.TabIndex = 25;
@@ -206,7 +208,7 @@ namespace GUI_PTTK
             // ngaydkhp
             // 
             this.ngaydkhp.AutoSize = true;
-            this.ngaydkhp.Location = new System.Drawing.Point(187, 441);
+            this.ngaydkhp.Location = new System.Drawing.Point(187, 465);
             this.ngaydkhp.Name = "ngaydkhp";
             this.ngaydkhp.Size = new System.Drawing.Size(70, 17);
             this.ngaydkhp.TabIndex = 26;
@@ -244,7 +246,7 @@ namespace GUI_PTTK
             // tracuudiemkqhp
             // 
             this.tracuudiemkqhp.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.tracuudiemkqhp.Location = new System.Drawing.Point(620, 129);
+            this.tracuudiemkqhp.Location = new System.Drawing.Point(631, 129);
             this.tracuudiemkqhp.Name = "tracuudiemkqhp";
             this.tracuudiemkqhp.Size = new System.Drawing.Size(125, 41);
             this.tracuudiemkqhp.TabIndex = 30;
@@ -255,7 +257,7 @@ namespace GUI_PTTK
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(412, 390);
+            this.label9.Location = new System.Drawing.Point(417, 407);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(117, 25);
             this.label9.TabIndex = 31;
@@ -264,7 +266,7 @@ namespace GUI_PTTK
             // solanthilai
             // 
             this.solanthilai.AutoSize = true;
-            this.solanthilai.Location = new System.Drawing.Point(601, 397);
+            this.solanthilai.Location = new System.Drawing.Point(606, 414);
             this.solanthilai.Name = "solanthilai";
             this.solanthilai.Size = new System.Drawing.Size(69, 17);
             this.solanthilai.TabIndex = 32;
@@ -273,7 +275,7 @@ namespace GUI_PTTK
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 161);
+            this.label10.Location = new System.Drawing.Point(31, 178);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(119, 17);
             this.label10.TabIndex = 34;
@@ -281,32 +283,50 @@ namespace GUI_PTTK
             // 
             // dateTimePickerThoigianBD
             // 
-            this.dateTimePickerThoigianBD.Location = new System.Drawing.Point(156, 161);
+            this.dateTimePickerThoigianBD.Location = new System.Drawing.Point(190, 178);
             this.dateTimePickerThoigianBD.Name = "dateTimePickerThoigianBD";
-            this.dateTimePickerThoigianBD.Size = new System.Drawing.Size(413, 22);
+            this.dateTimePickerThoigianBD.Size = new System.Drawing.Size(379, 22);
             this.dateTimePickerThoigianBD.TabIndex = 35;
             // 
             // dateTimePickerThoigiandk
             // 
-            this.dateTimePickerThoigiandk.Location = new System.Drawing.Point(156, 206);
+            this.dateTimePickerThoigiandk.Location = new System.Drawing.Point(190, 223);
             this.dateTimePickerThoigiandk.Name = "dateTimePickerThoigiandk";
-            this.dateTimePickerThoigiandk.Size = new System.Drawing.Size(413, 22);
+            this.dateTimePickerThoigiandk.Size = new System.Drawing.Size(379, 22);
             this.dateTimePickerThoigiandk.TabIndex = 37;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 206);
+            this.label11.Location = new System.Drawing.Point(31, 223);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 17);
             this.label11.TabIndex = 36;
             this.label11.Text = "Thoi gian dang ky ";
+            // 
+            // CMNDhocvien_tracuustep02
+            // 
+            this.CMNDhocvien_tracuustep02.Location = new System.Drawing.Point(190, 89);
+            this.CMNDhocvien_tracuustep02.Name = "CMNDhocvien_tracuustep02";
+            this.CMNDhocvien_tracuustep02.Size = new System.Drawing.Size(379, 22);
+            this.CMNDhocvien_tracuustep02.TabIndex = 39;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(31, 89);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(132, 17);
+            this.label12.TabIndex = 38;
+            this.label12.Text = "CMND cua hoc vien";
             // 
             // Tracuuketquahp02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 608);
+            this.Controls.Add(this.CMNDhocvien_tracuustep02);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.dateTimePickerThoigiandk);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.dateTimePickerThoigianBD);
@@ -368,5 +388,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.DateTimePicker dateTimePickerThoigianBD;
         private System.Windows.Forms.DateTimePicker dateTimePickerThoigiandk;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox CMNDhocvien_tracuustep02;
+        private System.Windows.Forms.Label label12;
     }
 }

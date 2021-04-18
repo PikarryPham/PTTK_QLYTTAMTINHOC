@@ -42,8 +42,6 @@ namespace GUI_PTTK
             this.label2 = new System.Windows.Forms.Label();
             this.chitietdkhocphan_huythongtindk = new System.Windows.Forms.DataGridView();
             this.username = new System.Windows.Forms.Label();
-            this.tenhv_tracuu_huythongtindk = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien_huythongtindk)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan_huythongtindk)).BeginInit();
             this.SuspendLayout();
@@ -110,7 +108,7 @@ namespace GUI_PTTK
             // 
             // timthongtindkhp_huythongtindk
             // 
-            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(191, 250);
+            this.timthongtindkhp_huythongtindk.Location = new System.Drawing.Point(191, 217);
             this.timthongtindkhp_huythongtindk.Name = "timthongtindkhp_huythongtindk";
             this.timthongtindkhp_huythongtindk.Size = new System.Drawing.Size(248, 35);
             this.timthongtindkhp_huythongtindk.TabIndex = 26;
@@ -175,29 +173,11 @@ namespace GUI_PTTK
             this.username.TabIndex = 31;
             this.username.Text = "Username";
             // 
-            // tenhv_tracuu_huythongtindk
-            // 
-            this.tenhv_tracuu_huythongtindk.Location = new System.Drawing.Point(191, 213);
-            this.tenhv_tracuu_huythongtindk.Name = "tenhv_tracuu_huythongtindk";
-            this.tenhv_tracuu_huythongtindk.Size = new System.Drawing.Size(336, 22);
-            this.tenhv_tracuu_huythongtindk.TabIndex = 33;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 17);
-            this.label6.TabIndex = 32;
-            this.label6.Text = "Ten hoc vien";
-            // 
-            // HuythongtindkhocphanStep01
+            // Huythongtindkhocphan01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1159, 741);
-            this.Controls.Add(this.tenhv_tracuu_huythongtindk);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong_huythongtindk);
             this.Controls.Add(this.label5);
@@ -211,7 +191,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.chitietdkhocphan_huythongtindk);
             this.Controls.Add(this.backTrang);
             this.Controls.Add(this.label1);
-            this.Name = "HuythongtindkhocphanStep01";
+            this.Name = "Huythongtindkhocphan01";
             this.Text = "HuythongtindkhocphanStep01";
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien_huythongtindk)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan_huythongtindk)).EndInit();
@@ -235,7 +215,5 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView chitietdkhocphan_huythongtindk;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.TextBox tenhv_tracuu_huythongtindk;
-        private System.Windows.Forms.Label label6;
     }
 }

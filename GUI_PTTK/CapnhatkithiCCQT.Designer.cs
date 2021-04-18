@@ -32,7 +32,6 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.capnhat_diadiemthi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.capnhat_thoigianbdccqt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -44,15 +43,12 @@ namespace GUI_PTTK
             this.label7 = new System.Windows.Forms.Label();
             this.ten_saukhicapnhat = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.tenkithi_sauupdate = new System.Windows.Forms.Label();
             this.diadiemthi_sauupdate = new System.Windows.Forms.Label();
-            this.ngaythi_sauupdate = new System.Windows.Forms.Label();
             this.batdautime_sauupdate = new System.Windows.Forms.Label();
             this.lambaitime_sauupdate = new System.Windows.Forms.Label();
-            this.dateTimePickerCapnhat = new System.Windows.Forms.DateTimePicker();
             this.username = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.capnhat_makythiccqt = new System.Windows.Forms.TextBox();
@@ -92,18 +88,9 @@ namespace GUI_PTTK
             this.label3.TabIndex = 15;
             this.label3.Text = "Dia diem thi";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 266);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 17);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Ngay thi";
-            // 
             // capnhat_thoigianbdccqt
             // 
-            this.capnhat_thoigianbdccqt.Location = new System.Drawing.Point(167, 317);
+            this.capnhat_thoigianbdccqt.Location = new System.Drawing.Point(167, 272);
             this.capnhat_thoigianbdccqt.Name = "capnhat_thoigianbdccqt";
             this.capnhat_thoigianbdccqt.Size = new System.Drawing.Size(371, 22);
             this.capnhat_thoigianbdccqt.TabIndex = 18;
@@ -111,7 +98,7 @@ namespace GUI_PTTK
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(28, 320);
+            this.label2.Location = new System.Drawing.Point(28, 275);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 17);
             this.label2.TabIndex = 19;
@@ -120,7 +107,7 @@ namespace GUI_PTTK
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 375);
+            this.label5.Location = new System.Drawing.Point(28, 330);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 17);
             this.label5.TabIndex = 21;
@@ -128,14 +115,14 @@ namespace GUI_PTTK
             // 
             // capnhat_thoigianlambai
             // 
-            this.capnhat_thoigianlambai.Location = new System.Drawing.Point(167, 372);
+            this.capnhat_thoigianlambai.Location = new System.Drawing.Point(167, 327);
             this.capnhat_thoigianlambai.Name = "capnhat_thoigianlambai";
             this.capnhat_thoigianlambai.Size = new System.Drawing.Size(371, 22);
             this.capnhat_thoigianlambai.TabIndex = 20;
             // 
             // capnhatbtn
             // 
-            this.capnhatbtn.Location = new System.Drawing.Point(236, 418);
+            this.capnhatbtn.Location = new System.Drawing.Point(236, 373);
             this.capnhatbtn.Name = "capnhatbtn";
             this.capnhatbtn.Size = new System.Drawing.Size(240, 35);
             this.capnhatbtn.TabIndex = 24;
@@ -199,21 +186,11 @@ namespace GUI_PTTK
             this.label8.TabIndex = 30;
             this.label8.Text = "Dia diem thi";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(595, 288);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 17);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Ngay thi";
-            // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(595, 377);
+            this.label11.Location = new System.Drawing.Point(595, 332);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(133, 17);
             this.label11.TabIndex = 33;
@@ -223,7 +200,7 @@ namespace GUI_PTTK
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(595, 332);
+            this.label10.Location = new System.Drawing.Point(595, 287);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 17);
             this.label10.TabIndex = 32;
@@ -247,19 +224,10 @@ namespace GUI_PTTK
             this.diadiemthi_sauupdate.TabIndex = 35;
             this.diadiemthi_sauupdate.Text = "label12";
             // 
-            // ngaythi_sauupdate
-            // 
-            this.ngaythi_sauupdate.AutoSize = true;
-            this.ngaythi_sauupdate.Location = new System.Drawing.Point(773, 288);
-            this.ngaythi_sauupdate.Name = "ngaythi_sauupdate";
-            this.ngaythi_sauupdate.Size = new System.Drawing.Size(54, 17);
-            this.ngaythi_sauupdate.TabIndex = 36;
-            this.ngaythi_sauupdate.Text = "label12";
-            // 
             // batdautime_sauupdate
             // 
             this.batdautime_sauupdate.AutoSize = true;
-            this.batdautime_sauupdate.Location = new System.Drawing.Point(773, 332);
+            this.batdautime_sauupdate.Location = new System.Drawing.Point(773, 287);
             this.batdautime_sauupdate.Name = "batdautime_sauupdate";
             this.batdautime_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.batdautime_sauupdate.TabIndex = 37;
@@ -268,19 +236,11 @@ namespace GUI_PTTK
             // lambaitime_sauupdate
             // 
             this.lambaitime_sauupdate.AutoSize = true;
-            this.lambaitime_sauupdate.Location = new System.Drawing.Point(773, 377);
+            this.lambaitime_sauupdate.Location = new System.Drawing.Point(773, 332);
             this.lambaitime_sauupdate.Name = "lambaitime_sauupdate";
             this.lambaitime_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.lambaitime_sauupdate.TabIndex = 38;
             this.lambaitime_sauupdate.Text = "label12";
-            // 
-            // dateTimePickerCapnhat
-            // 
-            this.dateTimePickerCapnhat.Location = new System.Drawing.Point(167, 266);
-            this.dateTimePickerCapnhat.Name = "dateTimePickerCapnhat";
-            this.dateTimePickerCapnhat.Size = new System.Drawing.Size(371, 22);
-            this.dateTimePickerCapnhat.TabIndex = 39;
-            this.dateTimePickerCapnhat.Value = new System.DateTime(2021, 4, 12, 0, 0, 0, 0);
             // 
             // username
             // 
@@ -372,15 +332,12 @@ namespace GUI_PTTK
             this.Controls.Add(this.label12);
             this.Controls.Add(this.capnhat_makythiccqt);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.dateTimePickerCapnhat);
             this.Controls.Add(this.lambaitime_sauupdate);
             this.Controls.Add(this.batdautime_sauupdate);
-            this.Controls.Add(this.ngaythi_sauupdate);
             this.Controls.Add(this.diadiemthi_sauupdate);
             this.Controls.Add(this.tenkithi_sauupdate);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ten_saukhicapnhat);
             this.Controls.Add(this.label7);
@@ -392,7 +349,6 @@ namespace GUI_PTTK
             this.Controls.Add(this.capnhat_thoigianlambai);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.capnhat_thoigianbdccqt);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.capnhat_diadiemthi);
             this.Controls.Add(this.label1);
@@ -410,7 +366,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox capnhat_diadiemthi;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox capnhat_thoigianbdccqt;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
@@ -422,15 +377,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label ten_saukhicapnhat;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label tenkithi_sauupdate;
         private System.Windows.Forms.Label diadiemthi_sauupdate;
-        private System.Windows.Forms.Label ngaythi_sauupdate;
         private System.Windows.Forms.Label batdautime_sauupdate;
         private System.Windows.Forms.Label lambaitime_sauupdate;
-        private System.Windows.Forms.DateTimePicker dateTimePickerCapnhat;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox capnhat_makythiccqt;

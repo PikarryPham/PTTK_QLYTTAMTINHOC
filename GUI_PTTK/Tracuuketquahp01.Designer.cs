@@ -42,8 +42,6 @@ namespace GUI_PTTK
             this.label5 = new System.Windows.Forms.Label();
             this.showlistdshvienhethong = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
-            this.tenhocvien_tracuu = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.chitietdkhocphan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dshocvien_tracuu)).BeginInit();
             this.SuspendLayout();
@@ -73,7 +71,7 @@ namespace GUI_PTTK
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(101, 279);
+            this.label2.Location = new System.Drawing.Point(102, 258);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(326, 25);
             this.label2.TabIndex = 12;
@@ -82,7 +80,7 @@ namespace GUI_PTTK
             // chitietdkhocphan
             // 
             this.chitietdkhocphan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.chitietdkhocphan.Location = new System.Drawing.Point(12, 316);
+            this.chitietdkhocphan.Location = new System.Drawing.Point(12, 300);
             this.chitietdkhocphan.Name = "chitietdkhocphan";
             this.chitietdkhocphan.RowHeadersWidth = 51;
             this.chitietdkhocphan.RowTemplate.Height = 24;
@@ -103,7 +101,7 @@ namespace GUI_PTTK
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(16, 143);
+            this.label4.Location = new System.Drawing.Point(15, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 17);
             this.label4.TabIndex = 14;
@@ -111,14 +109,14 @@ namespace GUI_PTTK
             // 
             // CMNDhocvien_tracuu
             // 
-            this.CMNDhocvien_tracuu.Location = new System.Drawing.Point(170, 143);
+            this.CMNDhocvien_tracuu.Location = new System.Drawing.Point(169, 163);
             this.CMNDhocvien_tracuu.Name = "CMNDhocvien_tracuu";
             this.CMNDhocvien_tracuu.Size = new System.Drawing.Size(336, 22);
             this.CMNDhocvien_tracuu.TabIndex = 15;
             // 
             // timthongtindkhp
             // 
-            this.timthongtindkhp.Location = new System.Drawing.Point(144, 231);
+            this.timthongtindkhp.Location = new System.Drawing.Point(169, 211);
             this.timthongtindkhp.Name = "timthongtindkhp";
             this.timthongtindkhp.Size = new System.Drawing.Size(248, 35);
             this.timthongtindkhp.TabIndex = 16;
@@ -175,29 +173,11 @@ namespace GUI_PTTK
             this.username.TabIndex = 21;
             this.username.Text = "Username";
             // 
-            // tenhocvien_tracuu
-            // 
-            this.tenhocvien_tracuu.Location = new System.Drawing.Point(170, 180);
-            this.tenhocvien_tracuu.Name = "tenhocvien_tracuu";
-            this.tenhocvien_tracuu.Size = new System.Drawing.Size(336, 22);
-            this.tenhocvien_tracuu.TabIndex = 23;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(16, 180);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 17);
-            this.label6.TabIndex = 22;
-            this.label6.Text = "Ten hoc vien";
-            // 
             // Tracuuketquahp01
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1081, 713);
-            this.Controls.Add(this.tenhocvien_tracuu);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.username);
             this.Controls.Add(this.showlistdshvienhethong);
             this.Controls.Add(this.label5);
@@ -235,7 +215,5 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button showlistdshvienhethong;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.TextBox tenhocvien_tracuu;
-        private System.Windows.Forms.Label label6;
     }
 }
