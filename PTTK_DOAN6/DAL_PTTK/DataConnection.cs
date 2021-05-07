@@ -11,7 +11,7 @@ namespace DAL_PTTK
     {
         public static SqlConnection GetSqlConnection()
         {
-            string connectionString = "Server=.;Database=QLTINHOC_PTTK;Integrated Security=true;";
+            string connectionString = @"Data Source=DESKTOP-ED2S73F\TRANGPHAM;Initial Catalog=QLTINHOC_PTTK;Integrated Security=True";
             SqlConnection con = new SqlConnection(connectionString);
             return con;
         }

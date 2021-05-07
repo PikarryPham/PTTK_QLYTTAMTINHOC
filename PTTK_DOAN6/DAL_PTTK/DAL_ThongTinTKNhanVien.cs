@@ -60,28 +60,30 @@ namespace DAL_PTTK
         /* ========= Method ===========*/
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
-        public static DataSet PTTK_KiemTraThongTinDauVao(DAL_ThongTinTKNhanVien thongtinnv)
+        public static DataTable PTTK_KiemTraThongTinDauVao(DAL_ThongTinTKNhanVien dal_thongtinnv)
         {
             SqlConnection con = DataConnection.GetSqlConnection();
-            DataSet dataSet = new DataSet();
+            DataTable tbl = new DataTable();
             try
             {
                 con.Open();
-                SqlCommand command = new SqlCommand("PTTK_KiemTraThongTinDauVao", con);
-                command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.Add(new SqlParameter("@USERNAME", thongtinnv.TKNV_USERNAME));
-                command.Parameters.Add(new SqlParameter("@PASS", thongtinnv.TKNV_MATKHAU));
-                command.Parameters.Add("@LOAINHANVIENN", SqlDbType.Int).Value = thongtinnv.TKNV_LOAINHANVIEN;
+                SqlCommand cmd = new SqlCommand("PTTK_KiemTraThongTinDauVao", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@USERNAME", SqlDbType.VarChar).Value = dal_thongtinnv.TKNV_USERNAME;
+                cmd.Parameters.Add("@PASS", SqlDbType.VarChar).Value = dal_thongtinnv.TKNV_MATKHAU;
+                cmd.Parameters.Add("@LOAINHANVIEN", SqlDbType.Int).Value = dal_thongtinnv.TKNV_LOAINHANVIEN;
 
                 SqlParameter param_RETURNCODE;
                 SqlParameter param_RETURNMESSAGE;
-                param_RETURNCODE = command.Parameters.Add("@RETURNCODE", SqlDbType.Int);
+                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
                 param_RETURNCODE.Direction = ParameterDirection.Output;
-                param_RETURNMESSAGE = command.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
+                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
                 param_RETURNMESSAGE.Direction = ParameterDirection.Output;
 
-                SqlDataAdapter da = new SqlDataAdapter(command);
-                da.Fill(dataSet);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tbl);
+
+                //cmd.ExecuteNonQuery();
 
                 ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
                 ReturnMess = param_RETURNMESSAGE.Value.ToString();
@@ -96,7 +98,7 @@ namespace DAL_PTTK
                 if (con.State == ConnectionState.Open)
                     con.Close();
             }
-            return dataSet;
+            return tbl;
         }
     }
 }

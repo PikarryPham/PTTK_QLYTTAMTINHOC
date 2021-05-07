@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,9 +59,22 @@ namespace BUS_PTTK
             this.TKNV_LOAINHANVIEN = typenv;
         }
         /*============ Cac method =============*/
-        public static void PTTK_KiemTraThongTinDauVao()
+        public static int ReturnCode { get; set; }
+        public static string ReturnMess { get; set; }
+        public static void PTTK_KiemTraThongTinDauVao(BUS_ThongTinTKNhanVien bus_thongtinnv)
         {
-            
+            try
+            {
+                DAL_ThongTinTKNhanVien da = new DAL_ThongTinTKNhanVien(bus_thongtinnv.TKNV_USERNAME, bus_thongtinnv.TKNV_MATKHAU, bus_thongtinnv.TKNV_LOAINHANVIEN);
+                DAL_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(da);
+                ReturnCode = DAL_ThongTinTKNhanVien.ReturnCode;
+                ReturnMess = DAL_ThongTinTKNhanVien.ReturnMess;
+            }
+            catch(Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
         }
     }
 }
