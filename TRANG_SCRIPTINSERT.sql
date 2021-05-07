@@ -1,0 +1,54 @@
+﻿/*Phạm Ngọc Thùy Trang - insert dữ liệu*/
+
+USE QLTINHOC_PTTK
+GO
+
+----- Xóa dữ liệu trước khi insert
+--- Bảng thông tin tk nhân viên
+DELETE FROM dbo.THONGTINTKNHANVIEN;
+INSERT INTO dbo.THONGTINTKNHANVIEN 
+VALUES('QL001','QL001',1),
+('QL002','QL002',1),
+('QL003','QL003',1),
+('NVTN001','NVTT001',2),
+('NVTN002','NVTT002',2),
+('NVTN003','NVTT003',2),
+('NVKT001','NVKT001',3),
+('NVKT002','NVKT002',3),
+('BPVP001','BPVP001',4),
+('BPVP002','BPVP002',4)
+SELECT * FROM dbo.THONGTINTKNHANVIEN;
+--- Bảng CCQT
+DELETE FROM dbo.CCQT;
+INSERT INTO dbo.CCQT
+VALUES(1,10000,200000,N'Chứng chỉ IELTS'),
+(2,20000,400000,N'Chứng chỉ IREB (CPRE)'),
+(3,5000,670000,N'Chứng chỉ ECBA'),
+(4,10000,560000,N'Chứng chỉ MCITP'),
+(5,15000,150000,N'Chứng chỉ Security+'),
+(6,30000,300000,N'Chứng chỉ MCSE')
+SELECT * FROM dbo.CCQT;
+-- Bảng kỳ thi CCQT
+DELETE FROM dbo.KYTHICCQT
+INSERT INTO dbo.KYTHICCQT
+VALUES(1, N'227 Nguyễn Văn Cừ, Q.5, TPHCM','15:00:00',3,1),
+(2, N'138 Nam Kỳ Khởi Nghĩa, Q.1, TPHCM','14:00:00',2,2),
+(3, N'436 Nguyễn Thị Thập, Q.7, TP. HCM','10:00:00',1,3),
+(4, N'74/7C Hai Bà Trưng, Q.1, TPHCM','09:00:00',1,4),
+(5, N'16 Lê Quý Đôn, Q.3, TPHCM','08:30:00',1.5,5),
+(6, N'18 Bà Huyện Thanh Quan, Q.3, TPHCM','14:15:00',2.5,5),
+(7, N'267 Lý Tự Trọng, Q.1, TPHCM','15:30:00',3.5,6),
+(8, N'125 Cộng Hoà, Q.TB, TP.HCM','13:30:00',1,6)
+SELECT * FROM KYTHICCQT JOIN CCQT ON KYTHICCQT.KTQT_CCQT = CCQT.CCQT_ID;
+--- Ngày thi kỳ thi CCQT
+DELETE FROM dbo.NGAYTHIKYTHICCQT
+INSERT INTO dbo.NGAYTHIKYTHICCQT VALUES
+(1,'2021-09-05'),
+(1,'2021-10-21'),
+(2,'2021-11-20'),
+(3,'2021-12-12'),
+(3,'2021-08-10'),
+(5,'2021-07-26'),
+(5,'2021-01-19'),
+(5,'2021-12-26')
+select * from NGAYTHIKYTHICCQT;
