@@ -11,9 +11,6 @@ C:\Users\MON\source\repos\GUI_PTTK\obj\Debug\GUI_PTTK.pdb
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\GUI_PTTK.exe.config
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\GUI_PTTK.exe
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\GUI_PTTK.pdb
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.pdb
-C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe.config
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.csprojAssemblyReference.cache
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.CapnhatkithiCCQT.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Properties.Resources.resources
@@ -34,3 +31,9 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Ket_qua_hoc_pha
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Thongtinngaythilai.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.TrangCaNhan_QuanLy.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.Chon_ngay_thi_cho_ky_thi_CCQT.resources
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\DAL_PTTK.exe
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\DAL_PTTK.pdb
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\DAL_PTTK.exe.config
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.pdb
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe.config

@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS_ThongTinTKNhanVien.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -71,9 +72,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
-      <Project>{9acb9163-a843-4515-8d63-cde649efbe91}</Project>
-      <Name>DataAccess</Name>
+    <ProjectReference Include="..\PTTK_DOAN6\DAL_PTTK\DAL_PTTK.csproj">
+      <Project>{654d9230-0e27-4672-8171-143dd9d8c74f}</Project>
+      <Name>DAL_PTTK</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

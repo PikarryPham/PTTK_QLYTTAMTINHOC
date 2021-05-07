@@ -21,5 +21,10 @@ namespace GUI_PTTK
         {
             //nothing
         }
+
+        private void idhp_xacnhanhuy_TextChanged(object sender, EventArgs e)
+        {
+            //nothing
+        }
     }
 }

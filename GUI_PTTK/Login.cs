@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DAL_PTTK;
+using BUS_PTTK;
 
 namespace GUI_PTTK
 {
@@ -15,6 +17,20 @@ namespace GUI_PTTK
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void loginhthong_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(loginusername.Text) || string.IsNullOrEmpty(loginpassword.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                return;
+            }
+            if (!logingiaovien.Checked && !logintiepnhan.Checked && !chunha_radio.Checked && !nvql_radio.Checked)
+            {
+                lblStatus.Text = "Vui lòng chọn loại tài khoản đăng nhập";
+                return;
+            }
         }
     }
 }

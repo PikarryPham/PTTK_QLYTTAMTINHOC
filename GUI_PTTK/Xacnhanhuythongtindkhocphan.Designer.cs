@@ -37,9 +37,7 @@ namespace GUI_PTTK
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dateTimePickerThoigiandk__HuyDK = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePickerThoigianBD_HuyDK = new System.Windows.Forms.DateTimePicker();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tenhp_xacnhanhuy = new System.Windows.Forms.TextBox();
+            this.idhp_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CMNDhocvien_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -102,22 +100,20 @@ namespace GUI_PTTK
             // 
             this.groupBox1.Controls.Add(this.dateTimePickerThoigiandk__HuyDK);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.dateTimePickerThoigianBD_HuyDK);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.tenhp_xacnhanhuy);
+            this.groupBox1.Controls.Add(this.idhp_xacnhanhuy);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.CMNDhocvien_xacnhanhuy);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(32, 93);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(578, 224);
+            this.groupBox1.Size = new System.Drawing.Size(578, 222);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dien thong tin huy dang ki hoc phan";
             // 
             // dateTimePickerThoigiandk__HuyDK
             // 
-            this.dateTimePickerThoigiandk__HuyDK.Location = new System.Drawing.Point(175, 167);
+            this.dateTimePickerThoigiandk__HuyDK.Location = new System.Drawing.Point(175, 125);
             this.dateTimePickerThoigiandk__HuyDK.Name = "dateTimePickerThoigiandk__HuyDK";
             this.dateTimePickerThoigiandk__HuyDK.Size = new System.Drawing.Size(344, 22);
             this.dateTimePickerThoigiandk__HuyDK.TabIndex = 39;
@@ -125,43 +121,28 @@ namespace GUI_PTTK
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 172);
+            this.label5.Location = new System.Drawing.Point(11, 130);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 17);
             this.label5.TabIndex = 40;
             this.label5.Text = "Thoi gian dang ky";
             // 
-            // dateTimePickerThoigianBD_HuyDK
+            // idhp_xacnhanhuy
             // 
-            this.dateTimePickerThoigianBD_HuyDK.Location = new System.Drawing.Point(175, 122);
-            this.dateTimePickerThoigianBD_HuyDK.Name = "dateTimePickerThoigianBD_HuyDK";
-            this.dateTimePickerThoigianBD_HuyDK.Size = new System.Drawing.Size(344, 22);
-            this.dateTimePickerThoigianBD_HuyDK.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(11, 127);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(150, 17);
-            this.label3.TabIndex = 38;
-            this.label3.Text = "Thoi gian bd hoc phan";
-            // 
-            // tenhp_xacnhanhuy
-            // 
-            this.tenhp_xacnhanhuy.Location = new System.Drawing.Point(175, 78);
-            this.tenhp_xacnhanhuy.Name = "tenhp_xacnhanhuy";
-            this.tenhp_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
-            this.tenhp_xacnhanhuy.TabIndex = 37;
+            this.idhp_xacnhanhuy.Location = new System.Drawing.Point(175, 78);
+            this.idhp_xacnhanhuy.Name = "idhp_xacnhanhuy";
+            this.idhp_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
+            this.idhp_xacnhanhuy.TabIndex = 37;
+            this.idhp_xacnhanhuy.TextChanged += new System.EventHandler(this.idhp_xacnhanhuy_TextChanged);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(11, 78);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 17);
+            this.label6.Size = new System.Drawing.Size(150, 17);
             this.label6.TabIndex = 36;
-            this.label6.Text = "Hoc phan muon huy";
+            this.label6.Text = "ID hoc phan muon huy";
             // 
             // CMNDhocvien_xacnhanhuy
             // 
@@ -219,14 +200,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tenhp_xacnhanhuy;
+        private System.Windows.Forms.TextBox idhp_xacnhanhuy;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox CMNDhocvien_xacnhanhuy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker dateTimePickerThoigiandk__HuyDK;
-        private System.Windows.Forms.DateTimePicker dateTimePickerThoigianBD_HuyDK;
         private System.Windows.Forms.Button backTrang;
     }
 }

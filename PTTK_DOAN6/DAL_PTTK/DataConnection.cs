@@ -11,7 +11,7 @@ namespace DAL_PTTK
     {
         public static SqlConnection GetSqlConnection()
         {
-            string connectionString = "Server=.;Database=xxxxx;Integrated Security=true;";
+            string connectionString = "Server=.;Database=QLTINHOC_PTTK;Integrated Security=true;";
             SqlConnection con = new SqlConnection(connectionString);
             return con;
         }

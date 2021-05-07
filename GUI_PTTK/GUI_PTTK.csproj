@@ -192,13 +192,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="component\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\BUS_PTTK\BUS_PTTK.csproj">
       <Project>{6571fbd3-8f8b-4e5b-a067-06e55e31fb3a}</Project>
       <Name>BUS_PTTK</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="component\" />
+    <ProjectReference Include="..\PTTK_DOAN6\DAL_PTTK\DAL_PTTK.csproj">
+      <Project>{654d9230-0e27-4672-8171-143dd9d8c74f}</Project>
+      <Name>DAL_PTTK</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

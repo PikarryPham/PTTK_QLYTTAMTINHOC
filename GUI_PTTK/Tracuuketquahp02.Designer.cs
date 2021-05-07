@@ -31,32 +31,32 @@ namespace GUI_PTTK
         {
             this.backTrang = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.thongtinhp_tracuu = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tbdenhocvien = new System.Windows.Forms.Label();
-            this.tenhpdky = new System.Windows.Forms.Label();
-            this.thoigianbdhp = new System.Windows.Forms.Label();
-            this.thoigiankthp = new System.Windows.Forms.Label();
-            this.diemhp = new System.Windows.Forms.Label();
-            this.ngaydkhp = new System.Windows.Forms.Label();
             this.inkqhocphan = new System.Windows.Forms.Button();
             this.dkthilai = new System.Windows.Forms.Button();
             this.username = new System.Windows.Forms.Label();
             this.tracuudiemkqhp = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.solanthilai = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.dateTimePickerThoigianBD = new System.Windows.Forms.DateTimePicker();
             this.dateTimePickerThoigiandk = new System.Windows.Forms.DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
             this.CMNDhocvien_tracuustep02 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.IDHocPhan_tracuustep02 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.solanthilai = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.thoigiankthp = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmndhocvien = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.tenhpdky = new System.Windows.Forms.Label();
+            this.thoigianbdhp = new System.Windows.Forms.Label();
+            this.ngaydkhp = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.diemhp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // backTrang
@@ -80,23 +80,6 @@ namespace GUI_PTTK
             this.label1.TabIndex = 11;
             this.label1.Text = "Tra cuu ket qua hoc phan";
             // 
-            // thongtinhp_tracuu
-            // 
-            this.thongtinhp_tracuu.Location = new System.Drawing.Point(190, 129);
-            this.thongtinhp_tracuu.Name = "thongtinhp_tracuu";
-            this.thongtinhp_tracuu.Size = new System.Drawing.Size(379, 22);
-            this.thongtinhp_tracuu.TabIndex = 13;
-            this.thongtinhp_tracuu.UseWaitCursor = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(31, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 17);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Ten hoc phan";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -108,56 +91,6 @@ namespace GUI_PTTK
             this.label3.TabIndex = 15;
             this.label3.Text = "Ket qua hoc phan";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(28, 327);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 25);
-            this.label4.TabIndex = 16;
-            this.label4.Text = "Ten hoc phan";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 368);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(163, 25);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Thoi gian bat dau";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(417, 361);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 25);
-            this.label6.TabIndex = 18;
-            this.label6.Text = "Thoi gian ket thuc";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(28, 414);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 25);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Diem hoc phan";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(28, 458);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(126, 25);
-            this.label8.TabIndex = 20;
-            this.label8.Text = "Ngay dang ki";
-            // 
             // tbdenhocvien
             // 
             this.tbdenhocvien.AutoSize = true;
@@ -168,51 +101,6 @@ namespace GUI_PTTK
             this.tbdenhocvien.Size = new System.Drawing.Size(319, 32);
             this.tbdenhocvien.TabIndex = 21;
             this.tbdenhocvien.Text = "Thong bao den hoc vien";
-            // 
-            // tenhpdky
-            // 
-            this.tenhpdky.AutoSize = true;
-            this.tenhpdky.Location = new System.Drawing.Point(187, 334);
-            this.tenhpdky.Name = "tenhpdky";
-            this.tenhpdky.Size = new System.Drawing.Size(96, 17);
-            this.tenhpdky.TabIndex = 22;
-            this.tenhpdky.Text = "Ten hoc phan";
-            // 
-            // thoigianbdhp
-            // 
-            this.thoigianbdhp.AutoSize = true;
-            this.thoigianbdhp.Location = new System.Drawing.Point(209, 375);
-            this.thoigianbdhp.Name = "thoigianbdhp";
-            this.thoigianbdhp.Size = new System.Drawing.Size(74, 17);
-            this.thoigianbdhp.TabIndex = 23;
-            this.thoigianbdhp.Text = "thoigianbd";
-            // 
-            // thoigiankthp
-            // 
-            this.thoigiankthp.AutoSize = true;
-            this.thoigiankthp.Location = new System.Drawing.Point(606, 368);
-            this.thoigiankthp.Name = "thoigiankthp";
-            this.thoigiankthp.Size = new System.Drawing.Size(69, 17);
-            this.thoigiankthp.TabIndex = 24;
-            this.thoigiankthp.Text = "thoigiankt";
-            // 
-            // diemhp
-            // 
-            this.diemhp.AutoSize = true;
-            this.diemhp.Location = new System.Drawing.Point(193, 421);
-            this.diemhp.Name = "diemhp";
-            this.diemhp.Size = new System.Drawing.Size(54, 17);
-            this.diemhp.TabIndex = 25;
-            this.diemhp.Text = "diemhp";
-            // 
-            // ngaydkhp
-            // 
-            this.ngaydkhp.AutoSize = true;
-            this.ngaydkhp.Location = new System.Drawing.Point(187, 465);
-            this.ngaydkhp.Name = "ngaydkhp";
-            this.ngaydkhp.Size = new System.Drawing.Size(70, 17);
-            this.ngaydkhp.TabIndex = 26;
-            this.ngaydkhp.Text = "ngaydkhp";
             // 
             // inkqhocphan
             // 
@@ -253,44 +141,9 @@ namespace GUI_PTTK
             this.tracuudiemkqhp.Text = "Tra cuu diem";
             this.tracuudiemkqhp.UseVisualStyleBackColor = false;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(417, 407);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 25);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "So lan thi lai";
-            // 
-            // solanthilai
-            // 
-            this.solanthilai.AutoSize = true;
-            this.solanthilai.Location = new System.Drawing.Point(606, 414);
-            this.solanthilai.Name = "solanthilai";
-            this.solanthilai.Size = new System.Drawing.Size(69, 17);
-            this.solanthilai.TabIndex = 32;
-            this.solanthilai.Text = "thoigiankt";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(31, 178);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 17);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Thoi gian bat dau";
-            // 
-            // dateTimePickerThoigianBD
-            // 
-            this.dateTimePickerThoigianBD.Location = new System.Drawing.Point(190, 178);
-            this.dateTimePickerThoigianBD.Name = "dateTimePickerThoigianBD";
-            this.dateTimePickerThoigianBD.Size = new System.Drawing.Size(379, 22);
-            this.dateTimePickerThoigianBD.TabIndex = 35;
-            // 
             // dateTimePickerThoigiandk
             // 
-            this.dateTimePickerThoigiandk.Location = new System.Drawing.Point(190, 223);
+            this.dateTimePickerThoigiandk.Location = new System.Drawing.Point(190, 206);
             this.dateTimePickerThoigiandk.Name = "dateTimePickerThoigiandk";
             this.dateTimePickerThoigiandk.Size = new System.Drawing.Size(379, 22);
             this.dateTimePickerThoigiandk.TabIndex = 37;
@@ -298,7 +151,7 @@ namespace GUI_PTTK
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(31, 223);
+            this.label11.Location = new System.Drawing.Point(31, 206);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 17);
             this.label11.TabIndex = 36;
@@ -320,17 +173,168 @@ namespace GUI_PTTK
             this.label12.TabIndex = 38;
             this.label12.Text = "CMND cua hoc vien";
             // 
+            // IDHocPhan_tracuustep02
+            // 
+            this.IDHocPhan_tracuustep02.Location = new System.Drawing.Point(190, 148);
+            this.IDHocPhan_tracuustep02.Name = "IDHocPhan_tracuustep02";
+            this.IDHocPhan_tracuustep02.Size = new System.Drawing.Size(379, 22);
+            this.IDHocPhan_tracuustep02.TabIndex = 41;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(31, 148);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 17);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "ID Hoc Phan";
+            // 
+            // solanthilai
+            // 
+            this.solanthilai.AutoSize = true;
+            this.solanthilai.Location = new System.Drawing.Point(606, 422);
+            this.solanthilai.Name = "solanthilai";
+            this.solanthilai.Size = new System.Drawing.Size(69, 17);
+            this.solanthilai.TabIndex = 32;
+            this.solanthilai.Text = "thoigiankt";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(417, 415);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(117, 25);
+            this.label9.TabIndex = 31;
+            this.label9.Text = "So lan thi lai";
+            // 
+            // thoigiankthp
+            // 
+            this.thoigiankthp.AutoSize = true;
+            this.thoigiankthp.Location = new System.Drawing.Point(606, 376);
+            this.thoigiankthp.Name = "thoigiankthp";
+            this.thoigiankthp.Size = new System.Drawing.Size(69, 17);
+            this.thoigiankthp.TabIndex = 24;
+            this.thoigiankthp.Text = "thoigiankt";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(417, 369);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(166, 25);
+            this.label6.TabIndex = 18;
+            this.label6.Text = "Thoi gian ket thuc";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(420, 327);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(125, 25);
+            this.label13.TabIndex = 42;
+            this.label13.Text = "Ten hoc vien";
+            // 
+            // cmndhocvien
+            // 
+            this.cmndhocvien.AutoSize = true;
+            this.cmndhocvien.Location = new System.Drawing.Point(606, 335);
+            this.cmndhocvien.Name = "cmndhocvien";
+            this.cmndhocvien.Size = new System.Drawing.Size(90, 17);
+            this.cmndhocvien.TabIndex = 43;
+            this.cmndhocvien.Text = "Ten hoc vien";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(28, 368);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(163, 25);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Thoi gian bat dau";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(28, 327);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 25);
+            this.label4.TabIndex = 16;
+            this.label4.Text = "Ten hoc phan";
+            // 
+            // tenhpdky
+            // 
+            this.tenhpdky.AutoSize = true;
+            this.tenhpdky.Location = new System.Drawing.Point(187, 334);
+            this.tenhpdky.Name = "tenhpdky";
+            this.tenhpdky.Size = new System.Drawing.Size(96, 17);
+            this.tenhpdky.TabIndex = 22;
+            this.tenhpdky.Text = "Ten hoc phan";
+            // 
+            // thoigianbdhp
+            // 
+            this.thoigianbdhp.AutoSize = true;
+            this.thoigianbdhp.Location = new System.Drawing.Point(209, 375);
+            this.thoigianbdhp.Name = "thoigianbdhp";
+            this.thoigianbdhp.Size = new System.Drawing.Size(74, 17);
+            this.thoigianbdhp.TabIndex = 23;
+            this.thoigianbdhp.Text = "thoigianbd";
+            // 
+            // ngaydkhp
+            // 
+            this.ngaydkhp.AutoSize = true;
+            this.ngaydkhp.Location = new System.Drawing.Point(187, 465);
+            this.ngaydkhp.Name = "ngaydkhp";
+            this.ngaydkhp.Size = new System.Drawing.Size(70, 17);
+            this.ngaydkhp.TabIndex = 26;
+            this.ngaydkhp.Text = "ngaydkhp";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(28, 458);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 25);
+            this.label8.TabIndex = 20;
+            this.label8.Text = "Ngay dang ki";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(28, 414);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(143, 25);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Diem hoc phan";
+            // 
+            // diemhp
+            // 
+            this.diemhp.AutoSize = true;
+            this.diemhp.Location = new System.Drawing.Point(193, 421);
+            this.diemhp.Name = "diemhp";
+            this.diemhp.Size = new System.Drawing.Size(54, 17);
+            this.diemhp.TabIndex = 25;
+            this.diemhp.Text = "diemhp";
+            // 
             // Tracuuketquahp02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 608);
+            this.Controls.Add(this.cmndhocvien);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.IDHocPhan_tracuustep02);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.CMNDhocvien_tracuustep02);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.dateTimePickerThoigiandk);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.dateTimePickerThoigianBD);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.solanthilai);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tracuudiemkqhp);
@@ -349,8 +353,6 @@ namespace GUI_PTTK
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.thongtinhp_tracuu);
             this.Controls.Add(this.backTrang);
             this.Controls.Add(this.label1);
             this.Name = "Tracuuketquahp02";
@@ -364,31 +366,31 @@ namespace GUI_PTTK
 
         private System.Windows.Forms.Button backTrang;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox thongtinhp_tracuu;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label tbdenhocvien;
-        private System.Windows.Forms.Label tenhpdky;
-        private System.Windows.Forms.Label thoigianbdhp;
-        private System.Windows.Forms.Label thoigiankthp;
-        private System.Windows.Forms.Label diemhp;
-        private System.Windows.Forms.Label ngaydkhp;
         private System.Windows.Forms.Button inkqhocphan;
         private System.Windows.Forms.Button dkthilai;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button tracuudiemkqhp;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label solanthilai;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DateTimePicker dateTimePickerThoigianBD;
         private System.Windows.Forms.DateTimePicker dateTimePickerThoigiandk;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox CMNDhocvien_tracuustep02;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox IDHocPhan_tracuustep02;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label solanthilai;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label thoigiankthp;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label cmndhocvien;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label tenhpdky;
+        private System.Windows.Forms.Label thoigianbdhp;
+        private System.Windows.Forms.Label ngaydkhp;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label diemhp;
     }
 }

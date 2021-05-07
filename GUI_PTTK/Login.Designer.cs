@@ -173,6 +173,7 @@ namespace GUI_PTTK
             this.loginhthong.TabIndex = 13;
             this.loginhthong.Text = "Dang nhap";
             this.loginhthong.UseVisualStyleBackColor = true;
+            this.loginhthong.Click += new System.EventHandler(this.loginhthong_Click);
             // 
             // Login
             // 
