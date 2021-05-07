@@ -41,21 +41,11 @@ namespace GUI_PTTK
             this.thoigianlambai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.taomoibtn = new System.Windows.Forms.Button();
-            this.tenkithi_sauinsert = new System.Windows.Forms.Label();
-            this.ten_saukhicapnhat = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.diadiemthi_sauinsert = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ngaythi_sauinsert = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.batdauhp_sauinsert = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lambaitime_sauinsert = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dateTimePickerThem = new System.Windows.Forms.DateTimePicker();
             this.username = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.makithi_sauinsert = new System.Windows.Forms.Label();
+            this.datagridview_kithiCCQTsaukhitao = new System.Windows.Forms.DataGridView();
+            this.ngaythiccqt = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_kithiCCQTsaukhitao)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,25 +150,7 @@ namespace GUI_PTTK
             this.taomoibtn.TabIndex = 19;
             this.taomoibtn.Text = "Tao moi ki thi";
             this.taomoibtn.UseVisualStyleBackColor = true;
-            // 
-            // tenkithi_sauinsert
-            // 
-            this.tenkithi_sauinsert.AutoSize = true;
-            this.tenkithi_sauinsert.Location = new System.Drawing.Point(802, 201);
-            this.tenkithi_sauinsert.Name = "tenkithi_sauinsert";
-            this.tenkithi_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.tenkithi_sauinsert.TabIndex = 37;
-            this.tenkithi_sauinsert.Text = "label12";
-            // 
-            // ten_saukhicapnhat
-            // 
-            this.ten_saukhicapnhat.AutoSize = true;
-            this.ten_saukhicapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ten_saukhicapnhat.Location = new System.Drawing.Point(624, 201);
-            this.ten_saukhicapnhat.Name = "ten_saukhicapnhat";
-            this.ten_saukhicapnhat.Size = new System.Drawing.Size(76, 17);
-            this.ten_saukhicapnhat.TabIndex = 36;
-            this.ten_saukhicapnhat.Text = "Ten ki thi";
+            this.taomoibtn.Click += new System.EventHandler(this.taomoibtn_Click);
             // 
             // label7
             // 
@@ -191,90 +163,6 @@ namespace GUI_PTTK
             this.label7.TabIndex = 35;
             this.label7.Text = "Thong tin cua ki thi CCQT sau khi tao moi thanh cong";
             // 
-            // diadiemthi_sauinsert
-            // 
-            this.diadiemthi_sauinsert.AutoSize = true;
-            this.diadiemthi_sauinsert.Location = new System.Drawing.Point(802, 240);
-            this.diadiemthi_sauinsert.Name = "diadiemthi_sauinsert";
-            this.diadiemthi_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.diadiemthi_sauinsert.TabIndex = 39;
-            this.diadiemthi_sauinsert.Text = "label12";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(624, 240);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 17);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Dia diem thi";
-            // 
-            // ngaythi_sauinsert
-            // 
-            this.ngaythi_sauinsert.AutoSize = true;
-            this.ngaythi_sauinsert.Location = new System.Drawing.Point(802, 281);
-            this.ngaythi_sauinsert.Name = "ngaythi_sauinsert";
-            this.ngaythi_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.ngaythi_sauinsert.TabIndex = 41;
-            this.ngaythi_sauinsert.Text = "label12";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(624, 281);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 17);
-            this.label9.TabIndex = 40;
-            this.label9.Text = "Ngay thi";
-            // 
-            // batdauhp_sauinsert
-            // 
-            this.batdauhp_sauinsert.AutoSize = true;
-            this.batdauhp_sauinsert.Location = new System.Drawing.Point(802, 320);
-            this.batdauhp_sauinsert.Name = "batdauhp_sauinsert";
-            this.batdauhp_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.batdauhp_sauinsert.TabIndex = 43;
-            this.batdauhp_sauinsert.Text = "label12";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(624, 320);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(136, 17);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "Thoi gian bat dau";
-            // 
-            // lambaitime_sauinsert
-            // 
-            this.lambaitime_sauinsert.AutoSize = true;
-            this.lambaitime_sauinsert.Location = new System.Drawing.Point(802, 359);
-            this.lambaitime_sauinsert.Name = "lambaitime_sauinsert";
-            this.lambaitime_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.lambaitime_sauinsert.TabIndex = 45;
-            this.lambaitime_sauinsert.Text = "label12";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(624, 359);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 17);
-            this.label13.TabIndex = 44;
-            this.label13.Text = "Thoi gian lam bai";
-            // 
-            // dateTimePickerThem
-            // 
-            this.dateTimePickerThem.Location = new System.Drawing.Point(162, 265);
-            this.dateTimePickerThem.Name = "dateTimePickerThem";
-            this.dateTimePickerThem.Size = new System.Drawing.Size(387, 22);
-            this.dateTimePickerThem.TabIndex = 46;
-            this.dateTimePickerThem.Value = new System.DateTime(2021, 4, 12, 0, 0, 0, 0);
-            // 
             // username
             // 
             this.username.AutoSize = true;
@@ -286,44 +174,33 @@ namespace GUI_PTTK
             this.username.TabIndex = 47;
             this.username.Text = "Username";
             // 
-            // label5
+            // datagridview_kithiCCQTsaukhitao
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(624, 165);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(116, 17);
-            this.label5.TabIndex = 48;
-            this.label5.Text = "Ma ki thi CCQT";
+            this.datagridview_kithiCCQTsaukhitao.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.datagridview_kithiCCQTsaukhitao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridview_kithiCCQTsaukhitao.GridColor = System.Drawing.SystemColors.InactiveCaption;
+            this.datagridview_kithiCCQTsaukhitao.Location = new System.Drawing.Point(624, 162);
+            this.datagridview_kithiCCQTsaukhitao.Name = "datagridview_kithiCCQTsaukhitao";
+            this.datagridview_kithiCCQTsaukhitao.RowHeadersWidth = 51;
+            this.datagridview_kithiCCQTsaukhitao.RowTemplate.Height = 24;
+            this.datagridview_kithiCCQTsaukhitao.Size = new System.Drawing.Size(470, 228);
+            this.datagridview_kithiCCQTsaukhitao.TabIndex = 48;
             // 
-            // makithi_sauinsert
+            // ngaythiccqt
             // 
-            this.makithi_sauinsert.AutoSize = true;
-            this.makithi_sauinsert.Location = new System.Drawing.Point(802, 165);
-            this.makithi_sauinsert.Name = "makithi_sauinsert";
-            this.makithi_sauinsert.Size = new System.Drawing.Size(54, 17);
-            this.makithi_sauinsert.TabIndex = 49;
-            this.makithi_sauinsert.Text = "label12";
+            this.ngaythiccqt.Location = new System.Drawing.Point(162, 265);
+            this.ngaythiccqt.Name = "ngaythiccqt";
+            this.ngaythiccqt.Size = new System.Drawing.Size(387, 22);
+            this.ngaythiccqt.TabIndex = 49;
             // 
             // ThemkithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1107, 514);
-            this.Controls.Add(this.makithi_sauinsert);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.ngaythiccqt);
+            this.Controls.Add(this.datagridview_kithiCCQTsaukhitao);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.dateTimePickerThem);
-            this.Controls.Add(this.lambaitime_sauinsert);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.batdauhp_sauinsert);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.ngaythi_sauinsert);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.diadiemthi_sauinsert);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.tenkithi_sauinsert);
-            this.Controls.Add(this.ten_saukhicapnhat);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.taomoibtn);
             this.Controls.Add(this.thoigianlambai);
@@ -339,6 +216,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.label1);
             this.Name = "ThemkithiCCQT";
             this.Text = "ThemkithiCCQT";
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_kithiCCQTsaukhitao)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,20 +236,9 @@ namespace GUI_PTTK
         private System.Windows.Forms.TextBox thoigianlambai;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button taomoibtn;
-        private System.Windows.Forms.Label tenkithi_sauinsert;
-        private System.Windows.Forms.Label ten_saukhicapnhat;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label diadiemthi_sauinsert;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label ngaythi_sauinsert;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label batdauhp_sauinsert;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lambaitime_sauinsert;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePickerThem;
         private System.Windows.Forms.Label username;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label makithi_sauinsert;
+        private System.Windows.Forms.DataGridView datagridview_kithiCCQTsaukhitao;
+        private System.Windows.Forms.TextBox ngaythiccqt;
     }
 }

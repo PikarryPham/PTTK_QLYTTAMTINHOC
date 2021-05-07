@@ -18,7 +18,7 @@ namespace GUI_PTTK
             InitializeComponent();
         }
         // Tao object nay de goi ham
-        
+
         private void loginhthong_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(loginusername.Text) || string.IsNullOrEmpty(loginpassword.Text))
@@ -36,13 +36,14 @@ namespace GUI_PTTK
                 // Tao mot object DAL_ThongTinTKNhanVien (dung constructor co truyen vao day du tham so)
                 BUS_ThongTinTKNhanVien da = new BUS_ThongTinTKNhanVien(loginusername.Text, loginpassword.Text, 1); //quan li co typenv la 1
                 // Do khai bao la static nen co the goi thang tenclass.tenham ma k can khoi tao doi tuong
-                BUS_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(da);
+                BUS_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(da); //Tra ve kieu du lieu la datatable
                 if (BUS_ThongTinTKNhanVien.ReturnCode == 0)
                 {
-                    Form form = new TrangCaNhan_QuanLy();
-                    form.StartPosition = FormStartPosition.CenterScreen;
-                    form.Show();
-                    this.Close();
+                    ThongTinNV._username = loginusername.Text;
+                    this.Hide();
+                    Form newform = new TrangCaNhan_QuanLy();
+                    newform.StartPosition = FormStartPosition.CenterScreen;
+                    newform.Show();
                 }
                 else
                     MessageBox.Show(BUS_ThongTinTKNhanVien.ReturnMess);

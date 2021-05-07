@@ -83,6 +83,7 @@ namespace DAL_PTTK
                 SqlDataAdapter da = new SqlDataAdapter(cmd);
                 da.Fill(tbl);
 
+
                 //cmd.ExecuteNonQuery();
 
                 ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());

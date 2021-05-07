@@ -74,6 +74,7 @@
     <Compile Include="Huythongtindkhocphan01.Designer.cs">
       <DependentUpon>Huythongtindkhocphan01.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThongTinNV.cs" />
     <Compile Include="Xacnhanhuythongtindkhocphan.cs">
       <SubType>Form</SubType>
     </Compile>

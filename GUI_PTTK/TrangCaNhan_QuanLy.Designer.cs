@@ -60,6 +60,7 @@ namespace GUI_PTTK
             this.backcapnhat.TabIndex = 42;
             this.backcapnhat.Text = "Dang xuat";
             this.backcapnhat.UseVisualStyleBackColor = false;
+            this.backcapnhat.Click += new System.EventHandler(this.backcapnhat_Click);
             // 
             // label1
             // 
@@ -89,6 +90,7 @@ namespace GUI_PTTK
             this.trangcn_taokithi.TabIndex = 45;
             this.trangcn_taokithi.Text = "Tao moi ki thi CCQT";
             this.trangcn_taokithi.UseVisualStyleBackColor = true;
+            this.trangcn_taokithi.Click += new System.EventHandler(this.trangcn_taokithi_Click);
             // 
             // trangcn_capnhatkithi
             // 
@@ -98,6 +100,7 @@ namespace GUI_PTTK
             this.trangcn_capnhatkithi.TabIndex = 46;
             this.trangcn_capnhatkithi.Text = "Cap nhat ki thi CCQT";
             this.trangcn_capnhatkithi.UseVisualStyleBackColor = true;
+            this.trangcn_capnhatkithi.Click += new System.EventHandler(this.trangcn_capnhatkithi_Click);
             // 
             // trangcn_editthongtinhp
             // 
@@ -125,6 +128,7 @@ namespace GUI_PTTK
             this.trangcn_quanlyngaythiCCQT_btn.TabIndex = 51;
             this.trangcn_quanlyngaythiCCQT_btn.Text = "Quan ly lich thi cho ki thi CCQT";
             this.trangcn_quanlyngaythiCCQT_btn.UseVisualStyleBackColor = true;
+            this.trangcn_quanlyngaythiCCQT_btn.Click += new System.EventHandler(this.trangcn_quanlyngaythiCCQT_btn_Click);
             // 
             // TrangCaNhan_QuanLy
             // 
