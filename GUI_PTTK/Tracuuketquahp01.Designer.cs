@@ -55,6 +55,7 @@ namespace GUI_PTTK
             this.backTrang.TabIndex = 10;
             this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
+            this.backTrang.Click += new System.EventHandler(this.backTrang_Click);
             // 
             // label1
             // 
@@ -122,6 +123,7 @@ namespace GUI_PTTK
             this.timthongtindkhp.TabIndex = 16;
             this.timthongtindkhp.Text = "Tim chi tiet dang ky hoc phan";
             this.timthongtindkhp.UseVisualStyleBackColor = true;
+            this.timthongtindkhp.Click += new System.EventHandler(this.timthongtindkhp_Click);
             // 
             // trathongtindiem
             // 
@@ -131,6 +133,7 @@ namespace GUI_PTTK
             this.trathongtindiem.TabIndex = 17;
             this.trathongtindiem.Text = "Kiem tra ket qua hoc phan";
             this.trathongtindiem.UseVisualStyleBackColor = true;
+            this.trathongtindiem.Click += new System.EventHandler(this.trathongtindiem_Click);
             // 
             // dshocvien_tracuu
             // 
@@ -161,6 +164,7 @@ namespace GUI_PTTK
             this.showlistdshvienhethong.TabIndex = 20;
             this.showlistdshvienhethong.Text = "Hien thi danh sach hoc vien he thong";
             this.showlistdshvienhethong.UseVisualStyleBackColor = true;
+            this.showlistdshvienhethong.Click += new System.EventHandler(this.showlistdshvienhethong_Click);
             // 
             // username
             // 

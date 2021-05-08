@@ -49,9 +49,27 @@ namespace GUI_PTTK
                     MessageBox.Show(BUS_ThongTinTKNhanVien.ReturnMess);
                 return;
             }
+            else if (logintiepnhan.Checked)
+            {
+                // Tao mot object DAL_ThongTinTKNhanVien (dung constructor co truyen vao day du tham so)
+                BUS_ThongTinTKNhanVien da = new BUS_ThongTinTKNhanVien(loginusername.Text, loginpassword.Text, 2); //nhan vien tiep nhan co typenv la 2
+                // Do khai bao la static nen co the goi thang tenclass.tenham ma k can khoi tao doi tuong
+                BUS_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(da); //Tra ve kieu du lieu la datatable
+                if (BUS_ThongTinTKNhanVien.ReturnCode == 0)
+                {
+                    ThongTinNV._username = loginusername.Text;
+                    this.Hide();
+                    Form newform = new TrangCaNhan_NVTiepNhan();
+                    newform.StartPosition = FormStartPosition.CenterScreen;
+                    newform.Show();
+                }
+                else
+                    MessageBox.Show(BUS_ThongTinTKNhanVien.ReturnMess);
+                return;
+            }
             else
             {
-                MessageBox.Show("ahihi");
+                MessageBox.Show("Will be update soon");
             }
         }
     }

@@ -37,3 +37,4 @@ C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\DAL_PTTK.exe.config
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.pdb
 C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\bin\Debug\BUS_PTTK.exe.config
+C:\Users\MON\source\repos\DOAN6_PTTK\GUI_PTTK\obj\Debug\GUI_PTTK.TrangCaNhan_NVTiepNhan.resources

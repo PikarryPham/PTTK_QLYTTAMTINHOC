@@ -47,7 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS_CCQT.cs" />
+    <Compile Include="BUS_ChungChiHocPhan.cs" />
+    <Compile Include="BUS_DangKyHocPhan.cs" />
+    <Compile Include="BUS_HocVien.cs" />
     <Compile Include="BUS_KyThiCCQT.cs" />
+    <Compile Include="BUS_LichThiLai.cs" />
     <Compile Include="BUS_NgayThiKyThiCCQT.cs" />
     <Compile Include="BUS_ThongTinTKNhanVien.cs" />
     <Compile Include="Program.cs" />

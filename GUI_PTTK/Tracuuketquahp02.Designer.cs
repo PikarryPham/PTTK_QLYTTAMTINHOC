@@ -56,6 +56,7 @@ namespace GUI_PTTK
             this.backTrang.TabIndex = 12;
             this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
+            this.backTrang.Click += new System.EventHandler(this.backTrang_Click);
             // 
             // label1
             // 
@@ -84,11 +85,11 @@ namespace GUI_PTTK
             this.tbdenhocvien.AutoSize = true;
             this.tbdenhocvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbdenhocvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbdenhocvien.Location = new System.Drawing.Point(250, 491);
+            this.tbdenhocvien.Location = new System.Drawing.Point(174, 493);
             this.tbdenhocvien.Name = "tbdenhocvien";
-            this.tbdenhocvien.Size = new System.Drawing.Size(319, 32);
+            this.tbdenhocvien.Size = new System.Drawing.Size(467, 32);
             this.tbdenhocvien.TabIndex = 21;
-            this.tbdenhocvien.Text = "Thong bao den hoc vien";
+            this.tbdenhocvien.Text = "Thong bao dau hay rot den hoc vien";
             // 
             // inkqhocphan
             // 
@@ -98,6 +99,7 @@ namespace GUI_PTTK
             this.inkqhocphan.TabIndex = 27;
             this.inkqhocphan.Text = "In ket qua hoc phan";
             this.inkqhocphan.UseVisualStyleBackColor = true;
+            this.inkqhocphan.Click += new System.EventHandler(this.inkqhocphan_Click);
             // 
             // dkthilai
             // 
@@ -128,6 +130,7 @@ namespace GUI_PTTK
             this.tracuudiemkqhp.TabIndex = 30;
             this.tracuudiemkqhp.Text = "Tra cuu diem";
             this.tracuudiemkqhp.UseVisualStyleBackColor = false;
+            this.tracuudiemkqhp.Click += new System.EventHandler(this.tracuudiemkqhp_Click);
             // 
             // label11
             // 

@@ -19,7 +19,7 @@ namespace GUI_PTTK
 
         private void Thongtinngaythilai_Load(object sender, EventArgs e)
         {
-
+            //do sthig
         }
 
        

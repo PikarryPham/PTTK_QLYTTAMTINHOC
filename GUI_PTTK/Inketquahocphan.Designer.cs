@@ -55,6 +55,7 @@ namespace GUI_PTTK
             this.khongdongy_inkqhpBtn.TabIndex = 24;
             this.khongdongy_inkqhpBtn.Text = "Khong dong y";
             this.khongdongy_inkqhpBtn.UseVisualStyleBackColor = true;
+            this.khongdongy_inkqhpBtn.Click += new System.EventHandler(this.khongdongy_inkqhpBtn_Click);
             // 
             // dongy_inkqhpBtn
             // 
@@ -64,6 +65,7 @@ namespace GUI_PTTK
             this.dongy_inkqhpBtn.TabIndex = 23;
             this.dongy_inkqhpBtn.Text = "Dong y";
             this.dongy_inkqhpBtn.UseVisualStyleBackColor = true;
+            this.dongy_inkqhpBtn.Click += new System.EventHandler(this.dongy_inkqhpBtn_Click);
             // 
             // label2
             // 
@@ -91,6 +93,7 @@ namespace GUI_PTTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(586, 292);
             this.Controls.Add(this.username);
             this.Controls.Add(this.khongdongy_inkqhpBtn);

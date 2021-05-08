@@ -55,7 +55,7 @@ namespace GUI_PTTK
             this.username.AutoSize = true;
             this.username.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.username.Location = new System.Drawing.Point(551, 9);
+            this.username.Location = new System.Drawing.Point(596, 9);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(106, 26);
             this.username.TabIndex = 21;
@@ -218,6 +218,7 @@ namespace GUI_PTTK
             this.button1.TabIndex = 50;
             this.button1.Text = "Tro ve trang chu";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 

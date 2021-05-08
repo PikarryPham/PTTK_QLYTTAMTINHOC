@@ -55,6 +55,7 @@ namespace GUI_PTTK
             this.backTrang.TabIndex = 14;
             this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
+            this.backTrang.Click += new System.EventHandler(this.backTrang_Click);
             // 
             // label1
             // 
@@ -75,6 +76,7 @@ namespace GUI_PTTK
             this.showlistdshvienhethong_huythongtindk.TabIndex = 30;
             this.showlistdshvienhethong_huythongtindk.Text = "Hien thi danh sach hoc vien he thong";
             this.showlistdshvienhethong_huythongtindk.UseVisualStyleBackColor = true;
+            this.showlistdshvienhethong_huythongtindk.Click += new System.EventHandler(this.showlistdshvienhethong_huythongtindk_Click);
             // 
             // label5
             // 
@@ -105,6 +107,7 @@ namespace GUI_PTTK
             this.trathongtindiem_huythongtindk.TabIndex = 27;
             this.trathongtindiem_huythongtindk.Text = "Huy dang ky hoc phan";
             this.trathongtindiem_huythongtindk.UseVisualStyleBackColor = true;
+            this.trathongtindiem_huythongtindk.Click += new System.EventHandler(this.trathongtindiem_huythongtindk_Click);
             // 
             // timthongtindkhp_huythongtindk
             // 
@@ -114,6 +117,7 @@ namespace GUI_PTTK
             this.timthongtindkhp_huythongtindk.TabIndex = 26;
             this.timthongtindkhp_huythongtindk.Text = "Tim thong tin dang ky hoc phan";
             this.timthongtindkhp_huythongtindk.UseVisualStyleBackColor = true;
+            this.timthongtindkhp_huythongtindk.Click += new System.EventHandler(this.timthongtindkhp_huythongtindk_Click);
             // 
             // cmnd_tracuu_huythongtindk
             // 

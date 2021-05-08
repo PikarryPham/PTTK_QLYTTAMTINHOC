@@ -35,13 +35,13 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.idthoigiandk_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.idhp_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CMNDhocvien_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.backTrang = new System.Windows.Forms.Button();
-            this.idthoigiandk_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +53,7 @@ namespace GUI_PTTK
             this.khongdongyhuyhpbtn.TabIndex = 23;
             this.khongdongyhuyhpbtn.Text = "Khong dong y";
             this.khongdongyhuyhpbtn.UseVisualStyleBackColor = true;
+            this.khongdongyhuyhpbtn.Click += new System.EventHandler(this.khongdongyhuyhpbtn_Click);
             // 
             // dongyhuyhpbtn
             // 
@@ -62,6 +63,7 @@ namespace GUI_PTTK
             this.dongyhuyhpbtn.TabIndex = 22;
             this.dongyhuyhpbtn.Text = "Dong y";
             this.dongyhuyhpbtn.UseVisualStyleBackColor = true;
+            this.dongyhuyhpbtn.Click += new System.EventHandler(this.dongyhuyhpbtn_Click);
             // 
             // label2
             // 
@@ -111,6 +113,13 @@ namespace GUI_PTTK
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dien thong tin huy dang ki hoc phan";
             // 
+            // idthoigiandk_xacnhanhuy
+            // 
+            this.idthoigiandk_xacnhanhuy.Location = new System.Drawing.Point(175, 127);
+            this.idthoigiandk_xacnhanhuy.Name = "idthoigiandk_xacnhanhuy";
+            this.idthoigiandk_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
+            this.idthoigiandk_xacnhanhuy.TabIndex = 41;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -126,7 +135,6 @@ namespace GUI_PTTK
             this.idhp_xacnhanhuy.Name = "idhp_xacnhanhuy";
             this.idhp_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
             this.idhp_xacnhanhuy.TabIndex = 37;
-            this.idhp_xacnhanhuy.TextChanged += new System.EventHandler(this.idhp_xacnhanhuy_TextChanged);
             // 
             // label6
             // 
@@ -162,13 +170,7 @@ namespace GUI_PTTK
             this.backTrang.TabIndex = 26;
             this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
-            // 
-            // idthoigiandk_xacnhanhuy
-            // 
-            this.idthoigiandk_xacnhanhuy.Location = new System.Drawing.Point(175, 127);
-            this.idthoigiandk_xacnhanhuy.Name = "idthoigiandk_xacnhanhuy";
-            this.idthoigiandk_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
-            this.idthoigiandk_xacnhanhuy.TabIndex = 41;
+            this.backTrang.Click += new System.EventHandler(this.backTrang_Click);
             // 
             // Huythongtindkhocphan02
             // 

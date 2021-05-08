@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS_PTTK;
 
 namespace GUI_PTTK
 {
@@ -15,6 +16,29 @@ namespace GUI_PTTK
         public Tracuuketquahp02()
         {
             InitializeComponent();
+            username.Text = ThongTinNV._username;
         }
+
+        private void backTrang_Click(object sender, EventArgs e)
+        {
+            Form form = new Tracuuketquahp01();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
+        }
+
+        private void tracuudiemkqhp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Gọi hàm PTTK_ThongTinChiTietDKHocPhan từ BUS_PTTK");
+        }
+
+        private void inkqhocphan_Click(object sender, EventArgs e)
+        {
+            Form form = new Inketquahocphan();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
+        }
+
     }
 }
