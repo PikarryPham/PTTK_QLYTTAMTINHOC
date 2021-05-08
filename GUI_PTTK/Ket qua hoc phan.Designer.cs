@@ -33,16 +33,12 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.ngaydkhp_inketqua = new System.Windows.Forms.Label();
             this.diemhp_inketqua = new System.Windows.Forms.Label();
-            this.thoigiankthp_inketqua = new System.Windows.Forms.Label();
             this.thoigianbdhp_inketqua = new System.Windows.Forms.Label();
             this.tenhpdky_inketqua = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.solanthilai_inketqua = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tenchungchi_inketqua = new System.Windows.Forms.Label();
@@ -50,6 +46,8 @@ namespace GUI_PTTK
             this.ngaycapcc_inketqua = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.cmndhocvien = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // username
@@ -68,7 +66,7 @@ namespace GUI_PTTK
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(141, 48);
+            this.label1.Location = new System.Drawing.Point(159, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(434, 36);
             this.label1.TabIndex = 20;
@@ -91,15 +89,6 @@ namespace GUI_PTTK
             this.diemhp_inketqua.Size = new System.Drawing.Size(54, 17);
             this.diemhp_inketqua.TabIndex = 41;
             this.diemhp_inketqua.Text = "diemhp";
-            // 
-            // thoigiankthp_inketqua
-            // 
-            this.thoigiankthp_inketqua.AutoSize = true;
-            this.thoigiankthp_inketqua.Location = new System.Drawing.Point(229, 297);
-            this.thoigiankthp_inketqua.Name = "thoigiankthp_inketqua";
-            this.thoigiankthp_inketqua.Size = new System.Drawing.Size(69, 17);
-            this.thoigiankthp_inketqua.TabIndex = 40;
-            this.thoigiankthp_inketqua.Text = "thoigiankt";
             // 
             // thoigianbdhp_inketqua
             // 
@@ -139,16 +128,6 @@ namespace GUI_PTTK
             this.label7.TabIndex = 36;
             this.label7.Text = "Diem hoc phan";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(32, 289);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 25);
-            this.label6.TabIndex = 35;
-            this.label6.Text = "Thoi gian ket thuc";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -168,25 +147,6 @@ namespace GUI_PTTK
             this.label4.Size = new System.Drawing.Size(133, 25);
             this.label4.TabIndex = 33;
             this.label4.Text = "Ten hoc phan";
-            // 
-            // solanthilai_inketqua
-            // 
-            this.solanthilai_inketqua.AutoSize = true;
-            this.solanthilai_inketqua.Location = new System.Drawing.Point(229, 343);
-            this.solanthilai_inketqua.Name = "solanthilai_inketqua";
-            this.solanthilai_inketqua.Size = new System.Drawing.Size(71, 17);
-            this.solanthilai_inketqua.TabIndex = 44;
-            this.solanthilai_inketqua.Text = "solanthilai";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(32, 336);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(117, 25);
-            this.label9.TabIndex = 43;
-            this.label9.Text = "So lan thi lai";
             // 
             // label2
             // 
@@ -259,11 +219,32 @@ namespace GUI_PTTK
             this.button1.Text = "Tro ve trang chu";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(32, 293);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(157, 25);
+            this.label9.TabIndex = 51;
+            this.label9.Text = "CMND Hoc Vien";
+            // 
+            // cmndhocvien
+            // 
+            this.cmndhocvien.AutoSize = true;
+            this.cmndhocvien.Location = new System.Drawing.Point(229, 301);
+            this.cmndhocvien.Name = "cmndhocvien";
+            this.cmndhocvien.Size = new System.Drawing.Size(107, 17);
+            this.cmndhocvien.TabIndex = 52;
+            this.cmndhocvien.Text = "CMND Hoc vien";
+            // 
             // Ket_qua_hoc_phan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(739, 645);
+            this.Controls.Add(this.cmndhocvien);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ngaycapcc_inketqua);
             this.Controls.Add(this.label12);
@@ -271,16 +252,12 @@ namespace GUI_PTTK
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.solanthilai_inketqua);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.ngaydkhp_inketqua);
             this.Controls.Add(this.diemhp_inketqua);
-            this.Controls.Add(this.thoigiankthp_inketqua);
             this.Controls.Add(this.thoigianbdhp_inketqua);
             this.Controls.Add(this.tenhpdky_inketqua);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.username);
@@ -298,16 +275,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label ngaydkhp_inketqua;
         private System.Windows.Forms.Label diemhp_inketqua;
-        private System.Windows.Forms.Label thoigiankthp_inketqua;
         private System.Windows.Forms.Label thoigianbdhp_inketqua;
         private System.Windows.Forms.Label tenhpdky_inketqua;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label solanthilai_inketqua;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label tenchungchi_inketqua;
@@ -315,5 +288,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label ngaycapcc_inketqua;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label cmndhocvien;
     }
 }

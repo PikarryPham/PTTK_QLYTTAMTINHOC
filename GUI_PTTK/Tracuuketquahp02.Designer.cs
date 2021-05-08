@@ -84,7 +84,7 @@ namespace GUI_PTTK
             this.tbdenhocvien.AutoSize = true;
             this.tbdenhocvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbdenhocvien.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.tbdenhocvien.Location = new System.Drawing.Point(241, 491);
+            this.tbdenhocvien.Location = new System.Drawing.Point(250, 491);
             this.tbdenhocvien.Name = "tbdenhocvien";
             this.tbdenhocvien.Size = new System.Drawing.Size(319, 32);
             this.tbdenhocvien.TabIndex = 21;
@@ -177,7 +177,7 @@ namespace GUI_PTTK
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(722, 173);
+            this.dataGridView1.Size = new System.Drawing.Size(722, 156);
             this.dataGridView1.TabIndex = 42;
             // 
             // thoigiandk_tracuustep02
