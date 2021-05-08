@@ -232,11 +232,6 @@ namespace GUI_PTTK
             // capnhat_thoigianlambai
             // 
             this.capnhat_thoigianlambai.Location = new System.Drawing.Point(167, 325);
-            this.capnhat_thoigianlambai.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             this.capnhat_thoigianlambai.Name = "capnhat_thoigianlambai";
             this.capnhat_thoigianlambai.Size = new System.Drawing.Size(371, 22);
             this.capnhat_thoigianlambai.TabIndex = 48;

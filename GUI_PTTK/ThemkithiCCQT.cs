@@ -28,7 +28,7 @@ namespace GUI_PTTK
                 return;
             }
             // Tao moi cac object
-            BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Text));
+            BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Value.ToString()));
             BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(diadiemthi.Text, thoigianbdccqt.Text, Int32.Parse(thoigianlambai.Text));
             BUS_CCQT ccqte = new BUS_CCQT(tenkithiccqt.Text);
             datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);

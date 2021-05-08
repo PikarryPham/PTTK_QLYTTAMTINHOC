@@ -86,6 +86,7 @@ namespace GUI_PTTK
             this.trangcn_dkhph.TabIndex = 56;
             this.trangcn_dkhph.Text = "Dang ky hoc phan";
             this.trangcn_dkhph.UseVisualStyleBackColor = true;
+            this.trangcn_dkhph.Click += new System.EventHandler(this.trangcn_dkhph_Click);
             // 
             // trangcn_dkthiccqt
             // 

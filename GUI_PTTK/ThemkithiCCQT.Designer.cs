@@ -43,8 +43,8 @@ namespace GUI_PTTK
             this.label7 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.datagridview_kithiCCQTsaukhitao = new System.Windows.Forms.DataGridView();
-            this.ngaythiccqt = new System.Windows.Forms.TextBox();
             this.thoigianlambai = new System.Windows.Forms.NumericUpDown();
+            this.ngaythiccqt = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_kithiCCQTsaukhitao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thoigianlambai)).BeginInit();
             this.SuspendLayout();
@@ -181,13 +181,6 @@ namespace GUI_PTTK
             this.datagridview_kithiCCQTsaukhitao.Size = new System.Drawing.Size(470, 125);
             this.datagridview_kithiCCQTsaukhitao.TabIndex = 48;
             // 
-            // ngaythiccqt
-            // 
-            this.ngaythiccqt.Location = new System.Drawing.Point(162, 265);
-            this.ngaythiccqt.Name = "ngaythiccqt";
-            this.ngaythiccqt.Size = new System.Drawing.Size(387, 22);
-            this.ngaythiccqt.TabIndex = 49;
-            // 
             // thoigianlambai
             // 
             this.thoigianlambai.Location = new System.Drawing.Point(162, 371);
@@ -210,14 +203,25 @@ namespace GUI_PTTK
             0,
             0});
             // 
+            // ngaythiccqt
+            // 
+            this.ngaythiccqt.CustomFormat = "yyyy-MM-dd";
+            this.ngaythiccqt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaythiccqt.Location = new System.Drawing.Point(162, 265);
+            this.ngaythiccqt.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaythiccqt.Name = "ngaythiccqt";
+            this.ngaythiccqt.Size = new System.Drawing.Size(387, 22);
+            this.ngaythiccqt.TabIndex = 57;
+            this.ngaythiccqt.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
             // ThemkithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1119, 514);
-            this.Controls.Add(this.thoigianlambai);
             this.Controls.Add(this.ngaythiccqt);
+            this.Controls.Add(this.thoigianlambai);
             this.Controls.Add(this.datagridview_kithiCCQTsaukhitao);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label7);
@@ -257,7 +261,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.DataGridView datagridview_kithiCCQTsaukhitao;
-        private System.Windows.Forms.TextBox ngaythiccqt;
         private System.Windows.Forms.NumericUpDown thoigianlambai;
+        private System.Windows.Forms.DateTimePicker ngaythiccqt;
     }
 }

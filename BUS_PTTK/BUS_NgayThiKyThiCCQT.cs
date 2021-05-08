@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL_PTTK;
 
 namespace BUS_PTTK
 {
@@ -45,8 +48,32 @@ namespace BUS_PTTK
         {
             this.NTKTQT_NGAY = ngaythi;
         }
+        public BUS_NgayThiKyThiCCQT(int kythiccqt)
+        {
+            this.KTQT_ID = kythiccqt;
+        }
         /* ========= Method ===========*/
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
+
+        public static DataTable PTTK_LayDanhSachCacNgayThiCCQT(BUS_NgayThiKyThiCCQT ngaythiccqt)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+
+                da = DAL_NgayThiKyThiCCQT.PTTK_LayDanhSachCacNgayThiCCQT(ngaythiccqt._KTQT_ID);
+
+                ReturnCode = DAL_KyThiCCQT.ReturnCode;
+                ReturnMess = DAL_KyThiCCQT.ReturnMess;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
     }
 }

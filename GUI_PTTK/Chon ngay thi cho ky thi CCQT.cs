@@ -22,16 +22,25 @@ namespace GUI_PTTK
         private void backTrangTaomoi_Click(object sender, EventArgs e)
         {
             Form form = new TrangCaNhan_QuanLy();
+            form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Close();
         }
 
         private void showlistkithiccqt_chinhsuangaythi_Click(object sender, EventArgs e)
         {
-            //if (BUS_KyThiCCQT.ReturnCode != 1)
-            //{
-            //    capnhatkythi_listdskythi.DataSource = BUS_KyThiCCQT.PTTK_LayDanhSachKyThiCCQT();
-            //}
+            chinhsuangaythi_dskithiCCQT.DataSource = BUS_KyThiCCQT.PTTK_LayDanhSachKyThiCCQT();
+        }
+
+        private void timdscacngaythi_chinhsuangaythikithiccqt_Click(object sender, EventArgs e)
+        {
+            BUS_NgayThiKyThiCCQT ngaythichungchiqt = new BUS_NgayThiKyThiCCQT(Convert.ToInt32(makithiccqt_quanli.Value));
+            dataGridView1.DataSource = BUS_NgayThiKyThiCCQT.PTTK_LayDanhSachCacNgayThiCCQT(ngaythichungchiqt);
+        }
+
+        private void themngaythi_btn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

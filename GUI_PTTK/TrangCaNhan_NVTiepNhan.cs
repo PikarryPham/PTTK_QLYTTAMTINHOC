@@ -40,5 +40,10 @@ namespace GUI_PTTK
             newform.StartPosition = FormStartPosition.CenterScreen;
             newform.Show();
         }
+
+        private void trangcn_dkhph_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

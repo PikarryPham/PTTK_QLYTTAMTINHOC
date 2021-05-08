@@ -65,7 +65,7 @@ namespace DAL_PTTK
                 cmd.Parameters.Add("@NGAYTHI", SqlDbType.Date).Value = ngaythi;
                 cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = diadiemthi;
                 cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = tenccqt;
-                MessageBox.Show(tenccqt);
+                //MessageBox.Show(tenccqt);
                 cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = tgbd;
                 cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = tglb;
 
@@ -106,10 +106,31 @@ namespace DAL_PTTK
                 SqlCommand cmd = new SqlCommand("PTTK_CapNhatVaHienThiThongTinMotKyThi", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.Add("@MAKYTHICCQT", SqlDbType.Int).Value = makithiccqt;
-                cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = tenccqt;
-                cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = diadiemthi;
-                cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = tgbd;
-                cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = tglb;
+
+                // Xet TH Ten Nha co duoc dien vao hay khong, neu khong thi se ntn?
+                if (!string.IsNullOrWhiteSpace(tenccqt))
+                    cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = tenccqt;
+                else
+                    cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = DBNull.Value;
+
+                // Xet TH Dia Diem Thi co duoc dien vao hay khong, neu khong thi se ntn?
+                if (!string.IsNullOrWhiteSpace(diadiemthi))
+                    cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = diadiemthi;
+                else
+                    cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = DBNull.Value;
+
+                // Xet TH Thoi gian bat dau co duoc dien vao hay khong, neu khong thi se ntn?
+                if (!string.IsNullOrWhiteSpace(tgbd))
+                    cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = tgbd;
+                else
+                    cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = DBNull.Value;
+
+                // Xet TH Thoi gian bat dau co duoc dien vao hay khong, neu khong thi se ntn?
+                if (tglb != null || tglb != 0 )
+                    cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = tglb;
+                else
+                    cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = DBNull.Value;
+                
 
                 SqlParameter param_RETURNCODE;
                 SqlParameter param_RETURNMESSAGE;
