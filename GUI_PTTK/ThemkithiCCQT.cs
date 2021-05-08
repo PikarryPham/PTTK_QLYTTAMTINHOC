@@ -31,15 +31,8 @@ namespace GUI_PTTK
             BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Text));
             BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(diadiemthi.Text, thoigianbdccqt.Text, Int32.Parse(thoigianlambai.Text));
             BUS_CCQT ccqte = new BUS_CCQT(tenkithiccqt.Text);
-            if(BUS_KyThiCCQT.ReturnCode == 0)
-            {
-                datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);
-                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
-            }
-            else
-            {
-                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
-            }
+            datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);
+            MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
         }
 
         private void backTrangTaomoi_Click(object sender, EventArgs e)

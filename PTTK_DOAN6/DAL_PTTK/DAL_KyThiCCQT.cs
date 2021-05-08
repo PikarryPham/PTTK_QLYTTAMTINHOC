@@ -105,11 +105,11 @@ namespace DAL_PTTK
                 con.Open();
                 SqlCommand cmd = new SqlCommand("PTTK_CapNhatVaHienThiThongTinMotKyThi", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@MAKYTHICCQT", SqlDbType.Int).Value = kythiccqt.KTQT_ID;
-                cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = ccqt.CCQT_TEN;
-                cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = kythiccqt.KTQT_DIADIEM;
-                cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = kythiccqt.KTQT_TGBATDAU;
-                cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = kythiccqt.KTQT_TGLAMBAI;
+                cmd.Parameters.Add("@MAKYTHICCQT", SqlDbType.Int).Value = makithiccqt;
+                cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = tenccqt;
+                cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = diadiemthi;
+                cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = tgbd;
+                cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = tglb;
 
                 SqlParameter param_RETURNCODE;
                 SqlParameter param_RETURNMESSAGE;

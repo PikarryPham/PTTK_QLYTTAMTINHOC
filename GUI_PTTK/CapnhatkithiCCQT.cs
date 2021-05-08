@@ -21,10 +21,7 @@ namespace GUI_PTTK
 
         private void btnhienthidscapnhat_Click(object sender, EventArgs e)
         {
-            if(BUS_KyThiCCQT.ReturnCode != 1)
-            {
-                capnhatkythi_listdskythi.DataSource = BUS_KyThiCCQT.PTTK_LayDanhSachKyThiCCQT();
-            }
+            capnhatkythi_listdskythi.DataSource = BUS_KyThiCCQT.PTTK_LayDanhSachKyThiCCQT();
         }
 
         private void backcapnhat_Click(object sender, EventArgs e)
@@ -37,18 +34,11 @@ namespace GUI_PTTK
         private void capnhatbtn_Click(object sender, EventArgs e)
         {
             // Tao moi cac object
-            BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(Int32.Parse(capnhat_makythiccqt.Text),capnhat_diadiemthi.Text, capnhat_thoigianbdccqt.Text, Int32.Parse(capnhat_thoigianlambai.Text));
+            BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(Int32.Parse(capnhat_makythiccqt.Text),capnhat_diadiemthi.Text, capnhat_thoigianbdccqt.Text, Convert.ToInt32(capnhat_thoigianlambai.Value));
             BUS_CCQT ccqte = new BUS_CCQT(capnhat_tenkithi.Text);
-            //MessageBox.Show(capnhat_tenkithi.Text);
-            if (BUS_KyThiCCQT.ReturnCode == 0)
-            {
-                dataGridView1.DataSource = BUS_KyThiCCQT.PTTK_CapNhatVaHienThiThongTinMotKyThi(kithiccqt, ccqte);
-                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
-            }
-            else
-            {
-                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
-            }
+            MessageBox.Show(capnhat_tenkithi.Text);
+            dataGridView1.DataSource = BUS_KyThiCCQT.PTTK_CapNhatVaHienThiThongTinMotKyThi(kithiccqt, ccqte);
+            MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
         }
     }
 }

@@ -1,7 +1,6 @@
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\bin\Debug\DAL_PTTK.exe.config
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\bin\Debug\DAL_PTTK.exe
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\bin\Debug\DAL_PTTK.pdb
-C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\obj\Debug\DAL_PTTK.csprojAssemblyReference.cache
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\obj\Debug\DAL_PTTK.Properties.Resources.resources
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\obj\Debug\DAL_PTTK.csproj.GenerateResource.cache
 C:\Users\MON\source\repos\DOAN6_PTTK\PTTK_DOAN6\DAL_PTTK\obj\Debug\DAL_PTTK.csproj.CoreCompileInputs.cache

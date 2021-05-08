@@ -65,8 +65,7 @@ namespace BUS_PTTK
         {
             try
             {
-                DAL_ThongTinTKNhanVien da = new DAL_ThongTinTKNhanVien(bus_thongtinnv.TKNV_USERNAME, bus_thongtinnv.TKNV_MATKHAU, bus_thongtinnv.TKNV_LOAINHANVIEN);
-                DAL_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(da);
+                DAL_ThongTinTKNhanVien.PTTK_KiemTraThongTinDauVao(bus_thongtinnv.TKNV_USERNAME, bus_thongtinnv.TKNV_MATKHAU, bus_thongtinnv.TKNV_LOAINHANVIEN);
                 ReturnCode = DAL_ThongTinTKNhanVien.ReturnCode;
                 ReturnMess = DAL_ThongTinTKNhanVien.ReturnMess;
             }
