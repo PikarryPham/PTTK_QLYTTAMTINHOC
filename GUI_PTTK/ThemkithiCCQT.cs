@@ -31,7 +31,7 @@ namespace GUI_PTTK
             BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Text));
             BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(diadiemthi.Text, thoigianbdccqt.Text, Int32.Parse(thoigianlambai.Text));
             BUS_CCQT ccqte = new BUS_CCQT(tenkithiccqt.Text);
-            MessageBox.Show(tenkithiccqt.Text);
+            //MessageBox.Show(tenkithiccqt.Text);
             if(BUS_KyThiCCQT.ReturnCode == 0)
             {
                 datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);

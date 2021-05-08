@@ -152,7 +152,7 @@ namespace GUI_PTTK
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(619, 114);
+            this.label7.Location = new System.Drawing.Point(619, 211);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(476, 25);
             this.label7.TabIndex = 35;
@@ -174,11 +174,11 @@ namespace GUI_PTTK
             this.datagridview_kithiCCQTsaukhitao.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.datagridview_kithiCCQTsaukhitao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.datagridview_kithiCCQTsaukhitao.GridColor = System.Drawing.SystemColors.InactiveCaption;
-            this.datagridview_kithiCCQTsaukhitao.Location = new System.Drawing.Point(624, 162);
+            this.datagridview_kithiCCQTsaukhitao.Location = new System.Drawing.Point(624, 265);
             this.datagridview_kithiCCQTsaukhitao.Name = "datagridview_kithiCCQTsaukhitao";
             this.datagridview_kithiCCQTsaukhitao.RowHeadersWidth = 51;
             this.datagridview_kithiCCQTsaukhitao.RowTemplate.Height = 24;
-            this.datagridview_kithiCCQTsaukhitao.Size = new System.Drawing.Size(470, 228);
+            this.datagridview_kithiCCQTsaukhitao.Size = new System.Drawing.Size(470, 125);
             this.datagridview_kithiCCQTsaukhitao.TabIndex = 48;
             // 
             // ngaythiccqt

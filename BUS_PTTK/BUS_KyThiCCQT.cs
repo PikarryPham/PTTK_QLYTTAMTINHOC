@@ -78,13 +78,12 @@ namespace BUS_PTTK
 
         /* ==== Constructor =======*/
         public BUS_KyThiCCQT() { }
-        public BUS_KyThiCCQT(int idktqt, string diadiem, string thoigianbd, int thoigianlbai, int idccqt)
+        public BUS_KyThiCCQT(int idktqt, string diadiem, string thoigianbd, int thoigianlbai)
         {
             this.KTQT_ID = idktqt;
             this.KTQT_DIADIEM = diadiem;
             this.KTQT_TGBATDAU = thoigianbd;
             this.KTQT_TGLAMBAI = thoigianlbai;
-            this._KTQT_CCQT = idccqt;
         }
         public BUS_KyThiCCQT(string diadiem, string thoigianbd, int thoigianlbai)
         {
@@ -117,13 +116,32 @@ namespace BUS_PTTK
             }
             return da;
         }
-        public static DataTable PTTK_LayDanhSachKyThiCCQT(BUS_KyThiCCQT kythiccqte)
+        public static DataTable PTTK_LayDanhSachKyThiCCQT()
         {
             DataTable da = new DataTable();
             try
             {
-                DAL_KyThiCCQT dal_kithiccqt = new DAL_KyThiCCQT(kythiccqte.KTQT_DIADIEM, kythiccqte.KTQT_TGBATDAU, kythiccqte.KTQT_TGLAMBAI);
-                da = DAL_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(dal_kithiccqt, dal_ngaythiccqte, dal_ccqt);
+                da = DAL_KyThiCCQT.PTTK_LayDanhSachKyThiCCQT();
+
+                ReturnCode = DAL_KyThiCCQT.ReturnCode;
+                ReturnMess = DAL_KyThiCCQT.ReturnMess;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
+        public static DataTable PTTK_CapNhatVaHienThiThongTinMotKyThi(BUS_KyThiCCQT kythiccqte, BUS_CCQT ccqt)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+                DAL_KyThiCCQT dal_kithiccqt = new DAL_KyThiCCQT(kythiccqte.KTQT_ID,kythiccqte.KTQT_DIADIEM, kythiccqte.KTQT_TGBATDAU, kythiccqte.KTQT_TGLAMBAI);
+                DAL_CCQT dal_ccqt = new DAL_CCQT(ccqt.CCQT_TEN);
+                da = DAL_KyThiCCQT.PTTK_CapNhatVaHienThiThongTinMotKyThi(dal_kithiccqt, dal_ccqt);
 
                 ReturnCode = DAL_KyThiCCQT.ReturnCode;
                 ReturnMess = DAL_KyThiCCQT.ReturnMess;
