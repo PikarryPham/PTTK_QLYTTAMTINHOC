@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAL_CCQT.cs" />
     <Compile Include="DAL_KyThiCCQT.cs" />
     <Compile Include="DAL_NgayThiKyThiCCQT.cs" />
     <Compile Include="DAL_ThongTinTKNhanVien.cs" />

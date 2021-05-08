@@ -5,10 +5,11 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DAL_PTTK;
 
-namespace DAL_PTTK
+namespace BUS_PTTK
 {
-    public class DAL_KyThiCCQT
+    public class BUS_KyThiCCQT
     {
         private int _KTQT_ID;
         private string _KTQT_DIADIEM;
@@ -76,8 +77,8 @@ namespace DAL_PTTK
         }
 
         /* ==== Constructor =======*/
-        public DAL_KyThiCCQT() { }
-        public DAL_KyThiCCQT(int idktqt, string diadiem, string thoigianbd, int thoigianlbai, int idccqt)
+        public BUS_KyThiCCQT() { }
+        public BUS_KyThiCCQT(int idktqt, string diadiem, string thoigianbd, int thoigianlbai, int idccqt)
         {
             this.KTQT_ID = idktqt;
             this.KTQT_DIADIEM = diadiem;
@@ -85,7 +86,7 @@ namespace DAL_PTTK
             this.KTQT_TGLAMBAI = thoigianlbai;
             this._KTQT_CCQT = idccqt;
         }
-        public DAL_KyThiCCQT(string diadiem, string thoigianbd, int thoigianlbai)
+        public BUS_KyThiCCQT(string diadiem, string thoigianbd, int thoigianlbai)
         {
             this.KTQT_DIADIEM = diadiem;
             this.KTQT_TGBATDAU = thoigianbd;
@@ -96,47 +97,44 @@ namespace DAL_PTTK
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
 
-        public static DataTable PTTK_TaoMoiVaHienThiKyThiCCQT(DAL_KyThiCCQT kythiccqt, DAL_NgayThiKyThiCCQT ngaythiCCQT, DAL_CCQT ccqt )
+        public static DataTable PTTK_TaoMoiVaHienThiKyThiCCQT(BUS_KyThiCCQT kythiccqte, BUS_NgayThiKyThiCCQT ngaythiCCQTe, BUS_CCQT ccqte)
         {
-            SqlConnection con = DataConnection.GetSqlConnection();
-            DataTable tbl = new DataTable();
+            DataTable da = new DataTable();
             try
             {
-                con.Open();
-                SqlCommand cmd = new SqlCommand("PTTK_TaoMoiVaHienThiKyThiCCQT", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add("@NGAYTHI", SqlDbType.Date).Value = ngaythiCCQT.NTKTQT_NGAY;
-                cmd.Parameters.Add("@DIADIEMTHI", SqlDbType.NVarChar).Value = kythiccqt.KTQT_DIADIEM;
-                cmd.Parameters.Add("@TENCCQT", SqlDbType.NVarChar).Value = ccqt.CCQT_TEN;
-                cmd.Parameters.Add("@TGBD", SqlDbType.Time).Value = kythiccqt.KTQT_TGBATDAU;
-                cmd.Parameters.Add("@TGLAMBAI", SqlDbType.Int).Value = kythiccqt.KTQT_TGLAMBAI;
+                DAL_KyThiCCQT dal_kithiccqt = new DAL_KyThiCCQT(kythiccqte.KTQT_DIADIEM, kythiccqte.KTQT_TGBATDAU, kythiccqte.KTQT_TGLAMBAI);
+                DAL_CCQT dal_ccqt = new DAL_CCQT(ccqte.CCQT_TEN);
+                DAL_NgayThiKyThiCCQT dal_ngaythiccqte = new DAL_NgayThiKyThiCCQT(ngaythiCCQTe.NTKTQT_NGAY);
+                da = DAL_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(dal_kithiccqt,dal_ngaythiccqte,dal_ccqt);
 
-                SqlParameter param_RETURNCODE;
-                SqlParameter param_RETURNMESSAGE;
-                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
-                param_RETURNCODE.Direction = ParameterDirection.Output;
-                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
-                param_RETURNMESSAGE.Direction = ParameterDirection.Output;
+                ReturnCode = DAL_KyThiCCQT.ReturnCode;
+                ReturnMess = DAL_KyThiCCQT.ReturnMess;
 
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                da.Fill(tbl);
-
-                //cmd.ExecuteNonQuery();
-
-                ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
-                ReturnMess = param_RETURNMESSAGE.Value.ToString();
-            }
-            catch(Exception ex)
+            } catch(Exception ex)
             {
                 ReturnCode = 500;
                 ReturnMess = ex.Message;
             }
-            finally
+            return da;
+        }
+        public static DataTable PTTK_LayDanhSachKyThiCCQT(BUS_KyThiCCQT kythiccqte)
+        {
+            DataTable da = new DataTable();
+            try
             {
-                if (con.State == ConnectionState.Open)
-                    con.Close();
+                DAL_KyThiCCQT dal_kithiccqt = new DAL_KyThiCCQT(kythiccqte.KTQT_DIADIEM, kythiccqte.KTQT_TGBATDAU, kythiccqte.KTQT_TGLAMBAI);
+                da = DAL_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(dal_kithiccqt, dal_ngaythiccqte, dal_ccqt);
+
+                ReturnCode = DAL_KyThiCCQT.ReturnCode;
+                ReturnMess = DAL_KyThiCCQT.ReturnMess;
+
             }
-            return tbl;
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
         }
     }
 }

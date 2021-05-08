@@ -35,13 +35,13 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dateTimePickerThoigiandk__HuyDK = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.idhp_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CMNDhocvien_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.backTrang = new System.Windows.Forms.Button();
+            this.idthoigiandk_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,7 +98,7 @@ namespace GUI_PTTK
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePickerThoigiandk__HuyDK);
+            this.groupBox1.Controls.Add(this.idthoigiandk_xacnhanhuy);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.idhp_xacnhanhuy);
             this.groupBox1.Controls.Add(this.label6);
@@ -106,17 +106,10 @@ namespace GUI_PTTK
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(32, 93);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(578, 222);
+            this.groupBox1.Size = new System.Drawing.Size(578, 194);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dien thong tin huy dang ki hoc phan";
-            // 
-            // dateTimePickerThoigiandk__HuyDK
-            // 
-            this.dateTimePickerThoigiandk__HuyDK.Location = new System.Drawing.Point(175, 125);
-            this.dateTimePickerThoigiandk__HuyDK.Name = "dateTimePickerThoigiandk__HuyDK";
-            this.dateTimePickerThoigiandk__HuyDK.Size = new System.Drawing.Size(344, 22);
-            this.dateTimePickerThoigiandk__HuyDK.TabIndex = 39;
             // 
             // label5
             // 
@@ -170,6 +163,13 @@ namespace GUI_PTTK
             this.backTrang.Text = "Quay ve";
             this.backTrang.UseVisualStyleBackColor = false;
             // 
+            // idthoigiandk_xacnhanhuy
+            // 
+            this.idthoigiandk_xacnhanhuy.Location = new System.Drawing.Point(175, 127);
+            this.idthoigiandk_xacnhanhuy.Name = "idthoigiandk_xacnhanhuy";
+            this.idthoigiandk_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
+            this.idthoigiandk_xacnhanhuy.TabIndex = 41;
+            // 
             // Huythongtindkhocphan02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -205,7 +205,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.TextBox CMNDhocvien_xacnhanhuy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePickerThoigiandk__HuyDK;
         private System.Windows.Forms.Button backTrang;
+        private System.Windows.Forms.TextBox idthoigiandk_xacnhanhuy;
     }
 }

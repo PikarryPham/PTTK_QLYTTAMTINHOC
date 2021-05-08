@@ -38,14 +38,15 @@ namespace GUI_PTTK
             this.label2 = new System.Windows.Forms.Label();
             this.thoigianbdccqt = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.thoigianlambai = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.taomoibtn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.datagridview_kithiCCQTsaukhitao = new System.Windows.Forms.DataGridView();
             this.ngaythiccqt = new System.Windows.Forms.TextBox();
+            this.thoigianlambai = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_kithiCCQTsaukhitao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thoigianlambai)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,6 +69,7 @@ namespace GUI_PTTK
             this.backTrangTaomoi.TabIndex = 7;
             this.backTrangTaomoi.Text = "Quay ve";
             this.backTrangTaomoi.UseVisualStyleBackColor = false;
+            this.backTrangTaomoi.Click += new System.EventHandler(this.backTrangTaomoi_Click);
             // 
             // labelaaaa
             // 
@@ -125,13 +127,6 @@ namespace GUI_PTTK
             this.label3.Size = new System.Drawing.Size(119, 17);
             this.label3.TabIndex = 15;
             this.label3.Text = "Thoi gian bat dau";
-            // 
-            // thoigianlambai
-            // 
-            this.thoigianlambai.Location = new System.Drawing.Point(162, 368);
-            this.thoigianlambai.Name = "thoigianlambai";
-            this.thoigianlambai.Size = new System.Drawing.Size(387, 22);
-            this.thoigianlambai.TabIndex = 18;
             // 
             // label4
             // 
@@ -193,17 +188,40 @@ namespace GUI_PTTK
             this.ngaythiccqt.Size = new System.Drawing.Size(387, 22);
             this.ngaythiccqt.TabIndex = 49;
             // 
+            // thoigianlambai
+            // 
+            this.thoigianlambai.Location = new System.Drawing.Point(162, 371);
+            this.thoigianlambai.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.thoigianlambai.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.thoigianlambai.Name = "thoigianlambai";
+            this.thoigianlambai.Size = new System.Drawing.Size(387, 22);
+            this.thoigianlambai.TabIndex = 50;
+            this.thoigianlambai.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // ThemkithiCCQT
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1107, 514);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1119, 514);
+            this.Controls.Add(this.thoigianlambai);
             this.Controls.Add(this.ngaythiccqt);
             this.Controls.Add(this.datagridview_kithiCCQTsaukhitao);
             this.Controls.Add(this.username);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.taomoibtn);
-            this.Controls.Add(this.thoigianlambai);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.thoigianbdccqt);
             this.Controls.Add(this.label3);
@@ -217,6 +235,7 @@ namespace GUI_PTTK
             this.Name = "ThemkithiCCQT";
             this.Text = "ThemkithiCCQT";
             ((System.ComponentModel.ISupportInitialize)(this.datagridview_kithiCCQTsaukhitao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.thoigianlambai)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,12 +252,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox thoigianbdccqt;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox thoigianlambai;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button taomoibtn;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.DataGridView datagridview_kithiCCQTsaukhitao;
         private System.Windows.Forms.TextBox ngaythiccqt;
+        private System.Windows.Forms.NumericUpDown thoigianlambai;
     }
 }

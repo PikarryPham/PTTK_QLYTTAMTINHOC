@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL_PTTK
+namespace BUS_PTTK
 {
-    public class DAL_NgayThiKyThiCCQT
+    public class BUS_NgayThiKyThiCCQT
     {
         private int _KTQT_ID;
         private string _NTKTQT_NGAY;
@@ -37,13 +35,13 @@ namespace DAL_PTTK
             }
         }
         /* ==== Constructor =======*/
-        public DAL_NgayThiKyThiCCQT() { }
-        public DAL_NgayThiKyThiCCQT(int idktqt, string ngaythi)
+        public BUS_NgayThiKyThiCCQT() { }
+        public BUS_NgayThiKyThiCCQT(int idktqt, string ngaythi)
         {
             this.KTQT_ID = idktqt;
             this.NTKTQT_NGAY = ngaythi;
         }
-        public DAL_NgayThiKyThiCCQT(string ngaythi)
+        public BUS_NgayThiKyThiCCQT(string ngaythi)
         {
             this.NTKTQT_NGAY = ngaythi;
         }

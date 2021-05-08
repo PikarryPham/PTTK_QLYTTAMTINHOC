@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using DAL_PTTK;
+using BUS_PTTK;
 
 namespace GUI_PTTK
 {
@@ -16,6 +16,7 @@ namespace GUI_PTTK
         public ThemkithiCCQT()
         {
             InitializeComponent();
+            username.Text = ThongTinNV._username;
         }
 
         private void taomoibtn_Click(object sender, EventArgs e)
@@ -26,8 +27,27 @@ namespace GUI_PTTK
                 MessageBox.Show("Vui lòng điền đầy đủ thông tin");
                 return;
             }
+            // Tao moi cac object
+            BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Text));
+            BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(diadiemthi.Text, thoigianbdccqt.Text, Int32.Parse(thoigianlambai.Text));
+            BUS_CCQT ccqte = new BUS_CCQT(tenkithiccqt.Text);
+            MessageBox.Show(tenkithiccqt.Text);
+            if(BUS_KyThiCCQT.ReturnCode == 0)
+            {
+                datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);
+                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+            }
+            else
+            {
+                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+            }
+        }
 
-            //DAL_KyThiCCQT da = new DAL_KyThiCCQT(diadiemthi.Text, tenkithiccqt.Text, ngaythiccqt.Text,)
+        private void backTrangTaomoi_Click(object sender, EventArgs e)
+        {
+            Form form = new TrangCaNhan_QuanLy();
+            form.Show();
+            this.Close();
         }
     }
 }

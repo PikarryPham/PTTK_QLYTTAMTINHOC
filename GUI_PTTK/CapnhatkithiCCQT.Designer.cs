@@ -170,7 +170,7 @@ namespace GUI_PTTK
             // 
             this.ten_saukhicapnhat.AutoSize = true;
             this.ten_saukhicapnhat.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ten_saukhicapnhat.Location = new System.Drawing.Point(595, 190);
+            this.ten_saukhicapnhat.Location = new System.Drawing.Point(595, 189);
             this.ten_saukhicapnhat.Name = "ten_saukhicapnhat";
             this.ten_saukhicapnhat.Size = new System.Drawing.Size(76, 17);
             this.ten_saukhicapnhat.TabIndex = 29;
@@ -180,7 +180,7 @@ namespace GUI_PTTK
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(595, 242);
+            this.label8.Location = new System.Drawing.Point(595, 241);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(94, 17);
             this.label8.TabIndex = 30;
@@ -190,7 +190,7 @@ namespace GUI_PTTK
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(595, 332);
+            this.label11.Location = new System.Drawing.Point(595, 331);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(133, 17);
             this.label11.TabIndex = 33;
@@ -200,7 +200,7 @@ namespace GUI_PTTK
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(595, 287);
+            this.label10.Location = new System.Drawing.Point(595, 286);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(136, 17);
             this.label10.TabIndex = 32;
@@ -209,7 +209,7 @@ namespace GUI_PTTK
             // tenkithi_sauupdate
             // 
             this.tenkithi_sauupdate.AutoSize = true;
-            this.tenkithi_sauupdate.Location = new System.Drawing.Point(773, 190);
+            this.tenkithi_sauupdate.Location = new System.Drawing.Point(773, 189);
             this.tenkithi_sauupdate.Name = "tenkithi_sauupdate";
             this.tenkithi_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.tenkithi_sauupdate.TabIndex = 34;
@@ -218,7 +218,7 @@ namespace GUI_PTTK
             // diadiemthi_sauupdate
             // 
             this.diadiemthi_sauupdate.AutoSize = true;
-            this.diadiemthi_sauupdate.Location = new System.Drawing.Point(773, 242);
+            this.diadiemthi_sauupdate.Location = new System.Drawing.Point(773, 241);
             this.diadiemthi_sauupdate.Name = "diadiemthi_sauupdate";
             this.diadiemthi_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.diadiemthi_sauupdate.TabIndex = 35;
@@ -227,7 +227,7 @@ namespace GUI_PTTK
             // batdautime_sauupdate
             // 
             this.batdautime_sauupdate.AutoSize = true;
-            this.batdautime_sauupdate.Location = new System.Drawing.Point(773, 287);
+            this.batdautime_sauupdate.Location = new System.Drawing.Point(773, 286);
             this.batdautime_sauupdate.Name = "batdautime_sauupdate";
             this.batdautime_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.batdautime_sauupdate.TabIndex = 37;
@@ -236,7 +236,7 @@ namespace GUI_PTTK
             // lambaitime_sauupdate
             // 
             this.lambaitime_sauupdate.AutoSize = true;
-            this.lambaitime_sauupdate.Location = new System.Drawing.Point(773, 332);
+            this.lambaitime_sauupdate.Location = new System.Drawing.Point(773, 331);
             this.lambaitime_sauupdate.Name = "lambaitime_sauupdate";
             this.lambaitime_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.lambaitime_sauupdate.TabIndex = 38;
@@ -274,7 +274,7 @@ namespace GUI_PTTK
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(595, 152);
+            this.label13.Location = new System.Drawing.Point(595, 151);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(116, 17);
             this.label13.TabIndex = 43;
@@ -283,7 +283,7 @@ namespace GUI_PTTK
             // makythi_sauupdate
             // 
             this.makythi_sauupdate.AutoSize = true;
-            this.makythi_sauupdate.Location = new System.Drawing.Point(773, 152);
+            this.makythi_sauupdate.Location = new System.Drawing.Point(773, 151);
             this.makythi_sauupdate.Name = "makythi_sauupdate";
             this.makythi_sauupdate.Size = new System.Drawing.Size(54, 17);
             this.makythi_sauupdate.TabIndex = 44;
