@@ -51,11 +51,11 @@ namespace GUI_PTTK
             this.xoangaythi_btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.themngaythi = new System.Windows.Forms.TabPage();
+            this.thongtinngaythiduoctaomoi = new System.Windows.Forms.Label();
             this.dateTimePickerThemngaythi = new System.Windows.Forms.DateTimePicker();
             this.themngaythi_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControlforChinhsuangaythi = new System.Windows.Forms.TabControl();
-            this.thongtinngaythiduoctaomoi = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chinhsuangaythi_dskithiCCQT)).BeginInit();
@@ -74,6 +74,7 @@ namespace GUI_PTTK
             this.backTrangTaomoi.TabIndex = 9;
             this.backTrangTaomoi.Text = "Quay ve";
             this.backTrangTaomoi.UseVisualStyleBackColor = false;
+            this.backTrangTaomoi.Click += new System.EventHandler(this.backTrangTaomoi_Click);
             // 
             // label1
             // 
@@ -175,6 +176,7 @@ namespace GUI_PTTK
             this.showlistkithiccqt_chinhsuangaythi.TabIndex = 52;
             this.showlistkithiccqt_chinhsuangaythi.Text = "Hien thi danh sach cac ki thi CCQT";
             this.showlistkithiccqt_chinhsuangaythi.UseVisualStyleBackColor = true;
+            this.showlistkithiccqt_chinhsuangaythi.Click += new System.EventHandler(this.showlistkithiccqt_chinhsuangaythi_Click);
             // 
             // suangaythi
             // 
@@ -283,6 +285,15 @@ namespace GUI_PTTK
             this.themngaythi.Text = "Them ngay thi moi cho ki thi CCQT";
             this.themngaythi.UseVisualStyleBackColor = true;
             // 
+            // thongtinngaythiduoctaomoi
+            // 
+            this.thongtinngaythiduoctaomoi.AutoSize = true;
+            this.thongtinngaythiduoctaomoi.Location = new System.Drawing.Point(210, 147);
+            this.thongtinngaythiduoctaomoi.Name = "thongtinngaythiduoctaomoi";
+            this.thongtinngaythiduoctaomoi.Size = new System.Drawing.Size(207, 17);
+            this.thongtinngaythiduoctaomoi.TabIndex = 57;
+            this.thongtinngaythiduoctaomoi.Text = "Thong tin ngay thi duoc tao moi";
+            // 
             // dateTimePickerThemngaythi
             // 
             this.dateTimePickerThemngaythi.Location = new System.Drawing.Point(155, 27);
@@ -318,15 +329,6 @@ namespace GUI_PTTK
             this.tabControlforChinhsuangaythi.SelectedIndex = 0;
             this.tabControlforChinhsuangaythi.Size = new System.Drawing.Size(624, 224);
             this.tabControlforChinhsuangaythi.TabIndex = 53;
-            // 
-            // thongtinngaythiduoctaomoi
-            // 
-            this.thongtinngaythiduoctaomoi.AutoSize = true;
-            this.thongtinngaythiduoctaomoi.Location = new System.Drawing.Point(210, 147);
-            this.thongtinngaythiduoctaomoi.Name = "thongtinngaythiduoctaomoi";
-            this.thongtinngaythiduoctaomoi.Size = new System.Drawing.Size(207, 17);
-            this.thongtinngaythiduoctaomoi.TabIndex = 57;
-            this.thongtinngaythiduoctaomoi.Text = "Thong tin ngay thi duoc tao moi";
             // 
             // Chon_ngay_thi_cho_ky_thi_CCQT
             // 
