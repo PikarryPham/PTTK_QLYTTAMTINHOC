@@ -21,6 +21,8 @@ namespace DAL_PTTK
 
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
+
+        public static string THONGBAODAUROT { get; set; }
         public static Int32 PTTK_KiemTraDuocThiLai(string cmnd, int hocphan, string ngaydkhocphan)
         {
             SqlConnection con = DataConnection.GetSqlConnection();
@@ -69,5 +71,94 @@ namespace DAL_PTTK
             }
             return isValid;
         }
+
+        public static DataTable PTTK_ThongTinChiTietDKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan) {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            DataTable tbl = new DataTable();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("PTTK_ThongTinChiTietDKHocPhan", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@CMNDHOCVIEN", SqlDbType.NVarChar).Value = cmnd;
+                cmd.Parameters.Add("@IDHOCPHAN", SqlDbType.Int).Value = idhocphan;
+                cmd.Parameters.Add("@THOIGIANDKHOCPHAN", SqlDbType.Date).Value = ngaydkhocphan;
+                
+                
+                SqlParameter param_RETURNCODE;
+                SqlParameter param_RETURNMESSAGE;
+                SqlParameter param_THONGBAODAUROT;
+
+                param_THONGBAODAUROT = cmd.Parameters.Add("@THONGBAODAUHAYKHONG", SqlDbType.NVarChar,500);
+                param_THONGBAODAUROT.Direction = ParameterDirection.Output;
+
+                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
+                param_RETURNCODE.Direction = ParameterDirection.Output;
+                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
+                param_RETURNMESSAGE.Direction = ParameterDirection.Output;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tbl);
+
+                //cmd.ExecuteNonQuery();
+
+                ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
+                ReturnMess = param_RETURNMESSAGE.Value.ToString();
+                THONGBAODAUROT = param_THONGBAODAUROT.Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return tbl;
+
+        }
+
+        public static DataTable PTTK_LayThongTinDKHocPhan(string cmnd) {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            DataTable tbl = new DataTable();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("PTTK_LayThongTinDKHocPhan", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@CMNDHOCVIEN", SqlDbType.NVarChar).Value = cmnd;
+               
+
+                SqlParameter param_RETURNCODE;
+                SqlParameter param_RETURNMESSAGE;
+
+                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
+                param_RETURNCODE.Direction = ParameterDirection.Output;
+                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
+                param_RETURNMESSAGE.Direction = ParameterDirection.Output;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tbl);
+
+                //cmd.ExecuteNonQuery();
+
+                ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
+                ReturnMess = param_RETURNMESSAGE.Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return tbl;
+        }
+
     }
 }

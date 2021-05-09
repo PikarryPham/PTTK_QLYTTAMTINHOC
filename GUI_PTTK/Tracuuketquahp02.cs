@@ -29,7 +29,22 @@ namespace GUI_PTTK
 
         private void tracuudiemkqhp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Gọi hàm PTTK_ThongTinChiTietDKHocPhan từ BUS_PTTK");
+            if (!string.IsNullOrEmpty(cmnd.Text))
+            {
+                BUS_HocPhan hp = new BUS_HocPhan(Convert.ToInt32(idhocphan.Value));
+                BUS_HocVien hv = new BUS_HocVien(cmnd.Text);
+                BUS_DangKyHocPhan dk = new BUS_DangKyHocPhan(ngaydk.Value.ToString());
+                dataGridView1.DataSource = BUS_DangKyHocPhan.PTTK_ThongTinChiTietDKHocPhan(hv, hp, dk);
+                tbdenhocvien.Text = BUS_DangKyHocPhan.THONGBAODAUROT;
+                if(BUS_DangKyHocPhan.ReturnCode == 1)
+                {
+                    MessageBox.Show(BUS_DangKyHocPhan.ReturnMess);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Không được để trống trường CMND");
+            }
         }
 
         private void inkqhocphan_Click(object sender, EventArgs e)
@@ -68,6 +83,10 @@ namespace GUI_PTTK
                 {
                     MessageBox.Show("Không được thi lại nữa vì đã thi lại 3 lần rồi");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Không được để trống trường CMND");
             }
         }
     }

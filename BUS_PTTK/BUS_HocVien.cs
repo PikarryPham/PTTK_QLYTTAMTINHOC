@@ -58,5 +58,25 @@ namespace BUS_PTTK
         {
             this.NDKT_CMND = cmnd;
         }
+        /* ========= Method ===========*/
+        public static int ReturnCode { get; set; }
+        public static string ReturnMess { get; set; }
+
+        public static DataTable PTTK_LayDSHocVien()
+        {
+            DataTable da = new DataTable();
+            try
+            {
+                da = DAL_HocVien.PTTK_LayDSHocVien();
+                ReturnCode = DAL_HocVien.ReturnCode;
+                ReturnMess = DAL_HocVien.ReturnMess;
+            }
+            catch(Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
     }
 }

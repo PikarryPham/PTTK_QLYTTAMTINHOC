@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS_PTTK;
 
 namespace GUI_PTTK
 {
@@ -36,12 +37,26 @@ namespace GUI_PTTK
 
         private void showlistdshvienhethong_huythongtindk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Gọi hàm PTTK_LayDSHocVien từ tầng BUS_PTTK");
+            dshocvien_huythongtindk.DataSource = BUS_HocVien.PTTK_LayDSHocVien();
         }
 
         private void timthongtindkhp_huythongtindk_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Gọi hàm PTTK_LayThongTinDKHocPhan từ tầng BUS_PTTK");
+            
+            if (!string.IsNullOrEmpty(cmnd_tracuu_huythongtindk.Text))
+            {
+                BUS_HocVien hv = new BUS_HocVien(cmnd_tracuu_huythongtindk.Text);
+                chitietdkhocphan_huythongtindk.DataSource = BUS_DangKyHocPhan.PTTK_LayThongTinDKHocPhan(hv);
+                if (BUS_DangKyHocPhan.ReturnCode == 1)
+                {
+                    MessageBox.Show(BUS_DangKyHocPhan.ReturnMess);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng điền vào CMND học viên");
+            }
         }
     }
 }
