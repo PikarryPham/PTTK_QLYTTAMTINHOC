@@ -105,8 +105,29 @@ namespace BUS_PTTK
             this.DKHP_ID = iddkhocphan;
         }
 
+        public BUS_DangKyHocPhan(string ngaydk)
+        {
+            this.DKHP_NGAYDK = ngaydk;
+        }
+
         /* ========= Method ===========*/
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
+        public static Int32 PTTK_KiemTraDuocThiLai(BUS_HocVien x, BUS_HocPhan y, BUS_DangKyHocPhan z)
+        {
+            int isValid = 0;
+            try
+            {
+                isValid = DAL_DangKyHocPhan.PTTK_KiemTraDuocThiLai(x.NDKT_CMND, y.HP_ID, z.DKHP_NGAYDK);
+                ReturnCode = DAL_DangKyHocPhan.ReturnCode;
+                ReturnMess = DAL_DangKyHocPhan.ReturnMess;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return isValid;
+        }
     }
 }

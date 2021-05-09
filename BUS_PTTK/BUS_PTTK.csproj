@@ -49,6 +49,7 @@
     <Compile Include="BUS_CCQT.cs" />
     <Compile Include="BUS_ChungChiHocPhan.cs" />
     <Compile Include="BUS_DangKyHocPhan.cs" />
+    <Compile Include="BUS_HocPhan.cs" />
     <Compile Include="BUS_HocVien.cs" />
     <Compile Include="BUS_KyThiCCQT.cs" />
     <Compile Include="BUS_LichThiLai.cs" />

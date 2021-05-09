@@ -17,5 +17,57 @@ namespace DAL_PTTK
         //public static DataTable PTTK_ThongTinChiTiet1DKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan) {};
         //public static DataTable PTTK_ThongTinKhaiQuatDKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan) {};
         //public static Int32 PTTK_KiemTraDiemHocPhan(int iddkhocphan) { return 1; };
+        
+
+        public static int ReturnCode { get; set; }
+        public static string ReturnMess { get; set; }
+        public static Int32 PTTK_KiemTraDuocThiLai(string cmnd, int hocphan, string ngaydkhocphan)
+        {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            int isValid = 0;
+            try
+            {
+                string query = @"SELECT [dbo].[PTTK_KiemTraDuocThiLai](@CMND,@IDHOCPHAN,@THOIGIANDK);";
+                ///define the SqlCommand object
+                SqlCommand cmd = new SqlCommand(query, con);
+                //parameter value will be set from command line
+                SqlParameter param0 = new SqlParameter();
+                param0.ParameterName = "@CMND";
+                param0.SqlDbType = SqlDbType.VarChar;
+                param0.Value = cmnd;
+
+                SqlParameter param1 = new SqlParameter();
+                param1.ParameterName = "@IDHOCPHAN";
+                param1.SqlDbType = SqlDbType.Int;
+                param1.Value = hocphan;
+
+                SqlParameter param2 = new SqlParameter();
+                param2.ParameterName = "@THOIGIANDK";
+                param2.SqlDbType = SqlDbType.Date;
+                param2.Value = ngaydkhocphan;
+
+                //pass parameter to the SQL Command
+                cmd.Parameters.Add(param0);
+                cmd.Parameters.Add(param1);
+                cmd.Parameters.Add(param2);
+                //open connection
+                con.Open();
+
+                //execute the SQLCommand
+                Int32 functionResult = (Int32)cmd.ExecuteScalar();
+                isValid = functionResult;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return isValid;
+        }
     }
 }

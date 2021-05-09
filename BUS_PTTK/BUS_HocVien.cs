@@ -11,7 +11,52 @@ namespace BUS_PTTK
 {
     public class BUS_HocVien
     {
-        // Lam tuong tu nhu cac BUS khac, ban tham khao script tao bang de biet duoc gom cac thuoc tinh gi
-        // Trong script tao bang, HocVien chinh la Nguoi Dang Ky Thi
+		// Lam tuong tu nhu cac BUS khac, ban tham khao script tao bang de biet duoc gom cac thuoc tinh gi
+		// Trong script tao bang, HocVien chinh la Nguoi Dang Ky Thi
+		private int NDKT_ID_;
+		private string NDKT_CMND_;
+		private string NDKT_TEN_;
+		private string NDKT_DCHI_;
+		private string NDKT_EMAIL_;
+		private string NDKT_GTINH_;
+		private string NDKT_LOAI_;
+		private string NDKT_SDT_;
+
+        /*========== GETTER/SETTER ======*/
+        public int NDKT_ID
+        {
+            get
+            {
+                return NDKT_ID_;
+            }
+            set
+            {
+                NDKT_ID_ = value;
+            }
+        }
+        public string NDKT_CMND
+        {
+            get
+            {
+                return NDKT_CMND_;
+            }
+            set
+            {
+                NDKT_CMND_ = value;
+            }
+        }
+
+        /* ==== Constructor =======*/
+        public BUS_HocVien() { }
+
+        public BUS_HocVien(int idhocvien, string cmnd)
+        {
+            this.NDKT_CMND = cmnd;
+            this.NDKT_ID = idhocvien;
+        }
+        public BUS_HocVien(string cmnd)
+        {
+            this.NDKT_CMND = cmnd;
+        }
     }
 }

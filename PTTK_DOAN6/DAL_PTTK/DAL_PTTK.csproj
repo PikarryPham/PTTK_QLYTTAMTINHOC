@@ -49,6 +49,7 @@
     <Compile Include="DAL_CCQT.cs" />
     <Compile Include="DAL_ChungChiHocPhan.cs" />
     <Compile Include="DAL_DangKyHocPhan.cs" />
+    <Compile Include="DAL_HocPhan.cs" />
     <Compile Include="DAL_HocVien.cs" />
     <Compile Include="DAL_KyThiCCQT.cs" />
     <Compile Include="DAL_LichThiLai.cs" />

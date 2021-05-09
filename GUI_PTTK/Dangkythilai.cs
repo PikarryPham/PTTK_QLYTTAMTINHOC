@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BUS_PTTK;
 
 namespace GUI_PTTK
 {
@@ -28,8 +29,6 @@ namespace GUI_PTTK
 
         private void dongy_thilaibtn_Click(object sender, EventArgs e)
         {
-            //B1. Goi ham kiem tra diem hoc phan
-            //B2. Neu diem hoc phan <5 ==> di den UI Thong tin thi lai
             Form form = new Thongtinngaythilai();
             form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();

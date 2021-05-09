@@ -38,13 +38,14 @@ namespace GUI_PTTK
             this.username = new System.Windows.Forms.Label();
             this.tracuudiemkqhp = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.CMNDhocvien_tracuustep02 = new System.Windows.Forms.TextBox();
+            this.cmnd = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.IDHocPhan_tracuustep02 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.thoigiandk_tracuustep02 = new System.Windows.Forms.TextBox();
+            this.idhocphan = new System.Windows.Forms.NumericUpDown();
+            this.ngaydk = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idhocphan)).BeginInit();
             this.SuspendLayout();
             // 
             // backTrang
@@ -142,12 +143,12 @@ namespace GUI_PTTK
             this.label11.TabIndex = 36;
             this.label11.Text = "Thoi gian dang ky ";
             // 
-            // CMNDhocvien_tracuustep02
+            // cmnd
             // 
-            this.CMNDhocvien_tracuustep02.Location = new System.Drawing.Point(190, 89);
-            this.CMNDhocvien_tracuustep02.Name = "CMNDhocvien_tracuustep02";
-            this.CMNDhocvien_tracuustep02.Size = new System.Drawing.Size(379, 22);
-            this.CMNDhocvien_tracuustep02.TabIndex = 39;
+            this.cmnd.Location = new System.Drawing.Point(190, 89);
+            this.cmnd.Name = "cmnd";
+            this.cmnd.Size = new System.Drawing.Size(379, 22);
+            this.cmnd.TabIndex = 39;
             // 
             // label12
             // 
@@ -157,13 +158,6 @@ namespace GUI_PTTK
             this.label12.Size = new System.Drawing.Size(132, 17);
             this.label12.TabIndex = 38;
             this.label12.Text = "CMND cua hoc vien";
-            // 
-            // IDHocPhan_tracuustep02
-            // 
-            this.IDHocPhan_tracuustep02.Location = new System.Drawing.Point(190, 148);
-            this.IDHocPhan_tracuustep02.Name = "IDHocPhan_tracuustep02";
-            this.IDHocPhan_tracuustep02.Size = new System.Drawing.Size(379, 22);
-            this.IDHocPhan_tracuustep02.TabIndex = 41;
             // 
             // label2
             // 
@@ -184,23 +178,44 @@ namespace GUI_PTTK
             this.dataGridView1.Size = new System.Drawing.Size(722, 156);
             this.dataGridView1.TabIndex = 42;
             // 
-            // thoigiandk_tracuustep02
+            // idhocphan
             // 
-            this.thoigiandk_tracuustep02.Location = new System.Drawing.Point(190, 203);
-            this.thoigiandk_tracuustep02.Name = "thoigiandk_tracuustep02";
-            this.thoigiandk_tracuustep02.Size = new System.Drawing.Size(379, 22);
-            this.thoigiandk_tracuustep02.TabIndex = 43;
+            this.idhocphan.Location = new System.Drawing.Point(190, 148);
+            this.idhocphan.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.idhocphan.Name = "idhocphan";
+            this.idhocphan.Size = new System.Drawing.Size(379, 22);
+            this.idhocphan.TabIndex = 44;
+            this.idhocphan.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // ngaydk
+            // 
+            this.ngaydk.CustomFormat = "yyyy-MM-dd";
+            this.ngaydk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaydk.Location = new System.Drawing.Point(190, 206);
+            this.ngaydk.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaydk.Name = "ngaydk";
+            this.ngaydk.Size = new System.Drawing.Size(379, 22);
+            this.ngaydk.TabIndex = 59;
+            this.ngaydk.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // Tracuuketquahp02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 608);
-            this.Controls.Add(this.thoigiandk_tracuustep02);
+            this.Controls.Add(this.ngaydk);
+            this.Controls.Add(this.idhocphan);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.IDHocPhan_tracuustep02);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.CMNDhocvien_tracuustep02);
+            this.Controls.Add(this.cmnd);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tracuudiemkqhp);
@@ -214,6 +229,7 @@ namespace GUI_PTTK
             this.Name = "Tracuuketquahp02";
             this.Text = "TracuuketquahocphanStep3";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.idhocphan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,11 +246,11 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.Button tracuudiemkqhp;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox CMNDhocvien_tracuustep02;
+        private System.Windows.Forms.TextBox cmnd;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox IDHocPhan_tracuustep02;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox thoigiandk_tracuustep02;
+        private System.Windows.Forms.NumericUpDown idhocphan;
+        private System.Windows.Forms.DateTimePicker ngaydk;
     }
 }
