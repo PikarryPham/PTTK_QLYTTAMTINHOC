@@ -44,7 +44,25 @@ namespace GUI_PTTK
         {
             // Gọi hàm PTTK_HuyDKHocPhan từ tầng BUS_PTTK
             // không được PHÉP GỌI DAL_PTTK
-            MessageBox.Show("Gọi hàm PTTK_HuyDKHocPhan từ tầng BUS_PTTK");
+            if(!string.IsNullOrEmpty(CMNDhocvien_xacnhanhuy.Text))
+            {
+                BUS_HocPhan hp = new BUS_HocPhan(Convert.ToInt32(idhocphan.Value));
+                BUS_HocVien hv = new BUS_HocVien(CMNDhocvien_xacnhanhuy.Text);
+                BUS_DangKyHocPhan dk = new BUS_DangKyHocPhan(ngaydk.Value.ToString());
+                BUS_DangKyHocPhan.PTTK_HuyDKHocPhan(hv, hp, dk);
+                if (BUS_DangKyHocPhan.ReturnCode == 1)
+                {
+                    MessageBox.Show(BUS_DangKyHocPhan.ReturnMess);
+                }
+                else
+                {
+                    MessageBox.Show(BUS_DangKyHocPhan.ReturnMess);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập vào CMND");
+            }
         }
     }
 }

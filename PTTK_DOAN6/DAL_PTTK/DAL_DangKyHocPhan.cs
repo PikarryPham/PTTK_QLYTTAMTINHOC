@@ -159,6 +159,49 @@ namespace DAL_PTTK
             }
             return tbl;
         }
+        public static DataTable PTTK_HuyDKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan)
+        {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            DataTable tbl = new DataTable();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("PTTK_HuyDKHocPhan", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@CMNDHOCVIEN", SqlDbType.NVarChar).Value = cmnd;
+                cmd.Parameters.Add("@IDHOCPHAN", SqlDbType.Int).Value = idhocphan;
+                cmd.Parameters.Add("@THOIGIANDKHOCPHAN", SqlDbType.Date).Value = ngaydkhocphan;
+
+
+                SqlParameter param_RETURNCODE;
+                SqlParameter param_RETURNMESSAGE;
+
+
+                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
+                param_RETURNCODE.Direction = ParameterDirection.Output;
+                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 500);
+                param_RETURNMESSAGE.Direction = ParameterDirection.Output;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tbl);
+
+                //cmd.ExecuteNonQuery();
+
+                ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
+                ReturnMess = param_RETURNMESSAGE.Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return tbl;
+        }
 
     }
 }

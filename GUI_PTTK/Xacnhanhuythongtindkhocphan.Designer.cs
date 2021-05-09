@@ -35,14 +35,15 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.username = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.idthoigiandk_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.idhp_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.CMNDhocvien_xacnhanhuy = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.backTrang = new System.Windows.Forms.Button();
+            this.ngaydk = new System.Windows.Forms.DateTimePicker();
+            this.idhocphan = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.idhocphan)).BeginInit();
             this.SuspendLayout();
             // 
             // khongdongyhuyhpbtn
@@ -100,9 +101,9 @@ namespace GUI_PTTK
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.idthoigiandk_xacnhanhuy);
+            this.groupBox1.Controls.Add(this.ngaydk);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.idhp_xacnhanhuy);
+            this.groupBox1.Controls.Add(this.idhocphan);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.CMNDhocvien_xacnhanhuy);
             this.groupBox1.Controls.Add(this.label4);
@@ -113,13 +114,6 @@ namespace GUI_PTTK
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Dien thong tin huy dang ki hoc phan";
             // 
-            // idthoigiandk_xacnhanhuy
-            // 
-            this.idthoigiandk_xacnhanhuy.Location = new System.Drawing.Point(175, 127);
-            this.idthoigiandk_xacnhanhuy.Name = "idthoigiandk_xacnhanhuy";
-            this.idthoigiandk_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
-            this.idthoigiandk_xacnhanhuy.TabIndex = 41;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -128,13 +122,6 @@ namespace GUI_PTTK
             this.label5.Size = new System.Drawing.Size(121, 17);
             this.label5.TabIndex = 40;
             this.label5.Text = "Thoi gian dang ky";
-            // 
-            // idhp_xacnhanhuy
-            // 
-            this.idhp_xacnhanhuy.Location = new System.Drawing.Point(175, 78);
-            this.idhp_xacnhanhuy.Name = "idhp_xacnhanhuy";
-            this.idhp_xacnhanhuy.Size = new System.Drawing.Size(344, 22);
-            this.idhp_xacnhanhuy.TabIndex = 37;
             // 
             // label6
             // 
@@ -172,6 +159,34 @@ namespace GUI_PTTK
             this.backTrang.UseVisualStyleBackColor = false;
             this.backTrang.Click += new System.EventHandler(this.backTrang_Click);
             // 
+            // ngaydk
+            // 
+            this.ngaydk.CustomFormat = "yyyy-MM-dd";
+            this.ngaydk.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaydk.Location = new System.Drawing.Point(175, 125);
+            this.ngaydk.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaydk.Name = "ngaydk";
+            this.ngaydk.Size = new System.Drawing.Size(344, 22);
+            this.ngaydk.TabIndex = 61;
+            this.ngaydk.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
+            // idhocphan
+            // 
+            this.idhocphan.Location = new System.Drawing.Point(175, 76);
+            this.idhocphan.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.idhocphan.Name = "idhocphan";
+            this.idhocphan.Size = new System.Drawing.Size(344, 22);
+            this.idhocphan.TabIndex = 60;
+            this.idhocphan.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // Huythongtindkhocphan02
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -189,6 +204,7 @@ namespace GUI_PTTK
             this.Load += new System.EventHandler(this.Huythongtindkhocphan02_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.idhocphan)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,12 +218,12 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox idhp_xacnhanhuy;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox CMNDhocvien_xacnhanhuy;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button backTrang;
-        private System.Windows.Forms.TextBox idthoigiandk_xacnhanhuy;
+        private System.Windows.Forms.DateTimePicker ngaydk;
+        private System.Windows.Forms.NumericUpDown idhocphan;
     }
 }

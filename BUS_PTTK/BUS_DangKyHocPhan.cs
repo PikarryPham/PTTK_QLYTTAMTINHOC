@@ -171,5 +171,24 @@ namespace BUS_PTTK
             }
             return da;
         }
+
+        public static DataTable PTTK_HuyDKHocPhan(BUS_HocVien x, BUS_HocPhan y, BUS_DangKyHocPhan z)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+                da = DAL_DangKyHocPhan.PTTK_HuyDKHocPhan(x.NDKT_CMND, y.HP_ID, z.DKHP_NGAYDK);
+
+                ReturnCode = DAL_DangKyHocPhan.ReturnCode;
+                ReturnMess = DAL_DangKyHocPhan.ReturnMess;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
     }
 }
