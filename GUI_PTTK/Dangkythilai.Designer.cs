@@ -66,6 +66,7 @@ namespace GUI_PTTK
             this.dongy_thilaibtn.TabIndex = 17;
             this.dongy_thilaibtn.Text = "Dong y";
             this.dongy_thilaibtn.UseVisualStyleBackColor = true;
+            this.dongy_thilaibtn.Click += new System.EventHandler(this.dongy_thilaibtn_Click);
             // 
             // khongdongy_thilaibtn
             // 
@@ -75,6 +76,7 @@ namespace GUI_PTTK
             this.khongdongy_thilaibtn.TabIndex = 18;
             this.khongdongy_thilaibtn.Text = "Khong dong y";
             this.khongdongy_thilaibtn.UseVisualStyleBackColor = true;
+            this.khongdongy_thilaibtn.Click += new System.EventHandler(this.khongdongy_thilaibtn_Click);
             // 
             // username
             // 

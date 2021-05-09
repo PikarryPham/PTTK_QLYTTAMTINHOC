@@ -44,8 +44,8 @@ namespace GUI_PTTK
             this.label4 = new System.Windows.Forms.Label();
             this.phong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.ngaythilai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.ngaythimoi_textbox = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.madkhocphan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.thongtinlichthilai)).BeginInit();
@@ -61,6 +61,7 @@ namespace GUI_PTTK
             this.backquayvetrangchu.TabIndex = 13;
             this.backquayvetrangchu.Text = "Quay ve trang chu";
             this.backquayvetrangchu.UseVisualStyleBackColor = false;
+            this.backquayvetrangchu.Click += new System.EventHandler(this.backquayvetrangchu_Click);
             // 
             // label1
             // 
@@ -81,6 +82,7 @@ namespace GUI_PTTK
             this.button1.TabIndex = 18;
             this.button1.Text = "Dang ky thi lai";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // username
             // 
@@ -95,6 +97,7 @@ namespace GUI_PTTK
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.ngaythimoi_textbox);
             this.groupBox1.Controls.Add(this.madkhocphan);
             this.groupBox1.Controls.Add(this.thongtinlichthilai);
             this.groupBox1.Controls.Add(this.label5);
@@ -106,7 +109,6 @@ namespace GUI_PTTK
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.phong);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.ngaythilai);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Location = new System.Drawing.Point(39, 114);
             this.groupBox1.Name = "groupBox1";
@@ -225,13 +227,6 @@ namespace GUI_PTTK
             this.label2.TabIndex = 14;
             this.label2.Text = "Ngay thi lai";
             // 
-            // ngaythilai
-            // 
-            this.ngaythilai.Location = new System.Drawing.Point(184, 80);
-            this.ngaythilai.Name = "ngaythilai";
-            this.ngaythilai.Size = new System.Drawing.Size(662, 22);
-            this.ngaythilai.TabIndex = 13;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -241,6 +236,17 @@ namespace GUI_PTTK
             this.label3.Size = new System.Drawing.Size(100, 25);
             this.label3.TabIndex = 11;
             this.label3.Text = "Ma DKHP";
+            // 
+            // ngaythimoi_textbox
+            // 
+            this.ngaythimoi_textbox.CustomFormat = "yyyy-MM-dd";
+            this.ngaythimoi_textbox.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaythimoi_textbox.Location = new System.Drawing.Point(184, 79);
+            this.ngaythimoi_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaythimoi_textbox.Name = "ngaythimoi_textbox";
+            this.ngaythimoi_textbox.Size = new System.Drawing.Size(662, 22);
+            this.ngaythimoi_textbox.TabIndex = 59;
+            this.ngaythimoi_textbox.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // Thongtinngaythilai
             // 
@@ -273,7 +279,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label username;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ngaythilai;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label;
@@ -284,5 +289,6 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView thongtinlichthilai;
         private System.Windows.Forms.NumericUpDown madkhocphan;
+        private System.Windows.Forms.DateTimePicker ngaythimoi_textbox;
     }
 }

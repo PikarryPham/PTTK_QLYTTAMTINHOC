@@ -78,5 +78,22 @@ namespace BUS_PTTK
         /* ========= Method ===========*/
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
+
+        public static Int32 PTTK_KiemTraTonTaiTenCCQT(BUS_CCQT ccqt)
+        {
+            int isValid = 0;
+            try
+            {
+                isValid = DAL_CCQT.PTTK_KiemTraTonTaiTenCCQT(ccqt.CCQT_TEN);
+                ReturnCode = DAL_CCQT.ReturnCode;
+                ReturnMess = DAL_CCQT.ReturnMess;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return isValid;
+        }
     }
 }

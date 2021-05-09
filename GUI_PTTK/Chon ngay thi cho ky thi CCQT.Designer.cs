@@ -41,20 +41,20 @@ namespace GUI_PTTK
             this.label5 = new System.Windows.Forms.Label();
             this.showlistkithiccqt_chinhsuangaythi = new System.Windows.Forms.Button();
             this.suangaythi = new System.Windows.Forms.TabPage();
+            this.ngaythimoi = new System.Windows.Forms.DateTimePicker();
+            this.ngaythicu = new System.Windows.Forms.DateTimePicker();
             this.suangaythi_btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.xoangaythi = new System.Windows.Forms.TabPage();
+            this.xoangaythi_txt = new System.Windows.Forms.DateTimePicker();
             this.xoangaythi_btn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.themngaythi = new System.Windows.Forms.TabPage();
+            this.ngaythimoi_textbox = new System.Windows.Forms.DateTimePicker();
             this.themngaythi_btn = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tabControlforChinhsuangaythi = new System.Windows.Forms.TabControl();
-            this.ngaythimoi_textbox = new System.Windows.Forms.DateTimePicker();
-            this.xoangaythi_txt = new System.Windows.Forms.DateTimePicker();
-            this.ngaythicu = new System.Windows.Forms.DateTimePicker();
-            this.ngaythimoi = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.makithiccqt_quanli)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -208,6 +208,28 @@ namespace GUI_PTTK
             this.suangaythi.Text = "Sua ngay thi cho ki thi CCQT";
             this.suangaythi.UseVisualStyleBackColor = true;
             // 
+            // ngaythimoi
+            // 
+            this.ngaythimoi.CustomFormat = "yyyy-MM-dd";
+            this.ngaythimoi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaythimoi.Location = new System.Drawing.Point(155, 63);
+            this.ngaythimoi.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaythimoi.Name = "ngaythimoi";
+            this.ngaythimoi.Size = new System.Drawing.Size(387, 22);
+            this.ngaythimoi.TabIndex = 60;
+            this.ngaythimoi.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
+            // ngaythicu
+            // 
+            this.ngaythicu.CustomFormat = "yyyy-MM-dd";
+            this.ngaythicu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaythicu.Location = new System.Drawing.Point(155, 21);
+            this.ngaythicu.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaythicu.Name = "ngaythicu";
+            this.ngaythicu.Size = new System.Drawing.Size(387, 22);
+            this.ngaythicu.TabIndex = 60;
+            this.ngaythicu.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
             // suangaythi_btn
             // 
             this.suangaythi_btn.Location = new System.Drawing.Point(165, 119);
@@ -216,6 +238,7 @@ namespace GUI_PTTK
             this.suangaythi_btn.TabIndex = 61;
             this.suangaythi_btn.Text = "Doi ngay thi";
             this.suangaythi_btn.UseVisualStyleBackColor = true;
+            this.suangaythi_btn.Click += new System.EventHandler(this.suangaythi_btn_Click);
             // 
             // label7
             // 
@@ -248,6 +271,17 @@ namespace GUI_PTTK
             this.xoangaythi.Text = "Xoa ngay thi cho ki thi CCQT";
             this.xoangaythi.UseVisualStyleBackColor = true;
             // 
+            // xoangaythi_txt
+            // 
+            this.xoangaythi_txt.CustomFormat = "yyyy-MM-dd";
+            this.xoangaythi_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.xoangaythi_txt.Location = new System.Drawing.Point(122, 42);
+            this.xoangaythi_txt.Margin = new System.Windows.Forms.Padding(4);
+            this.xoangaythi_txt.Name = "xoangaythi_txt";
+            this.xoangaythi_txt.Size = new System.Drawing.Size(387, 22);
+            this.xoangaythi_txt.TabIndex = 60;
+            this.xoangaythi_txt.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
+            // 
             // xoangaythi_btn
             // 
             this.xoangaythi_btn.Location = new System.Drawing.Point(122, 102);
@@ -256,6 +290,7 @@ namespace GUI_PTTK
             this.xoangaythi_btn.TabIndex = 58;
             this.xoangaythi_btn.Text = "Xoa ngay thi";
             this.xoangaythi_btn.UseVisualStyleBackColor = true;
+            this.xoangaythi_btn.Click += new System.EventHandler(this.xoangaythi_btn_Click);
             // 
             // label3
             // 
@@ -278,6 +313,17 @@ namespace GUI_PTTK
             this.themngaythi.TabIndex = 0;
             this.themngaythi.Text = "Them ngay thi moi cho ki thi CCQT";
             this.themngaythi.UseVisualStyleBackColor = true;
+            // 
+            // ngaythimoi_textbox
+            // 
+            this.ngaythimoi_textbox.CustomFormat = "yyyy-MM-dd";
+            this.ngaythimoi_textbox.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaythimoi_textbox.Location = new System.Drawing.Point(128, 32);
+            this.ngaythimoi_textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaythimoi_textbox.Name = "ngaythimoi_textbox";
+            this.ngaythimoi_textbox.Size = new System.Drawing.Size(387, 22);
+            this.ngaythimoi_textbox.TabIndex = 58;
+            this.ngaythimoi_textbox.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // themngaythi_btn
             // 
@@ -308,50 +354,6 @@ namespace GUI_PTTK
             this.tabControlforChinhsuangaythi.SelectedIndex = 0;
             this.tabControlforChinhsuangaythi.Size = new System.Drawing.Size(570, 224);
             this.tabControlforChinhsuangaythi.TabIndex = 53;
-            // 
-            // ngaythimoi_textbox
-            // 
-            this.ngaythimoi_textbox.CustomFormat = "yyyy-MM-dd";
-            this.ngaythimoi_textbox.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngaythimoi_textbox.Location = new System.Drawing.Point(128, 32);
-            this.ngaythimoi_textbox.Margin = new System.Windows.Forms.Padding(4);
-            this.ngaythimoi_textbox.Name = "ngaythimoi_textbox";
-            this.ngaythimoi_textbox.Size = new System.Drawing.Size(387, 22);
-            this.ngaythimoi_textbox.TabIndex = 58;
-            this.ngaythimoi_textbox.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
-            // 
-            // xoangaythi_txt
-            // 
-            this.xoangaythi_txt.CustomFormat = "yyyy-MM-dd";
-            this.xoangaythi_txt.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.xoangaythi_txt.Location = new System.Drawing.Point(122, 42);
-            this.xoangaythi_txt.Margin = new System.Windows.Forms.Padding(4);
-            this.xoangaythi_txt.Name = "xoangaythi_txt";
-            this.xoangaythi_txt.Size = new System.Drawing.Size(387, 22);
-            this.xoangaythi_txt.TabIndex = 60;
-            this.xoangaythi_txt.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
-            // 
-            // ngaythicu
-            // 
-            this.ngaythicu.CustomFormat = "yyyy-MM-dd";
-            this.ngaythicu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngaythicu.Location = new System.Drawing.Point(155, 21);
-            this.ngaythicu.Margin = new System.Windows.Forms.Padding(4);
-            this.ngaythicu.Name = "ngaythicu";
-            this.ngaythicu.Size = new System.Drawing.Size(387, 22);
-            this.ngaythicu.TabIndex = 62;
-            this.ngaythicu.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
-            // 
-            // ngaythimoi
-            // 
-            this.ngaythimoi.CustomFormat = "yyyy-MM-dd";
-            this.ngaythimoi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngaythimoi.Location = new System.Drawing.Point(155, 63);
-            this.ngaythimoi.Margin = new System.Windows.Forms.Padding(4);
-            this.ngaythimoi.Name = "ngaythimoi";
-            this.ngaythimoi.Size = new System.Drawing.Size(387, 22);
-            this.ngaythimoi.TabIndex = 63;
-            this.ngaythimoi.Value = new System.DateTime(2021, 5, 8, 0, 0, 0, 0);
             // 
             // Chon_ngay_thi_cho_ky_thi_CCQT
             // 

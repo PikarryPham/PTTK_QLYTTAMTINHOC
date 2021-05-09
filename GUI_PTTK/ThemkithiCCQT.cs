@@ -21,6 +21,7 @@ namespace GUI_PTTK
 
         private void taomoibtn_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(diadiemthi.Text) || string.IsNullOrEmpty(tenkithiccqt.Text) || string.IsNullOrEmpty(ngaythiccqt.Text) ||
                 string.IsNullOrEmpty(thoigianbdccqt.Text) || string.IsNullOrEmpty(thoigianlambai.Text))
             {
@@ -28,17 +29,27 @@ namespace GUI_PTTK
                 return;
             }
             // Tao moi cac object
+
             BUS_NgayThiKyThiCCQT ngaythimotccqt = new BUS_NgayThiKyThiCCQT((ngaythiccqt.Value.ToString()));
             BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(diadiemthi.Text, thoigianbdccqt.Text, Int32.Parse(thoigianlambai.Text));
             BUS_CCQT ccqte = new BUS_CCQT(tenkithiccqt.Text);
-            datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);
-            MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+            int result = BUS_CCQT.PTTK_KiemTraTonTaiTenCCQT(ccqte);
+            if(result != 0)
+            {
+                datagridview_kithiCCQTsaukhitao.DataSource = BUS_KyThiCCQT.PTTK_TaoMoiVaHienThiKyThiCCQT(kithiccqt, ngaythimotccqt, ccqte);
+                MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+            }
+            else
+            {
+                MessageBox.Show("Khong ton tai ten CCQT nay");
+            }
         }
 
         private void backTrangTaomoi_Click(object sender, EventArgs e)
         {
             Form form = new TrangCaNhan_QuanLy();
             form.Show();
+            form.StartPosition = FormStartPosition.CenterScreen;
             this.Close();
         }
     }

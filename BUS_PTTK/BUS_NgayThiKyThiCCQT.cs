@@ -52,6 +52,7 @@ namespace BUS_PTTK
         {
             this.KTQT_ID = kythiccqt;
         }
+        
         /* ========= Method ===========*/
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
@@ -74,6 +75,80 @@ namespace BUS_PTTK
                 ReturnMess = ex.Message;
             }
             return da;
+        }
+
+        public static DataTable PTTK_ThemNgayThiMoi(BUS_NgayThiKyThiCCQT ngaythiccqt)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+
+                da = DAL_NgayThiKyThiCCQT.PTTK_ThemNgayThiMoi(ngaythiccqt.KTQT_ID, ngaythiccqt.NTKTQT_NGAY);
+
+                ReturnCode = DAL_NgayThiKyThiCCQT.returnCode1;
+                ReturnMess = DAL_NgayThiKyThiCCQT.returnMess1;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
+
+        public static DataTable PTTK_XoaNgayThiHienTai(BUS_NgayThiKyThiCCQT ngaythiccqt)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+                da = DAL_NgayThiKyThiCCQT.PTTK_XoaNgayThiHienTai(ngaythiccqt.KTQT_ID, ngaythiccqt.NTKTQT_NGAY);
+
+                ReturnCode = DAL_NgayThiKyThiCCQT.returnCode1;
+                ReturnMess = DAL_NgayThiKyThiCCQT.returnMess1;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
+
+        public static DataTable PTTK_CapNhatNgayThi(BUS_NgayThiKyThiCCQT ngaythiccqtcu, BUS_NgayThiKyThiCCQT ngaythiccqtmoi)
+        {
+            DataTable da = new DataTable();
+            try
+            {
+                da = DAL_NgayThiKyThiCCQT.PTTK_CapNhatNgayThi(ngaythiccqtcu.KTQT_ID, ngaythiccqtcu.NTKTQT_NGAY, ngaythiccqtmoi.NTKTQT_NGAY);
+                ReturnCode = DAL_NgayThiKyThiCCQT.returnCode1;
+                ReturnMess = DAL_NgayThiKyThiCCQT.returnMess1;
+
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return da;
+        }
+
+        public static Int32 PTTK_KiemTraMaKiThiCCQT(BUS_NgayThiKyThiCCQT ngaythiccqt)
+        {
+            int isValid = 0;
+            try
+            {
+                isValid = DAL_NgayThiKyThiCCQT.PTTK_KiemTraMaKiThiCCQT(ngaythiccqt.KTQT_ID);
+                ReturnCode = DAL_NgayThiKyThiCCQT.returnCode1;
+                ReturnMess = DAL_NgayThiKyThiCCQT.returnMess1;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return isValid;
         }
     }
 }

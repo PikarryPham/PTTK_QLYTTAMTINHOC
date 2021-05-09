@@ -40,5 +40,12 @@ namespace GUI_PTTK
             this.Close();
         }
 
+        private void dkthilai_Click(object sender, EventArgs e)
+        {
+            Form form = new Dangkythilai();
+            form.StartPosition = FormStartPosition.CenterScreen;
+            form.Show();
+            this.Close();
+        }
     }
 }

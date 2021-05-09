@@ -109,6 +109,7 @@ namespace GUI_PTTK
             this.dkthilai.TabIndex = 28;
             this.dkthilai.Text = "Dang ky thi lai";
             this.dkthilai.UseVisualStyleBackColor = true;
+            this.dkthilai.Click += new System.EventHandler(this.dkthilai_Click);
             // 
             // username
             // 

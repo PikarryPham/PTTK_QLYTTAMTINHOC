@@ -27,6 +27,7 @@ namespace GUI_PTTK
         private void backcapnhat_Click(object sender, EventArgs e)
         {
             Form form = new TrangCaNhan_QuanLy();
+            form.StartPosition = FormStartPosition.CenterScreen;
             form.Show();
             this.Close();
         }
@@ -37,9 +38,26 @@ namespace GUI_PTTK
 
             BUS_KyThiCCQT kithiccqt = new BUS_KyThiCCQT(Int32.Parse(capnhat_makythiccqt.Text),capnhat_diadiemthi.Text, capnhat_thoigianbdccqt.Text, Convert.ToInt32(capnhat_thoigianlambai.Value));
             BUS_CCQT ccqte = new BUS_CCQT(capnhat_tenkithi.Text);
+            BUS_NgayThiKyThiCCQT ngthiccqt = new BUS_NgayThiKyThiCCQT(Convert.ToInt32(capnhat_makythiccqt.Value));
             //MessageBox.Show(capnhat_tenkithi.Text);
-            dataGridView1.DataSource = BUS_KyThiCCQT.PTTK_CapNhatVaHienThiThongTinMotKyThi(kithiccqt, ccqte);
-            MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+            int result = BUS_CCQT.PTTK_KiemTraTonTaiTenCCQT(ccqte);
+            int resultMaKiThiCCQT = BUS_NgayThiKyThiCCQT.PTTK_KiemTraMaKiThiCCQT(ngthiccqt);
+            if(resultMaKiThiCCQT != 0)
+            {
+                if (result != 0)
+                {
+                    dataGridView1.DataSource = BUS_KyThiCCQT.PTTK_CapNhatVaHienThiThongTinMotKyThi(kithiccqt, ccqte);
+                    MessageBox.Show(BUS_KyThiCCQT.ReturnMess);
+                }
+                else
+                {
+                    MessageBox.Show("Khong ton tai ten CCQT nay");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Khong ton tai ma ki thi CCQT nay");
+            }
         }
     }
 }
