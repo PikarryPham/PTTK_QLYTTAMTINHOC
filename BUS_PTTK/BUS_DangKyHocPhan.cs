@@ -190,5 +190,22 @@ namespace BUS_PTTK
             }
             return da;
         }
+
+        public static Int32 PTTK_KiemTraDiemHocPhan(BUS_HocVien x, BUS_HocPhan y, BUS_DangKyHocPhan z)
+        {
+            int isValid = 0;
+            try
+            {
+                isValid = DAL_DangKyHocPhan.PTTK_KiemTraDiemHocPhan(x.NDKT_ID,y.HP_ID,z.DKHP_NGAYDK);
+                ReturnCode = DAL_DangKyHocPhan.ReturnCode;
+                ReturnMess = DAL_DangKyHocPhan.ReturnMess;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return isValid;
+        }
     }
 }

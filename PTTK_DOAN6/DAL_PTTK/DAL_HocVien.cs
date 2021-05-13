@@ -52,5 +52,44 @@ namespace DAL_PTTK
             }
             return tbl;
         }
+
+        public static Int32 PTTK_LayIDHocVien(string cmnd)
+        {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            int idHocVien = 0;
+            try
+            {
+                string query = @"SELECT [dbo].[PTTK_LayIDHocVien](@CMND);";
+                ///define the SqlCommand object
+                SqlCommand cmd = new SqlCommand(query, con);
+                //parameter value will be set from command line
+                SqlParameter param0 = new SqlParameter();
+                param0.ParameterName = "@CMND";
+                param0.SqlDbType = SqlDbType.VarChar;
+                param0.Value = cmnd;
+
+
+                //pass parameter to the SQL Command
+                cmd.Parameters.Add(param0);
+                
+                //open connection
+                con.Open();
+
+                //execute the SQLCommand
+                Int32 functionResult = (Int32)cmd.ExecuteScalar();
+                idHocVien = functionResult;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return idHocVien;
+        }
     }
 }

@@ -203,5 +203,54 @@ namespace DAL_PTTK
             return tbl;
         }
 
+        public static Int32 PTTK_KiemTraDiemHocPhan(int idhocvien, int idhocphan, string tgdk)
+        {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            int isValid = 0;
+            try
+            {
+                string query = @"SELECT [dbo].[PTTK_KiemTraDiemHocPhan](@IDHOCVIEN,@IDHOCPHAN,@THOIGIANDKHOCPHAN);";
+                ///define the SqlCommand object
+                SqlCommand cmd = new SqlCommand(query, con);
+                //parameter value will be set from command line
+                SqlParameter param0 = new SqlParameter();
+                param0.ParameterName = "@IDHOCVIEN";
+                param0.SqlDbType = SqlDbType.Int;
+                param0.Value = idhocvien;
+
+                SqlParameter param1 = new SqlParameter();
+                param1.ParameterName = "@IDHOCPHAN";
+                param1.SqlDbType = SqlDbType.Int;
+                param1.Value = idhocphan;
+
+                SqlParameter param2 = new SqlParameter();
+                param2.ParameterName = "@THOIGIANDKHOCPHAN";
+                param2.SqlDbType = SqlDbType.Date;
+                param2.Value = tgdk;
+
+                //pass parameter to the SQL Command
+                cmd.Parameters.Add(param0);
+                cmd.Parameters.Add(param1);
+                cmd.Parameters.Add(param2);
+                //open connection
+                con.Open();
+
+                //execute the SQLCommand
+                Int32 functionResult = (Int32)cmd.ExecuteScalar();
+                isValid = functionResult;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return isValid;
+        }
+
     }
 }

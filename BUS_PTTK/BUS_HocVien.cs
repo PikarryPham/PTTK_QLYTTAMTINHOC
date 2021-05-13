@@ -54,6 +54,11 @@ namespace BUS_PTTK
             this.NDKT_CMND = cmnd;
             this.NDKT_ID = idhocvien;
         }
+
+        public BUS_HocVien(int idhv)
+        {
+            this.NDKT_ID = idhv;
+        }
         public BUS_HocVien(string cmnd)
         {
             this.NDKT_CMND = cmnd;
@@ -77,6 +82,23 @@ namespace BUS_PTTK
                 ReturnMess = ex.Message;
             }
             return da;
+        }
+
+        public static Int32 PTTK_LayIDHocVien(BUS_HocVien hvien)
+        {
+            int IDHOCVIEN = 0;
+            try
+            {
+                IDHOCVIEN = DAL_HocVien.PTTK_LayIDHocVien(hvien.NDKT_CMND);
+                ReturnCode = DAL_HocVien.ReturnCode;
+                ReturnMess = DAL_HocVien.ReturnMess;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            return IDHOCVIEN;
         }
     }
 }
