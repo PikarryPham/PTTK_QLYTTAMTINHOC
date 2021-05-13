@@ -49,9 +49,9 @@ namespace GUI_PTTK
 
         private void inkqhocphan_Click(object sender, EventArgs e)
         {
-
             if (!string.IsNullOrEmpty(cmnd.Text))
             {
+                
                 BUS_HocVien hv = new BUS_HocVien(cmnd.Text);
                 int idhocvien = BUS_HocVien.PTTK_LayIDHocVien(hv);
 
@@ -59,6 +59,8 @@ namespace GUI_PTTK
                 BUS_HocPhan hp = new BUS_HocPhan(Convert.ToInt32(idhocphan.Value));
                 BUS_HocVien hvien = new BUS_HocVien(idhocvien);
                 BUS_DangKyHocPhan dk = new BUS_DangKyHocPhan(ngaydk.Value.ToString());
+
+                
 
                 int ketquaDiemThi = BUS_DangKyHocPhan.PTTK_KiemTraDiemHocPhan(hvien, hp, dk);
                 //MessageBox.Show("Ket qua diem thi la " + ketquaDiemThi);
@@ -72,6 +74,9 @@ namespace GUI_PTTK
                 }
                 else
                 {
+                    ThongTinHV._CMND = cmnd.Text;
+                    ThongTinHocPhan._IDHocPhan = Convert.ToInt32(idhocphan.Value);
+                    ThongTinDKHP._ngaydk = ngaydk.Value.ToString();
                     Form form = new Inketquahocphan();
                     form.StartPosition = FormStartPosition.CenterScreen;
                     form.Show();

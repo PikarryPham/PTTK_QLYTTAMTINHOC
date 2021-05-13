@@ -11,11 +11,8 @@ using BUS_PTTK;
 
 namespace GUI_PTTK
 {
-   
-    public static class ThongTinNV
+    public static class ThongTinHV
     {
-        public static string _username;
-        
+        public static string _CMND;
     }
-
 }

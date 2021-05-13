@@ -115,6 +115,12 @@ namespace BUS_PTTK
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
 
+        public static string TenHocPhan { get; set; }
+        public static string TGBD { get; set; }
+        public static string DiemHP { get; set; }
+        public static string NgayDK { get; set; }
+        public static string CMNDHV { get; set; }
+
         public static string THONGBAODAUROT { get; set; }
         public static Int32 PTTK_KiemTraDuocThiLai(BUS_HocVien x, BUS_HocPhan y, BUS_DangKyHocPhan z)
         {
@@ -206,6 +212,28 @@ namespace BUS_PTTK
                 ReturnMess = ex.Message;
             }
             return isValid;
+        }
+
+        public static DataTable PTTK_ThongTinKhaiQuatDKHocPhan(BUS_HocVien x, BUS_HocPhan y, BUS_DangKyHocPhan z)
+        {
+            try
+            {
+                var tbl = DAL_DangKyHocPhan.PTTK_ThongTinKhaiQuatDKHocPhan(x.NDKT_CMND, y.HP_ID, z.DKHP_NGAYDK);
+                ReturnCode = DAL_DangKyHocPhan.ReturnCode;
+                ReturnMess = DAL_DangKyHocPhan.ReturnMess;
+                TenHocPhan = DAL_DangKyHocPhan.TenHocPhan;
+                TGBD = DAL_DangKyHocPhan.TGBD;
+                DiemHP = DAL_DangKyHocPhan.DiemHP;
+                NgayDK = DAL_DangKyHocPhan.NgayDK;
+                CMNDHV = DAL_DangKyHocPhan.CMNDHV;
+                return tbl;
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+                return new DataTable();
+            }
         }
     }
 }

@@ -17,7 +17,12 @@ namespace DAL_PTTK
         //public static DataTable PTTK_ThongTinChiTiet1DKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan) {};
         //public static DataTable PTTK_ThongTinKhaiQuatDKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan) {};
         //public static Int32 PTTK_KiemTraDiemHocPhan(int iddkhocphan) { return 1; };
-        
+
+        public static string TenHocPhan { get; set; }
+        public static string TGBD { get; set; }
+        public static string DiemHP { get; set; }
+        public static string NgayDK { get; set; }
+        public static string CMNDHV { get; set; }
 
         public static int ReturnCode { get; set; }
         public static string ReturnMess { get; set; }
@@ -250,6 +255,69 @@ namespace DAL_PTTK
                     con.Close();
             }
             return isValid;
+        }
+
+        public static DataTable PTTK_ThongTinKhaiQuatDKHocPhan(string cmnd, int idhocphan, string ngaydkhocphan)
+        {
+            SqlConnection con = DataConnection.GetSqlConnection();
+            DataTable tbl = new DataTable();
+            try
+            {
+                //DateTime ngayDK = DateTime.ParseExact(ngaydkhocphan, "dd-MM-yyyy", System.Globalization.CultureInfo.InvariantCulture);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("PTTK_ThongTinKhaiQuatDKHocPhan", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add("@CMNDHOCVIEN", SqlDbType.VarChar).Value = cmnd;
+                cmd.Parameters.Add("@IDHOCPHAN", SqlDbType.Int).Value = idhocphan;
+                cmd.Parameters.Add("@THOIGIANDKHOCPHAN", SqlDbType.Date).Value = ngaydkhocphan;
+
+                SqlParameter param_RETURNCODE;
+                SqlParameter param_RETURNMESSAGE;
+                param_RETURNCODE = cmd.Parameters.Add("@RETURNCODE", SqlDbType.Int);
+                param_RETURNCODE.Direction = ParameterDirection.Output;
+                param_RETURNMESSAGE = cmd.Parameters.Add("@RETURNMESS", SqlDbType.NVarChar, 100);
+                param_RETURNMESSAGE.Direction = ParameterDirection.Output;
+
+                SqlParameter param_TENHOCPHAN = cmd.Parameters.Add("@TENHOCPHAN", SqlDbType.NVarChar, 100);
+                param_TENHOCPHAN.Direction = ParameterDirection.Output;
+
+                SqlParameter param_TGBD = cmd.Parameters.Add("@TGBD", SqlDbType.NVarChar, 100);
+                param_TGBD.Direction = ParameterDirection.Output;
+
+                SqlParameter param_DIEMHP = cmd.Parameters.Add("@DIEMHP", SqlDbType.NVarChar, 100);
+                param_DIEMHP.Direction = ParameterDirection.Output;
+
+                SqlParameter param_NGAYDK = cmd.Parameters.Add("@NGAYDK", SqlDbType.NVarChar, 100);
+                param_NGAYDK.Direction = ParameterDirection.Output;
+
+                SqlParameter param_CMNDHV = cmd.Parameters.Add("@CMNDHV", SqlDbType.NVarChar, 100);
+                param_CMNDHV.Direction = ParameterDirection.Output;
+
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(tbl);
+
+                cmd.ExecuteNonQuery();
+
+                ReturnCode = Convert.ToInt32(param_RETURNCODE.Value.ToString());
+                ReturnMess = param_RETURNMESSAGE.Value.ToString();
+
+                TenHocPhan = param_TENHOCPHAN.Value.ToString();
+                TGBD = param_TGBD.Value.ToString();
+                DiemHP = param_DIEMHP.Value.ToString();
+                NgayDK = param_NGAYDK.Value.ToString();
+                CMNDHV = param_CMNDHV.Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                ReturnCode = 500;
+                ReturnMess = ex.Message;
+            }
+            finally
+            {
+                if (con.State == ConnectionState.Open)
+                    con.Close();
+            }
+            return tbl;
         }
 
     }
