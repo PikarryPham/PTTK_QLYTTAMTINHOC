@@ -1,0 +1,9 @@
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\bin\Debug\DataAccess.exe.config
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\bin\Debug\DataAccess.exe
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\bin\Debug\DataAccess.pdb
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DAL_PTTK.csprojAssemblyReference.cache
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DataAccess.Properties.Resources.resources
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DAL_PTTK.csproj.GenerateResource.cache
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DAL_PTTK.csproj.CoreCompileInputs.cache
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DataAccess.exe
+D:\Desktop\PTTK\Project_5NGUOI\Project06\PTTK_QLYTTAMTINHOC\DataAccess\obj\Debug\DataAccess.pdb

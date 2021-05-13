@@ -21,5 +21,18 @@ namespace GUI_PTTK
         {
 
         }
+
+        private void TrangCaNhan_NVTiepNhan_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void QLHV_Click(object sender, EventArgs e)
+        {
+             this.Hide();
+            Form newform = new QuanLiHocVien();
+            newform.StartPosition = FormStartPosition.CenterScreen;
+            newform.Show();
+        }
     }
 }

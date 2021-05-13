@@ -74,6 +74,7 @@
             this.btnQuayVe.TabIndex = 7;
             this.btnQuayVe.Text = "Quay ve";
             this.btnQuayVe.UseVisualStyleBackColor = true;
+            this.btnQuayVe.Click += new System.EventHandler(this.btnQuayVe_Click);
             // 
             // txbTenHV
             // 
@@ -186,7 +187,7 @@
             this.btnSuaTTHV.TabIndex = 22;
             this.btnSuaTTHV.Text = "Luu lai";
             this.btnSuaTTHV.UseVisualStyleBackColor = true;
-            this.btnSuaTTHV.Click += new System.EventHandler(this.button1_Click);
+            this.btnSuaTTHV.Click += new System.EventHandler(this.btnSuaTTHV_Click);
             // 
             // SuaThongTinHocVien
             // 

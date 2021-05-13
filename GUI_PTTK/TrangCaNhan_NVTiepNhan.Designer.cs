@@ -34,7 +34,7 @@ namespace GUI_PTTK
             this.label1 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.QLHV = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -94,15 +94,16 @@ namespace GUI_PTTK
             this.button1.Text = "Huy thong tin dang ki thi CCQT";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // QLHV
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(199, 140);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(157, 45);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Quan li hoc vien";
-            this.button3.UseVisualStyleBackColor = true;
+            this.QLHV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QLHV.Location = new System.Drawing.Point(199, 140);
+            this.QLHV.Name = "QLHV";
+            this.QLHV.Size = new System.Drawing.Size(157, 45);
+            this.QLHV.TabIndex = 36;
+            this.QLHV.Text = "Quan li hoc vien";
+            this.QLHV.UseVisualStyleBackColor = true;
+            this.QLHV.Click += new System.EventHandler(this.QLHV_Click);
             // 
             // button4
             // 
@@ -153,7 +154,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.QLHV);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.label1);
@@ -161,6 +162,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.labNVTT);
             this.Name = "TrangCaNhan_NVTiepNhan";
             this.Text = "TrangCaNhan_NVTiepNhan";
+            this.Load += new System.EventHandler(this.TrangCaNhan_NVTiepNhan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -173,7 +175,7 @@ namespace GUI_PTTK
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button QLHV;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

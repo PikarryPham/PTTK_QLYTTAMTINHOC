@@ -45,8 +45,16 @@ namespace GUI_PTTK
             this.btnQuayVe = new System.Windows.Forms.Button();
             this.labTen = new System.Windows.Forms.Label();
             this.labThemHV = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.datagridview_HVMoi = new System.Windows.Forms.DataGridView();
+            this.NDKT_ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_TEN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_GTINH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_DCHI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_EMAIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NDKT_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_HVMoi)).BeginInit();
             this.SuspendLayout();
             // 
             // btnThemHV
@@ -58,6 +66,7 @@ namespace GUI_PTTK
             this.btnThemHV.TabIndex = 38;
             this.btnThemHV.Text = "Them";
             this.btnThemHV.UseVisualStyleBackColor = true;
+            this.btnThemHV.Click += new System.EventHandler(this.btnThemHV_Click);
             // 
             // txbSDT
             // 
@@ -170,6 +179,7 @@ namespace GUI_PTTK
             this.btnQuayVe.TabIndex = 25;
             this.btnQuayVe.Text = "Quay ve";
             this.btnQuayVe.UseVisualStyleBackColor = true;
+            this.btnQuayVe.Click += new System.EventHandler(this.btnQuayVe_Click);
             // 
             // labTen
             // 
@@ -191,20 +201,81 @@ namespace GUI_PTTK
             this.labThemHV.Text = "Them ho so hoc vien moi";
             this.labThemHV.Click += new System.EventHandler(this.labSuaTTHV_Click);
             // 
-            // dataGridView1
+            // label2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(235, 359);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(344, 79);
-            this.dataGridView1.TabIndex = 39;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(153, 381);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(556, 25);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Thong tin hoc vien vua moi duoc them vao he thong";
+            // 
+            // datagridview_HVMoi
+            // 
+            this.datagridview_HVMoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.datagridview_HVMoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.NDKT_ID,
+            this.NDKT_TEN,
+            this.NDKT_CMND,
+            this.NDKT_GTINH,
+            this.NDKT_DCHI,
+            this.NDKT_EMAIL,
+            this.NDKT_SDT});
+            this.datagridview_HVMoi.Location = new System.Drawing.Point(50, 430);
+            this.datagridview_HVMoi.Name = "datagridview_HVMoi";
+            this.datagridview_HVMoi.Size = new System.Drawing.Size(743, 133);
+            this.datagridview_HVMoi.TabIndex = 41;
+            // 
+            // NDKT_ID
+            // 
+            this.NDKT_ID.DataPropertyName = "NDKT_ID";
+            this.NDKT_ID.HeaderText = "Mã học viên";
+            this.NDKT_ID.Name = "NDKT_ID";
+            // 
+            // NDKT_TEN
+            // 
+            this.NDKT_TEN.DataPropertyName = "NDKT_TEN";
+            this.NDKT_TEN.HeaderText = "Tên học viên";
+            this.NDKT_TEN.Name = "NDKT_TEN";
+            // 
+            // NDKT_CMND
+            // 
+            this.NDKT_CMND.DataPropertyName = "NDKT_CMND";
+            this.NDKT_CMND.HeaderText = "Số CMND";
+            this.NDKT_CMND.Name = "NDKT_CMND";
+            // 
+            // NDKT_GTINH
+            // 
+            this.NDKT_GTINH.DataPropertyName = "NDKT_GTINH";
+            this.NDKT_GTINH.HeaderText = "Giới tính";
+            this.NDKT_GTINH.Name = "NDKT_GTINH";
+            // 
+            // NDKT_DCHI
+            // 
+            this.NDKT_DCHI.DataPropertyName = "NDKT_DCHI";
+            this.NDKT_DCHI.HeaderText = "Địa chỉ";
+            this.NDKT_DCHI.Name = "NDKT_DCHI";
+            // 
+            // NDKT_EMAIL
+            // 
+            this.NDKT_EMAIL.DataPropertyName = "NDKT_EMAIL";
+            this.NDKT_EMAIL.HeaderText = "Email";
+            this.NDKT_EMAIL.Name = "NDKT_EMAIL";
+            // 
+            // NDKT_SDT
+            // 
+            this.NDKT_SDT.DataPropertyName = "NDKT_SDT";
+            this.NDKT_SDT.HeaderText = "SĐT";
+            this.NDKT_SDT.Name = "NDKT_SDT";
             // 
             // ThemHoSoHocVienMoi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(824, 603);
+            this.Controls.Add(this.datagridview_HVMoi);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnThemHV);
             this.Controls.Add(this.txbSDT);
             this.Controls.Add(this.labSDT);
@@ -223,7 +294,7 @@ namespace GUI_PTTK
             this.Controls.Add(this.labThemHV);
             this.Name = "ThemHoSoHocVienMoi";
             this.Text = "ThemHoSoHocVienMoi";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.datagridview_HVMoi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -247,6 +318,14 @@ namespace GUI_PTTK
         private System.Windows.Forms.Button btnQuayVe;
         private System.Windows.Forms.Label labTen;
         private System.Windows.Forms.Label labThemHV;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView datagridview_HVMoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_TEN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_CMND;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_GTINH;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_DCHI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_EMAIL;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NDKT_SDT;
     }
 }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_PTTK", "..\GUI_PTTK\GUI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_PTTK", "..\BUS_PTTK\BUS_PTTK.csproj", "{6571FBD3-8F8B-4E5B-A067-06E55E31FB3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "..\DataAccess\DataAccess.csproj", "{9ACB9163-A843-4515-8D63-CDE649EFBE91}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_PTTK", "..\DataAccess\DAL_PTTK.csproj", "{9ACB9163-A843-4515-8D63-CDE649EFBE91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

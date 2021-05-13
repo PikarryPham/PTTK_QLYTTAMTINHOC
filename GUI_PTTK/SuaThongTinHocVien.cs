@@ -17,9 +17,16 @@ namespace GUI_PTTK
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSuaTTHV_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnQuayVe_Click(object sender, EventArgs e)
+        {
+            Form form = new QuanLiHocVien();
+            form.Show();
+            this.Close();
         }
     }
 }
