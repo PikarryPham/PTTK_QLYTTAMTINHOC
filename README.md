@@ -7,5 +7,6 @@ Do an quan ly trung tam tin hoc khoa hoc tu nhien
 - Chạy file PTTK_DoAnTinHoc_FullInsert để insert dữ liệu mẫu
 - Chạy file Trang_CodeChucNang để chạy lệnh tạo hàm và procedure tương ứng
 
-## Có thể vào từng branch của mỗi người để xem và cách cài đặt các chức năng tương ứng với câu lệnh: git clone -b "Tên branch"
+## Có thể vào từng branch của mỗi người để xem và cài đặt các chức năng tương ứng với câu lệnh: git clone -b "Tên branch"
+## Có đính kèm file báo cáo ở branch Trang
 ## Có thể xem bảng phân công ở mục 1.1 của báo cáo
