@@ -23,3 +23,6 @@ C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_
 C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.csproj.CopyComplete
 C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.exe
 C:\Users\Bao Tran\Desktop\ATTT\DOAN06\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.pdb
+C:\Users\Bao Tran\Desktop\Zend\PTTK_QLYTTAMTINHOC\GUI_PTTK\bin\Debug\GUI_PTTK.exe.config
+C:\Users\Bao Tran\Desktop\Zend\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.exe
+C:\Users\Bao Tran\Desktop\Zend\PTTK_QLYTTAMTINHOC\GUI_PTTK\obj\Debug\GUI_PTTK.pdb

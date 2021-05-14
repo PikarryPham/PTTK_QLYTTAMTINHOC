@@ -58,11 +58,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhanCongGiangDay.cs">
+    <Compile Include="ThemPhanCongGiangDay.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PhanCongGiangDay.Designer.cs">
-      <DependentUpon>PhanCongGiangDay.cs</DependentUpon>
+    <Compile Include="ThemPhanCongGiangDay.Designer.cs">
+      <DependentUpon>ThemPhanCongGiangDay.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,8 +84,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PhanCongGiangDay.resx">
-      <DependentUpon>PhanCongGiangDay.cs</DependentUpon>
+    <EmbeddedResource Include="ThemPhanCongGiangDay.resx">
+      <DependentUpon>ThemPhanCongGiangDay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

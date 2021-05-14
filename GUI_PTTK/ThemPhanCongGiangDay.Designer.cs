@@ -37,20 +37,11 @@ namespace GUI_PTTK
             this.txTenHocPhan = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txGV = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txPhongHoc = new System.Windows.Forms.TextBox();
-            this.txTGBT = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txTGKT = new System.Windows.Forms.TextBox();
-            this.Phong = new System.Windows.Forms.Label();
-            this.txthu = new System.Windows.Forms.TextBox();
             this.btnPCGD = new System.Windows.Forms.Button();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
@@ -99,15 +90,15 @@ namespace GUI_PTTK
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(193, 299);
+            this.label3.Location = new System.Drawing.Point(197, 400);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 17);
+            this.label3.Size = new System.Drawing.Size(90, 17);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Ten hoc phan";
+            this.label3.Text = "Ma hoc phan";
             // 
             // txTenHocPhan
             // 
-            this.txTenHocPhan.Location = new System.Drawing.Point(336, 299);
+            this.txTenHocPhan.Location = new System.Drawing.Point(336, 400);
             this.txTenHocPhan.Name = "txTenHocPhan";
             this.txTenHocPhan.Size = new System.Drawing.Size(232, 22);
             this.txTenHocPhan.TabIndex = 5;
@@ -115,86 +106,30 @@ namespace GUI_PTTK
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(193, 347);
+            this.label4.Location = new System.Drawing.Point(197, 469);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
+            this.label4.Size = new System.Drawing.Size(100, 17);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Giang vien";
+            this.label4.Text = " Ma giang vien";
             // 
             // txGV
             // 
-            this.txGV.Location = new System.Drawing.Point(336, 342);
+            this.txGV.Location = new System.Drawing.Point(336, 466);
             this.txGV.Name = "txGV";
             this.txGV.Size = new System.Drawing.Size(232, 22);
             this.txGV.TabIndex = 7;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(193, 375);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Phong hoc";
-            // 
-            // txPhongHoc
-            // 
-            this.txPhongHoc.Location = new System.Drawing.Point(336, 375);
-            this.txPhongHoc.Name = "txPhongHoc";
-            this.txPhongHoc.Size = new System.Drawing.Size(232, 22);
-            this.txPhongHoc.TabIndex = 9;
-            // 
-            // txTGBT
-            // 
-            this.txTGBT.Location = new System.Drawing.Point(336, 427);
-            this.txTGBT.Name = "txTGBT";
-            this.txTGBT.Size = new System.Drawing.Size(232, 22);
-            this.txTGBT.TabIndex = 10;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(193, 427);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 17);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Thoi gian bat dau";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(193, 480);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 17);
+            this.label7.Size = new System.Drawing.Size(0, 17);
             this.label7.TabIndex = 12;
-            this.label7.Text = "Thoi Gian Ket Thuc";
-            // 
-            // txTGKT
-            // 
-            this.txTGKT.Location = new System.Drawing.Point(336, 475);
-            this.txTGKT.Name = "txTGKT";
-            this.txTGKT.Size = new System.Drawing.Size(232, 22);
-            this.txTGKT.TabIndex = 13;
-            // 
-            // Phong
-            // 
-            this.Phong.AutoSize = true;
-            this.Phong.Location = new System.Drawing.Point(193, 526);
-            this.Phong.Name = "Phong";
-            this.Phong.Size = new System.Drawing.Size(33, 17);
-            this.Phong.TabIndex = 14;
-            this.Phong.Text = "Thu";
-            // 
-            // txthu
-            // 
-            this.txthu.Location = new System.Drawing.Point(336, 526);
-            this.txthu.Name = "txthu";
-            this.txthu.Size = new System.Drawing.Size(232, 22);
-            this.txthu.TabIndex = 15;
             // 
             // btnPCGD
             // 
-            this.btnPCGD.Location = new System.Drawing.Point(196, 591);
+            this.btnPCGD.Location = new System.Drawing.Point(336, 536);
             this.btnPCGD.Name = "btnPCGD";
             this.btnPCGD.Size = new System.Drawing.Size(101, 61);
             this.btnPCGD.TabIndex = 16;
@@ -232,44 +167,17 @@ namespace GUI_PTTK
             this.button1.Text = "Quay ve";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(336, 591);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 61);
-            this.button2.TabIndex = 20;
-            this.button2.Text = "SuaPCGD";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(476, 591);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(90, 61);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "XoaPCGD";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // btnSuaPCGD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1176, 749);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.btnPCGD);
-            this.Controls.Add(this.txthu);
-            this.Controls.Add(this.Phong);
-            this.Controls.Add(this.txTGKT);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txTGBT);
-            this.Controls.Add(this.txPhongHoc);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txGV);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txTenHocPhan);
@@ -299,19 +207,10 @@ namespace GUI_PTTK
         private System.Windows.Forms.TextBox txTenHocPhan;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txGV;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txPhongHoc;
-        private System.Windows.Forms.TextBox txTGBT;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txTGKT;
-        private System.Windows.Forms.Label Phong;
-        private System.Windows.Forms.TextBox txthu;
         private System.Windows.Forms.Button btnPCGD;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }
